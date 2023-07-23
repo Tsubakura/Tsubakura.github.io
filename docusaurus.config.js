@@ -6,7 +6,7 @@ const projectName = 'Tsubakura.github.io';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  deploymentBranch: 'master',
+  deploymentBranch: 'main',
   title: 'Kitten ERP Guides',
   tagline: 'Kitten Extreme Raid Progression',
   favicon: 'img/favicon.ico',
