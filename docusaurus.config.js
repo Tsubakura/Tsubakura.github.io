@@ -13,6 +13,7 @@ const config = {
   baseUrl: '/',
   organizationName,
   projectName,
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
