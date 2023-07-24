@@ -1,6 +1,7 @@
 ---
-sidebar_position: 2
+id: About this website
 title: About this website
+sidebar_position: 2
 hide_title: true
 hide_table_of_contents: true
 slug: /about
