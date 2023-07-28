@@ -80,7 +80,8 @@ const pandaemonium = [
     type: "category",
     label: "P12S - Athena",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p12s/p12s", label: "Intro"}
+      {type: "doc", id: "savage/pandaemonium/p12s/p12s_p1", label: "Intro (Phase 1)"},
+      {type: "doc", id: "savage/pandaemonium/p12s/p12s_p2", label: "Intro (Phase 2)"}
     ]
   }
 ];
