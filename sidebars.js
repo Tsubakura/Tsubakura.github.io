@@ -3,85 +3,85 @@ const pandaemonium = [
     type: "category",
     label: "P1S - Erichthonios",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p1s/p1s", label: "Intro"}
+      "savage/pandaemonium/p1s/p1s"
     ]
   },
   {
     type: "category",
     label: "P2S - Hippokampos",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p2s/p2s", label: "Intro"}
+      "savage/pandaemonium/p2s/p2s"
     ]
   },
   {
     type: "category",
     label: "P3S - Phoinix",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p3s/p3s", label: "Intro"}
+      "savage/pandaemonium/p3s/p3s"
     ]
   },
   {
     type: "category",
     label: "P4S - Hesperos",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p4s/p4s", label: "Intro"}
+      "savage/pandaemonium/p4s/p4s"
     ]
   },
   {
     type: "category",
     label: "P5S - Proto-Carbuncle",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p5s/p5s", label: "Intro"}
+      "savage/pandaemonium/p5s/p5s"
     ]
   },
   {
     type: "category",
     label: "P6S - Hegemone",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p6s/p6s", label: "Intro"}
+      "savage/pandaemonium/p6s/p6s"
     ]
   },
   {
     type: "category",
     label: "P7S - Agdistis",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p7s/p7s", label: "Intro"}
+      "savage/pandaemonium/p7s/p7s"
     ]
   },
   {
     type: "category",
     label: "P8S - Hephaistos",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p8s/p8s", label: "Intro"}
+      "savage/pandaemonium/p8s/p8s"
     ]
   },
   {
     type: "category",
     label: "P9S - Kokytos",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p9s/p9s", label: "Intro"}
+      "savage/pandaemonium/p9s/p9s"
     ]
   },
   {
     type: "category",
     label: "P10S - Pandaemonium",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p10s/p10s", label: "Intro"}
+      "savage/pandaemonium/p10s/p10s"
     ]
   },
   {
     type: "category",
     label: "P11S - Themis",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p11s/p11s", label: "Intro"}
+      "savage/pandaemonium/p11s/p11s"
     ]
   },
   {
     type: "category",
     label: "P12S - Athena",
     items: [
-      {type: "doc", id: "savage/pandaemonium/p12s/p12s_p1", label: "Intro (Phase 1)"},
-      {type: "doc", id: "savage/pandaemonium/p12s/p12s_p2", label: "Intro (Phase 2)"}
+      "savage/pandaemonium/p12s/p12s_p1",
+      "savage/pandaemonium/p12s/p12s_p2"
     ]
   }
 ];
@@ -102,6 +102,7 @@ const sidebars = {
   mySideBar: [
     {type: 'doc', id: 'Home', label: 'Home'},
     {type: 'doc', id: 'About this website', label: 'About this website'},
+    {type: 'doc', id: 'Cultural differences between DCs', label: 'Cultural differences between DCs'},
     {
       type: 'category',
       label: 'Savage',

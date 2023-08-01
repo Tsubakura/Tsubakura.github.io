@@ -1,0 +1,243 @@
+---
+id: Cultural differences between DCs
+title: Cultural differences between DCs
+sidebar_position: 3
+hide_title: false
+hide_table_of_contents: true
+slug: /culture
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import p9s_waymark_example_jp from '/img/culture/p9s_waymark_example_jp.jpg';
+import p9s_waymark_example_na from '/img/culture/p9s_waymark_example_na.jpg';
+import p9s_waymark_setup_na from '/img/culture/p9s_waymark_setup_na.png';
+import MT from '/img/assets/00_ROLE/MT.png';
+import ST from '/img/assets/00_ROLE/ST.png';
+import OT from '/img/assets/00_ROLE/OT.png';
+import H1 from '/img/assets/00_ROLE/H1.png';
+import H2 from '/img/assets/00_ROLE/H2.png';
+import D1 from '/img/assets/00_ROLE/D1.png';
+import D2 from '/img/assets/00_ROLE/D2.png';
+import D3 from '/img/assets/00_ROLE/D3.png';
+import D4 from '/img/assets/00_ROLE/D4.png';
+
+While each datacenter follows the same common sense (don't be an asshole and don't trap), each datacenter has their own culture and conventions when it comes to conducting raids.
+
+<Tabs>
+    <TabItem value="Mana (JP)" label="Mana (JP)" default>
+Mana is a Japanese FFXIV data center and it is home to the Japanese raiders. While raiding in Mana, everyone in the party is expected to be able to at least communicate in Japanese.
+
+A characteristic culture of JP raiding is the heavy use of macros. Once a macro has been shown, each player will then call out the position that they want to take. Below is an example of a JP P9S macro that is translated to English.
+
+```
+■ Spread　　　　■ Pairs (Rotate ccw for ×)
+　D3 MT D4　　　　　　　MT/D3
+　H1 ★ H2　　　　H1/D1　★　H2/D4
+　D1 ST D2　　　　　　　 ST/D2
+■ Archaic Demolish (4:4 stacks)
+　West：MTH1D1D3 / STH2D2D4 ：East
+■ Scrambled Succession (Mario Kart)
+　Nothing：Start at 1, drop blue AoEs at walls
+　Towers：6 → 8 → 2 → 4
+　　   Fire：2 → 4 → 6 → 8　※45° ahead of tower
+■ Beast Phase
+　Poison：CW from 12 o'clock　D → T/H
+　Cone AoEs：T/H → D
+■ Chimeric Succession (Limit Cut #2)
+　1 → E　2 → W　3,4 → N　No debuff → S
+```
+
+A typical JP waymark has the 1 start at northwest when the waymarks are placed in a clock position. Below is an example of P9S.
+<img src={p9s_waymark_example_jp} />
+
+### Positions
+Most of the positions actually already have a predetermined default. Except for D1 and D2, calling out positions is not on a first come first serve basis in a regular party. If you intend on deviating from the defaults, make sure that you communicate this with your party.
+
+<table>
+    <tr>
+        <th><img src={MT} /></th>
+        <td>WAR > DRK > GNB > PLD</td>
+    </tr>
+    <tr>
+        <th><img src={ST} /></th>
+        <td>PLD > GNB > DRK > WAR</td>
+    </tr>
+    <tr>
+        <th><img src={H1} /></th>
+        <td>Pure healer</td>
+    </tr>
+    <tr>
+        <th><img src={H2} /></th>
+        <td>Barrier healer</td>
+    </tr>
+    <tr>
+        <th><img src={D1} /></th>
+        <td>Melee DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D2} /></th>
+        <td>Any DPS, but usually the 2nd melee DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D3} /></th>
+        <td>Physical ranged DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D4} /></th>
+        <td>Magical ranged DPS</td>
+    </tr>
+</table>
+
+
+### Strategies and priority system
+If a mechanic exists in which a priority system is required, the order is fixed from highest to lowest priority:
+
+<img src={MT} /><img src={ST} /><img src={H1} /><img src={H2} /><img src={D1} /><img src={D2} /><img src={D3} /><img src={D4} />
+
+This means that in all cases, the MT has the highest priority while D4 has the lowest priority in almost every mechanic.
+
+
+As for the other things to keep in mind:
+
+<ul>
+    <li>JP mainly follows <a href="https://game8.jp/ff14">game8</a> and FFO (JP forum). The JP players are notorably stubborn about sticking to the strategies on these sites.</li>
+    <li>JP prefers splitting the map between north (G1) and south (G2) halves. If its unfeasible, they will split it west (G1) and east (G2) instead.</li>
+    <li>JP do not like burdening support players. If given the choice of having either TH or DPS adjust, they will make the <b>DPS</b> move.</li>
+    <li>JP strategies prefers not to make the MT do extra movement just in order to make a mechanic easier for the rest of the party.</li>
+</ul>
+
+</TabItem>
+
+<TabItem value="Aether (NA)" label="Aether (NA)">
+
+NA is a North American FFXIV datacenter and the datacenter everyone believes has the best raiders of NA for some reason. The language used in Aether while raiding is primarily English.
+
+A characteristic culture of NA raiding is the heavy use of waymarks to determine positions and groups, and the free for all style in setting up positions. Below is an example of NA doing basic clockspots in P9S. Keep in mind that more waymark setups can follow depending on the mechanics of a fight.
+
+<img src={p9s_waymark_setup_na} />
+
+A typical NA waymark has the 1 start at northeast when the waymarks are placed in a clock position. Below is an example of P9S.
+
+<img src={p9s_waymark_example_na} />
+
+### Positions
+All spots are first come first serve, unless the other person is willing to give up the spot for you.
+
+<table>
+    <tr>
+        <th><img src={MT} /><img src={OT} /></th>
+        <td>First come first serve. NA doesn't care if you're WAR. <br />Even a PLD will attempt to MT if you allow him to.</td>
+    </tr>
+    <tr>
+        <th><img src={H1} /><img src={H2} /></th>
+        <td>First come first serve. <br />There is no distinction between pure and barrier healer.</td>
+    </tr>
+    <tr>
+        <th><img src={D1} /><img src={D2} /><img src={D3} /><img src={D4} /></th>
+        <td>First come first serve. <br />Melee will usually take D1 and D2, while the ranged will take D3 and D4.<br /> There is no distinction between a physical ranged and a magical ranged DPS.</td>
+    </tr>
+</table>
+
+### Strategies and priority system
+For resolving mechanics that requires a priority system, NA relies on partnering and having the acting melee flex for the ranged roles.
+
+<img src={MT} /><img src={H1} />&nbsp;&nbsp;&nbsp;<img src={OT} /><img src={H2} />&nbsp;&nbsp;&nbsp;<img src={D1} /><img src={D2} />&nbsp;&nbsp;&nbsp;<img src={D3} /><img src={D4} />
+
+The melee players needs to be watchful of their partners and adjust for them when necessary.
+
+As for the other things to keep in mind:
+
+<ul>
+    <li>NA strategies is all over the place, ranging from toolboxes, pastebins and videos.</li>
+    <li>NA prefers splitting the map between west (G1) and east (G2) halves. If its unfeasible, they will split it north (G1) and south (G2) instead.</li>
+    <li>Group 1 takes north and west, while group 2 takes south and east. If there's a conflict, like MT and H1 having to act first, the melee (MT in this example) will adjust and flex to group 2 spot instead for that mechanic.</li>
+    <li>NA design strategies that try to cater to the DPS. If given the choice of having either TH or DPS adjust, they will place the burden on the <b>TH</b>.</li>
+    <li>NA does not always have a 100% agreed on strategy for all the mechanics. It is thus important to double check what the PF description says.</li>
+</ul>
+
+</TabItem>
+
+<TabItem value="Elemental (JP)" label="Elemental (JP)">
+
+Elemental is a Japanese FFXIV data center and it is home to the English-speaking raiders who live in the Asia and Oceania regions. Elemental does have Japanese players, but the majority of the PF are English-speaking.
+
+Just like Mana, Elemental also uses macros and JP strategies by default. The big difference between Elemental and Mana though, is that Elemental are willing to adapt other strategies if the English-speaking raiders dislike what the JP are doing. As a result, Elemental has its own unique culture that is not completely the same as of that of Mana. Below is an example of a P9S macro, but with the Mario Kart replaced by the Intercard (JP Braindead) strategy.
+
+```
+■ Spread　　　　■ Pairs (Rotate ccw for ×)
+　D3 MT D4　　　　　　　MT/D3
+　H1 ★ H2　　　　H1/D1　★　H2/D4
+　D1 ST D2　　　　　　　 ST/D2
+■ Archaic Demolish (4:4 stacks)
+　West：MTH1D1D3 / STH2D2D4 ：East
+■ Scrambled Succession (Intercard)
+　Towers：6 → 8 → 2 → 4,　Fire：2 → 4 → 6 → 8
+　Blue：2x (Between 1+3) → 2x (Between 5+7)
+　Fire：2x (Between 5+7) → 2x (Between 1+3)
+■ Beast Phase
+　Poison：CW from 12 o'clock　D → T/H
+　Cone AoEs：T/H → D
+■ Chimeric Succession (Limit Cut #2)
+　1 → E　2 → W　3,4 → N　No debuff → S
+```
+
+Elemental follows the same waymark convention as Mana by default, but the waymark might change depending on the strategy being used. In case of P9S, the waymark does not change even when a different strat is used.
+<img src={p9s_waymark_example_jp} />
+
+### Positions
+Most of the positions actually already have a predetermined default. Except for D1 and D2, calling out positions is not on a first come first serve basis in a regular party. If you intend on deviating from the defaults, make sure that you communicate this with your party.
+
+<table>
+    <tr>
+        <th><img src={MT} /></th>
+        <td>WAR > DRK > GNB > PLD</td>
+    </tr>
+    <tr>
+        <th><img src={ST} /></th>
+        <td>PLD > GNB > DRK > WAR</td>
+    </tr>
+    <tr>
+        <th><img src={H1} /></th>
+        <td>Pure healer</td>
+    </tr>
+    <tr>
+        <th><img src={H2} /></th>
+        <td>Barrier healer</td>
+    </tr>
+    <tr>
+        <th><img src={D1} /></th>
+        <td>Melee DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D2} /></th>
+        <td>Any DPS, but usually the 2nd melee DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D3} /></th>
+        <td>Physical ranged DPS</td>
+    </tr>
+    <tr>
+        <th><img src={D4} /></th>
+        <td>Magical ranged DPS</td>
+    </tr>
+</table>
+
+
+### Strategies and priority system
+If a mechanic exists in which a priority system is required, the order is fixed from highest to lowest priority:
+
+<img src={MT} /><img src={ST} /><img src={H1} /><img src={H2} /><img src={D1} /><img src={D2} /><img src={D3} /><img src={D4} />
+
+This means that in all cases, the MT has the highest priority while D4 has the lowest priority in almost every mechanic.
+
+
+As for the other things to keep in mind:
+
+<ul>
+    <li>Elemental mainly follows <a href="https://tuufless.github.io/FFXIV-Elemental-Raid-Macros/">Tuufless</a>. You can join his discord <a href="https://discord.gg/WEzhVHwAU6">here</a>. Reminder, he does <b>not</b> make the strategies, he only puts up what is popular.</li>
+    <li>Elemental is influenced by outside sources. The datacenter will mainly try to follow JP strategies, but once a strategy becomes popular enough in the early weeks, it might effectively replace the JP equivalent.</li>
+</ul>
+
+</TabItem>
+</Tabs>
