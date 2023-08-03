@@ -3,9 +3,173 @@ id: p12s_p2
 title: P12S - Athena Intro (Phase 2)
 sidebar_position: 13
 sidebar_label: Intro (Phase 2)
-hide_title: true
+hide_title: false
 hide_table_of_contents: true
 slug: /savage/p12s_p2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import markers_papan from '/img/pandaemonium/p12s/markers_papan.jpg';
+import markers_mochibe from '/img/pandaemonium/p12s/markers_mochibe.jpg';
+
+
 This is the second phase of P12S and it serves as a checkpoint. For phase one, head back to [part 1](/savage/p12s_p1) of this fight.
+
+The strategies used for each datacenter are as follows:
+- Aether uses [pastebin](https://pastebin.com/gc93tBFY).
+  - Aether uses the [updated version of Papan strategy](https://ff14.toolboxgaming.space/?id=286982839316861&preview=1) for Caloric Theory 1.
+- Mana follows [Nukemaru](https://www.youtube.com/watch?v=5c3-Rinh6lA).
+  - Check whether the PF mentions KX or XX, which refers to the Palladian Ray spreads during The Classical Concepts.
+  - Mana parties do not line up for Pangenesis by default, but they are aware that it is a thing.
+- Elemental follows [Nukemaru](https://www.youtube.com/watch?v=5c3-Rinh6lA), but with a few changes in the strategies:
+  - Check whether the PF mentions KX or XX, which refers to the Palladian Ray spreads during The Classical Concepts.
+  - Elemental uses the [original version of Papan strategy](https://ff14.toolboxgaming.space/?id=845983862306861&preview=1) for Caloric Theory 1.
+  - Elemental parties always line up for Pangenesis by default.
+
+## Major mechanics
+- Gaiaochos 1
+- The Classical Concepts 1
+- Caloric Theory 1
+- Pangenesis
+- The Classical Concepts 2
+- Caloric Theory 2
+- Gaiaochos 2
+
+## Setup
+
+<Tabs>
+<TabItem value="Elemental" label="Elemental" default>
+
+### Waymark
+
+```json
+{"Name":"P12S-2 (Papan)","MapID":943,"A":{"X":100.0,"Y":0.0,"Z":89.0,"ID":0,"Active":true},"B":{"X":104.0,"Y":0.0,"Z":93.0,"ID":1,"Active":true},"C":{"X":100.0,"Y":0.0,"Z":97.0,"ID":2,"Active":true},"D":{"X":96.0,"Y":0.0,"Z":93.0,"ID":3,"Active":true},"One":{"X":99.0,"Y":0.0,"Z":81.0,"ID":6,"Active":true},"Two":{"X":113.0,"Y":0.0,"Z":93.0,"ID":5,"Active":true},"Three":{"X":119.0,"Y":0.0,"Z":91.0,"ID":7,"Active":true},"Four":{"X":87.0,"Y":0.0,"Z":93.0,"ID":4,"Active":true}}
+```
+
+<img src={markers_papan} />
+
+### Macro
+
+    【Palladian Grasp】Tank → W　Others → E
+    【Summon Darkness】N/W → T/H　S/E → DPS
+    【Demi Parhelion】
+    　　MT　 ST　　　MT　　ST　
+    　H1　　　H2　　H1　　H2　　H1 MT ST H2
+    　　　●　　　　　　 ●　　　　　　　●
+    　D3　　　D4　　D3　　D4　　D3 D1 D2 D4
+    　　D1　D2　　　D1　　D2　
+    【The Classical Concepts】
+    　※ Go to Blue：West ← 〇×▽□ → East
+    　α → Block Red ▲　　β → Block Yellow ■
+    【Palladian Ray - X-formation】
+    ●　　●　　●　　●　　2nd round：Flip 〇×▽□
+    〇α ★ ×α 　△α ★ □α　※ Bait then go to ★
+    ●　　●　　●　　●
+    〇β ★ ×β　 △β ★ □β
+    ●　　●　　●　　●
+    【Caloric Theory 1 (Papan)】
+    　　  D3　　　T/M： Preposition at ★　
+    　H1 ★ D4　  T/H mark：Swap with H1
+    　　  H2　　　DPS mark：Swap with D4
+    　■ Players at ★ fill in *empty* spots：
+    　　　W (ccw) ← H1 MT ST D2 D1 D4 → N (cw)
+    　■ 2x Fire stacks：
+    　　　Rotate to E + W stacks, CW priority
+    【Ekpyrosis】
+    　MT　ST
+    　D1　D2　　MT  D1  D2  ST
+    　H1　H2　　D3  H1  H2  D4
+    　D3　D4
+    【Pangenesis】　MT：Invuln West Others: East
+    　Colourless：W ← MTSTH1H2D1D2D3D4 → E
+    　No stacks：Slimes → W to , E to 
+    【Caloric Theory 2 (Starting positions)】
+    　　　H2　　　　 Red Marker: Swap with MT
+    　D1　　　D4　　※Pass CCW - last player moves
+    　　　MT　　　　　 twice without going mid
+    　ST　　　D2
+    　　　H1
+    　　　　　D3
+    【Summon Darkness + Demi Parhelion】
+    　※ MTD1 runs to the other side
+    　Moves＞ MTD1　STD2　H1D3　H2D4 ＜Stays
+    【Summon Darkness (Tethers)】
+    　Resolve in pairs: MTD1　STD2　H1D3　H2D4
+
+
+</TabItem>
+
+<TabItem value="Mana" label="Mana">
+
+### Waymark
+
+```json
+{"Name":"P12S-2 (Mochibe)","MapID":943,"A":{"X":97.67,"Y":0.0,"Z":92.67,"ID":0,"Active":true},"B":{"X":102.33,"Y":0.0,"Z":92.67,"ID":1,"Active":true},"C":{"X":102.33,"Y":0.0,"Z":97.33,"ID":2,"Active":true},"D":{"X":97.67,"Y":0.0,"Z":97.33,"ID":3,"Active":true},"One":{"X":99.0,"Y":0.0,"Z":81.0,"ID":4,"Active":true},"Two":{"X":119.0,"Y":0.0,"Z":91.0,"ID":5,"Active":true},"Three":{"X":105.67,"Y":0.0,"Z":101.0,"ID":6,"Active":true},"Four":{"X":94.33,"Y":0.0,"Z":101.0,"ID":7,"Active":true}}
+```
+
+<img src={markers_mochibe} />
+
+### Macro
+
+    【パラスの手】  T:西　他:東
+    【サモンダークネス】北＞西:TH　南＞東:DPS
+    【デミハルペリオン】
+    　　MT　 ST　　　MT　　ST　
+    　H1　　　H2　　H1　　H2　　H1 MT ST H2
+    　　　●　　　　　　 ●　　　　　　　●
+    　D3　　　D4　　D3　　D4　　D3 D1 D2 D4
+    　　D1　D2　　　D1　　D2　
+    【イデア】 西←〇×△□→東　 α:北　β:南
+    【パラスレイX処理】
+    ●　　●　　●　　●
+    〇α ★ ×α 　△α ★ □α　 2回目は〇×△□反転
+    ●　　●　　●　　●　　 ※誘導後→★に入る
+    〇β ★ ×β　 △β ★ □β
+    ●　　●　　●　　●
+    【カロリック1】※もちべ式
+    炎マーカー頭割り・・・西:TH　東:DPS
+    風炎:MTSTH1H2D1D2D3D4の順でAから時計
+    【エクピロシス】
+    MT  ST
+    D1  D2　   MT  D1  D2  ST　
+    H1  H2　   D3  H1  H2  D4   
+    D3  D4
+    【パンゲネシス】MT:西無敵、他:南(東側)
+    極性なし:西←MTSTH1H2D1D2D3D4→東
+    無職:スライム 西：1マーカー、東：2マーカー
+    【カロリック2回目】
+    　　H2　　　　 マーカー:MTと交代
+    D1　　　D4　    ※反時計/最後中央行かずに２回移動
+    　　MT　　　 　
+    ST　　　D2
+    　　H1
+    　　　 　D3
+    【サモンダークネス+デミ2】（MTD1が奥まで走る）
+    安置の逆側＞MT/D1　ST/D2　H1/D3　H2/D4＜安置
+    【サモンダークネス(線)】
+    　MT/D1　ST/D2　H1/D3　H2/D4ペアで処理
+
+</TabItem>
+
+<TabItem value="Aether" label="Aether">
+
+### Waymark
+Still looking for a decent screenshot =w=
+
+
+### Demi Parhelion and Ekyprosis spread positions
+Still looking for a decent screenshot =w=
+
+
+### Pangenesis line up
+Still looking for a decent screenshot =w=
+
+
+### Caloric Theory 2 positions
+Still looking for a decent screenshot =w=
+
+
+</TabItem>
+
+</Tabs>
