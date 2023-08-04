@@ -7,19 +7,6 @@ hide_table_of_contents: true
 slug: /savage/p12s_p2/gaiaochos_1
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import MT from '/img/assets/00_ROLE/MT.png';
-import ST from '/img/assets/00_ROLE/ST.png';
-import OT from '/img/assets/00_ROLE/OT.png';
-import H1 from '/img/assets/00_ROLE/H1.png';
-import H2 from '/img/assets/00_ROLE/H2.png';
-import D1 from '/img/assets/00_ROLE/D1.png';
-import D2 from '/img/assets/00_ROLE/D2.png';
-import D3 from '/img/assets/00_ROLE/D3.png';
-import D4 from '/img/assets/00_ROLE/D4.png';
-import Raidwide from '/src/components/Raidwide.js';
-import Tankbuster from '/src/components/Tankbuster.js';
 import palladian_grasp_jp from '/img/pandaemonium/p12s/palladian_grasp_jp.gif';
 import palladian_grasp_na from '/img/pandaemonium/p12s/palladian_grasp_na.gif';
 import uav1_start from '/img/pandaemonium/p12s/uav1_start.gif';
@@ -38,15 +25,15 @@ Athena will start the battle by casting <Raidwide>Ultima</Raidwide>, which is a 
 <Tankbuster>Palladian Grasp</Tankbuster> is a tankbuster which cleaves the arena half of where the tank is standing. If the tank being cleaved is standing on the left half of the arena, it means the whole left side of the arena is unsafe for the rest of the party. <Tankbuster>Palladian Grasp</Tankbuster> hits twice with each hit inflicting a vulnerability, so an invulnerability or a tankswap is required. While doing it the intended way is possible, the PF strategy is to simply have one of the tanks invuln it.
 
 <Tabs>
-<TabItem value="JP" label="JP" default>
+<TabItem value="JP" label="Tankbuster on the west half (JP)" default>
 
-The tank invulns at the west half. The party stays at the east half.
+The tank invulns at the west half, while the party stays at the east half. This is the preferred approach in Elemental and Mana.
 <img src={palladian_grasp_jp} />
 
 </TabItem>
-<TabItem value="NA" label="NA">
+<TabItem value="NA" label="Tankbuster on the east half (NA)">
 
-The tank invulns at the east half. The party stays at the west half.
+The tank invulns at the east half, while the party stays at the west half. This is preferred in Aether.
 <img src={palladian_grasp_na} />
 
 </TabItem>
@@ -97,15 +84,15 @@ The mechanics looks visually impressive, but it is actually nothing special due 
     </tr>
     <tr>
         <th>Elemental <br />Mana</th>
-        <td><center>&nbsp;<img src={MT} />&nbsp;<img src={ST} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={D4} /><br />&nbsp;<img src={D1} />&nbsp;<img src={D2} /></center></td>
-        <td><center><img src={MT} />&nbsp;&nbsp;&nbsp;<img src={ST} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;<img src={D4} /><br /><img src={D1} />&nbsp;&nbsp;&nbsp;<img src={D2} /></center></td>
-        <td><center><img src={H1} /><img src={MT} /><img src={ST} /><img src={H2} /><br /><img src={D3} /><img src={D1} /><img src={D2} /><img src={D4} /></center></td>
+        <td><center>&nbsp;<Role role='MT' />&nbsp;<Role role='ST' /><br /><Role role='H1' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Role role='H2' /><br /><Role role='D3' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Role role='D4' /><br />&nbsp;<Role role='D1' />&nbsp;<Role role='D2' /></center></td>
+        <td><center><Role role='MT' />&nbsp;&nbsp;&nbsp;<Role role='ST' /><br /><Role role='H1' />&nbsp;&nbsp;&nbsp;<Role role='H2' /><br /><Role role='D3' />&nbsp;&nbsp;&nbsp;<Role role='D4' /><br /><Role role='D1' />&nbsp;&nbsp;&nbsp;<Role role='D2' /></center></td>
+        <td><center><Role role='H1' /><Role role='MT' /><Role role='ST' /><Role role='H2' /><br /><Role role='D3' /><Role role='D1' /><Role role='D2' /><Role role='D4' /></center></td>
     </tr>
     <tr>
         <th>Aether</th>
-        <td><center>&nbsp;<img src={MT} />&nbsp;<img src={OT} /><br /><img src={D1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={D2} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={H2} /><br />&nbsp;<img src={D3} />&nbsp;<img src={D4} /></center></td>
-        <td><center><img src={D1} />&nbsp;&nbsp;&nbsp;<img src={D2} /><br /><img src={MT} />&nbsp;&nbsp;&nbsp;<img src={OT} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;<img src={D4} /></center></td>
-        <td><center><img src={D1} /><img src={MT} /><img src={OT} /><img src={D2} /><br /><img src={D3} /><img src={H1} /><img src={H2} /><img src={D4} /></center></td>
+        <td><center>&nbsp;<Role role='MT' />&nbsp;<Role role='OT' /><br /><Role role='D1' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Role role='D2' /><br /><Role role='H1' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Role role='H2' /><br />&nbsp;<Role role='D3' />&nbsp;<Role role='D4' /></center></td>
+        <td><center><Role role='D1' />&nbsp;&nbsp;&nbsp;<Role role='D2' /><br /><Role role='MT' />&nbsp;&nbsp;&nbsp;<Role role='OT' /><br /><Role role='H1' />&nbsp;&nbsp;&nbsp;<Role role='H2' /><br /><Role role='D3' />&nbsp;&nbsp;&nbsp;<Role role='D4' /></center></td>
+        <td><center><Role role='D1' /><Role role='MT' /><Role role='OT' /><Role role='D2' /><br /><Role role='D3' /><Role role='H1' /><Role role='H2' /><Role role='D4' /></center></td>
     </tr>
 </table>
 
