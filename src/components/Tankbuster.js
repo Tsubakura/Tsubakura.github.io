@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Tankbuster({children}) {
     return (
-        <div style={{
+        <span style={{
             color: 'orange',
             fontWeight: 'bold',
             position: 'relative',
             display: 'inline-block'
         }}>
         {children}
-        </div>
+        </span>
     );
 }

@@ -1,13 +1,112 @@
 ---
 id: p12s_p2_gaiaochos_1
 title: P12S - Gaiaochos 1
-sidebar_label: Gaiaochos 1
+sidebar_label: Gaiaochos 1 (UAV 1)
 hide_title: false
 hide_table_of_contents: true
 slug: /savage/p12s_p2/gaiaochos_1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import MT from '/img/assets/00_ROLE/MT.png';
+import ST from '/img/assets/00_ROLE/ST.png';
+import OT from '/img/assets/00_ROLE/OT.png';
+import H1 from '/img/assets/00_ROLE/H1.png';
+import H2 from '/img/assets/00_ROLE/H2.png';
+import D1 from '/img/assets/00_ROLE/D1.png';
+import D2 from '/img/assets/00_ROLE/D2.png';
+import D3 from '/img/assets/00_ROLE/D3.png';
+import D4 from '/img/assets/00_ROLE/D4.png';
 import Raidwide from '/src/components/Raidwide.js';
 import Tankbuster from '/src/components/Tankbuster.js';
+import palladian_grasp_jp from '/img/pandaemonium/p12s/palladian_grasp_jp.gif';
+import palladian_grasp_na from '/img/pandaemonium/p12s/palladian_grasp_na.gif';
+import uav1_start from '/img/pandaemonium/p12s/uav1_start.gif';
+import summon_darkess_1 from '/img/pandaemonium/p12s/summon_darkness_1.png';
+import summon_darkess_2 from '/img/pandaemonium/p12s/summon_darkness_2.png';
+import summon_darkess_3 from '/img/pandaemonium/p12s/summon_darkness_3.png';
+import missing_link_debuff from '/img/pandaemonium/p12s/missing_link_debuff.png';
+import summon_darkness_roles from '/img/pandaemonium/p12s/summon_darkness_roles.png';
+import summon_darkness_example from '/img/pandaemonium/p12s/summon_darkness_example.gif';
+import geocentrism_vertical from '/img/pandaemonium/p12s/geocentrism_vertical.gif';
+import geocentrism_horizontal from '/img/pandaemonium/p12s/geocentrism_horizontal.gif';
+import geocentrism_donut from '/img/pandaemonium/p12s/geocentrism_donut.gif';
 
-Athena will start the battle by casting <Raidwide>Ultima</Raidwide>, which is a generic raidwide attack. Once the party has healed up, the boss will now cast <Tankbuster>Palladian Grasp</Tankbuster>.
+Athena will start the battle by casting <Raidwide>Ultima</Raidwide>, which is a generic raidwide attack. After dealing with the initial raidwide, Athena will cast <Tankbuster>Palladian Grasp</Tankbuster> on the player who currently has the aggro on the boss.
+
+<Tankbuster>Palladian Grasp</Tankbuster> is a tankbuster which cleaves the arena half of where the tank is standing. If the tank being cleaved is standing on the left half of the arena, it means the whole left side of the arena is unsafe for the rest of the party. <Tankbuster>Palladian Grasp</Tankbuster> hits twice with each hit inflicting a vulnerability, so an invulnerability or a tankswap is required. While doing it the intended way is possible, the PF strategy is to simply have one of the tanks invuln it.
+
+<Tabs>
+<TabItem value="JP" label="JP" default>
+
+The tank invulns at the west half. The party stays at the east half.
+<img src={palladian_grasp_jp} />
+
+</TabItem>
+<TabItem value="NA" label="NA">
+
+The tank invulns at the east half. The party stays at the west half.
+<img src={palladian_grasp_na} />
+
+</TabItem>
+</Tabs>
+
+Keep in mind that <Tankbuster>Palladian Grasp</Tankbuster> will appear again later during [Pangenesis](/savage/p12s_p2/pangenesis). Amongst the tanks, only WAR has a short enough cooldown that allows them to invuln both <Tankbuster>Palladian Grasp</Tankbuster> that appears throughout this fight. If your party does not have a WAR, then the tanks need to decide amongst themselves as to who wants to invuln first. Regardless of how the party intends to resolve the tankbusters, it is now a good time for the tanks to establish aggro priority 1 and 2. It will be important later on in another tankbuster mechanic that happens before [Caloric 1](/savage/p12s_p2/caloric_1).
+
+Once the tankbuster has been resolved, the boss will now start casting <Raidwide>Gaiaochos</Raidwide>. Immediately run into the center of the safespot that appeared and make sure to mitigate <Raidwide>Gaiaochos</Raidwide> in order to prevent the party from outright wiping to damage.
+
+<img src={uav1_start} />
+
+## Summon Darkness
+Once you've entered this mini phase, two things will happen right at the start. Athena will first cast <strong>Summon Darkness</strong>, which summons three angels that will fire a straight beam towards the center of the arena. The angels will always spawn in an Y-formation, which means that there is always two safe spots that are at the opposite site of each other. There are 8 possible patterns, but the three examples below should give you a good idea on how to find the safespots by checking for the Y-formation.
+
+<table>
+    <tr>
+        <td><img src={summon_darkess_1} /></td>
+        <td><img src={summon_darkess_2} /></td>
+        <td><img src={summon_darkess_3} /></td>
+    </tr>
+</table>
+
+
+While the angels are charging up their lasers, Athena will chains up each support with a DPS, which would lead to fatal damage if the chains are not broken in time. In order to break the chains, the support group and the DPS group needs to run away from each other once the chains has formed. The chains will check the distance based on where the player was when the chain was formed, so make absolutely sure that you starts in the middle like everyone else and that you do not run out too early. For reference, once you can see the debuff as shown in the image below, then that is the signal that you can start running.
+
+<img src={missing_link_debuff} />
+
+Because of the angels, there are always only two safe locations in which the two groups can run to in order to break the chains. The support group and the DPS group need to run away from each other in order to break the chains, but accidents might happen where both support and DPS might run towards the same safe spot. In order to prevent such accidents from happening, the PF strategy fixes the groups by having the support group take north and west, while the DPS group takes south and east.
+
+<img src={summon_darkness_roles} />
+
+To summarize everything, stack dead center in the middle of the arena and identify where your role based safe spot is once <strong>Summon Darkness</strong> is cast. Once you see the chains debuff appear, then you can start running towards your safe spot. Your movement is slowed down during this phase, so using sprint is recommended in order to reach your safe spot faster.
+
+<img src={summon_darkness_example} />
+
+
+## Demi Parhelion
+Athena will cast <strong>Demi Parhelion</strong>, which creates a 3x3 circle AoE on the floor that you have to avoid. The AoEs are nothing special by itself, but Athena will quickly follow this up by casting <strong>Geocentrism</strong> while wrapping her tentacles around the globe. What this move does, is that she will spin the globe in a certain direction, which would cause the AoE on the floor to also move and burn everything in the same direction as the globe is spinning. On top of that, Athena will cast an untelegraphed spread marker on all players, forcing everyone to spread out while dodging the moving AoEs caused by the globe spinning around.
+
+The mechanics looks visually impressive, but it is actually nothing special due to how much space is given to you in order to spread out. The only thing to keep in mind is that you need to visually identify the tentacles while she is casting <strong>Geocentrism</strong>, as there is no other way to identify how the globe will spin. Athena can spin the globe in three different ways: Vertically, horizontally and sideways. Once you have identified in which way the globe is spinning, move to your spread position and the mechanic will resolve itself.
+
+<table>
+    <tr>
+        <th></th>
+        <th><img src={geocentrism_donut} /></th>
+        <th><img src={geocentrism_vertical} /></th>
+        <th><img src={geocentrism_horizontal} /></th>
+    </tr>
+    <tr>
+        <th>Elemental <br />Mana</th>
+        <td><center>&nbsp;<img src={MT} />&nbsp;<img src={ST} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={D4} /><br />&nbsp;<img src={D1} />&nbsp;<img src={D2} /></center></td>
+        <td><center><img src={MT} />&nbsp;&nbsp;&nbsp;<img src={ST} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;<img src={D4} /><br /><img src={D1} />&nbsp;&nbsp;&nbsp;<img src={D2} /></center></td>
+        <td><center><img src={H1} /><img src={MT} /><img src={ST} /><img src={H2} /><br /><img src={D3} /><img src={D1} /><img src={D2} /><img src={D4} /></center></td>
+    </tr>
+    <tr>
+        <th>Aether</th>
+        <td><center>&nbsp;<img src={MT} />&nbsp;<img src={OT} /><br /><img src={D1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={D2} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src={H2} /><br />&nbsp;<img src={D3} />&nbsp;<img src={D4} /></center></td>
+        <td><center><img src={D1} />&nbsp;&nbsp;&nbsp;<img src={D2} /><br /><img src={MT} />&nbsp;&nbsp;&nbsp;<img src={OT} /><br /><img src={H1} />&nbsp;&nbsp;&nbsp;<img src={H2} /><br /><img src={D3} />&nbsp;&nbsp;&nbsp;<img src={D4} /></center></td>
+        <td><center><img src={D1} /><img src={MT} /><img src={OT} /><img src={D2} /><br /><img src={D3} /><img src={H1} /><img src={H2} /><img src={D4} /></center></td>
+    </tr>
+</table>
+
+Once you have successfully resolved the mechanics, Athena will cast <Raidwide>Ultima</Raidwide> and return you and the arena back to normal.
