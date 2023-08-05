@@ -7,5 +7,106 @@ hide_table_of_contents: true
 slug: /savage/p12s_p2/classical_1
 ---
 
+import classical1_start from '/img/pandaemonium/p12s/classical1_start.gif';
+import shackled_together_icon_hr from '/img/pandaemonium/p12s/shackled_together_icon_hr.png';
+import alpha_target_icon_hr from '/img/pandaemonium/p12s/alpha_target_icon_hr.png';
+import beta_target_icon_hr from '/img/pandaemonium/p12s/beta_target_icon_hr.png';
+import classical_theory_example_1 from '/img/pandaemonium/p12s/classical_theory_example_1.png';
+import classical_theory_example_2 from '/img/pandaemonium/p12s/classical_theory_example_2.png';
+import classical_theory_choices_1 from '/img/pandaemonium/p12s/classical_theory_choices_1.png';
+import classical_theory_choices_2 from '/img/pandaemonium/p12s/classical_theory_choices_2.png';
+import classical_theory_nukemaru from '/img/pandaemonium/p12s/classical_theory_nukemaru.png';
+import classical_theory_bpog from '/img/pandaemonium/p12s/classical_theory_bpog.png';
+import classical_1_solution1 from '/img/pandaemonium/p12s/classical_1_solution1.png';
+import classical_1_solution2 from '/img/pandaemonium/p12s/classical_1_solution2.png';
 
-Athena will start this mechanic off by immediately casting <Raidwide>The Classical Concepts</Raidwide>
+Athena will start this mechanic off by immediately casting <Raidwide>The Classical Concepts</Raidwide>. This mechanic will generate a 3x4 grid of orbs over the arena while simultaneously inflicting debuffs that splits the party in pairs. Your partner can be easily identified by the same playstation marker and the green tether that appears shortly after.
+
+<img src={classical1_start} />
+
+<table width='50%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><img src={shackled_together_icon_hr} /></td>
+        <td><Title>Shackled Together</Title>Shackles two players together with a green tether, forcing the pair to be close to each other. Moving too far from each other will break the tether, killing both players.</td>
+    </tr>
+    <tr>
+        <td><img src={alpha_target_icon_hr} /></td>
+        <td rowspan='2'><Title>Alpha Target and Beta Target</Title>All pairs are assigned one Alpha and one Beta. These debuffs do nothing, but they are used in strategies to determine who takes which orbs during this mechanic. Contrary to popular belief, having Alpha does not prevent you from taking yellow cube orbs. Similarly, Beta can take red triangle orbs instead if they want to.</td>
+    </tr>
+    <tr>
+        <td><img src={beta_target_icon_hr} /></td>
+    </tr>
+</table>
+
+
+## The Classical Concepts
+Once <Raidwide>The Classical Concepts</Raidwide> is cast, a 3x4 grid of orbs will spawn. The mechanic is straightforward: after the orbs have spawned in, the yellow and the red orbs will try to tether to either a blue orb or a player, whoever is closer. If any orb succeeds in tethering to a blue orb, the orbs will then fuse and cause a big explosion, killing everyone. Your goal as a party is thus to prevent the red and yellow orbs from tethering to the blue orbs. This can be achieved by standing in between them, which causes the orbs to tether to you instead. There are exactly four blue orbs, four red orbs and four yellow orbs once they spawn in. Each person can only intercept one orb, so everyone in the party needs to coordinate in order to stop all 8 orbs from ever touching the blue orbs.
+
+The orbs that spawn in are random, but they do follow certain rules:
+- There's only ever one blue orb in every column.
+- Each blue orb always has at least one adjecent yellow orb and red orb.
+
+Below are two examples as to how the orb layout could look like.
+
+<table>
+    <tr>
+        <td><img src={classical_theory_example_1} /></td>
+        <td><img src={classical_theory_example_2} /></td>
+    </tr>
+</table>
+
+In order to resolve this mechanic in a coordinated way, each pair must go to each column and locate the blue orb first. Which pair goes to which column is dependent on which playstation marker you get.
+
+<Tabs>
+
+<TabItem value="JP" label="OX▽▢ (JP)">
+
+The preferred Playstation assignment in Elemental and Mana.
+
+<img src={classical_theory_nukemaru} />
+
+</TabItem>
+
+<TabItem value="NA" label="BPOG (NA)">
+
+BPOG is an acronym which means Blue, Purple, Orange and Green. The O has been repurposed to being the circle, as there's no orange in Playstation markers.
+
+<img src={classical_theory_bpog} />
+
+</TabItem>
+
+</Tabs>
+
+
+Once the blue orb has been located, the player with Alpha must intercept an adjecent red orb while the player with Beta must intercept a yellow orb. Due to how the orbs are generated, it is very possible that there are multiple red orbs or yellow orbs next to a blue orb. There is only ever one correct solution, so double check whether you are intercepting the correct orb.
+
+<table width='60%'>
+    <tr>
+        <td width='30%'><img src={classical_theory_choices_1} /></td>
+        <td width='30%'><img src={classical_theory_choices_2} /></td>
+    </tr>
+    <tr>
+        <td>The player has a Beta debuff. There are two yellow orbs next to the blue orb, but there is only one correct answer.</td>
+        <td>The left orb has two blue orbs next to it. This means that intercepting the left orb is wrong.</td>
+    </tr>
+</table>
+
+If everything was done correctly, then each rogue orb will tether to a player instead of a blue orb.
+<table>
+    <tr>
+        <td><img src={classical_1_solution1} /></td>
+        <td><img src={classical_1_solution2} /></td>
+    </tr>
+</table>
+
+The players will take damage when the orbs tether to them, so healers be wary. Once the purple tether disappears, stay away from the orbs as they will all explode in a small AoE. 
+
+## Palladian Ray
+
+The mechanic is not over yet! Athena will now cast <strong>Palladian Ray</strong>, which signals her next mechanic. Athena will plunge down two giant swords on the arena, one at the west and one at the east. Each sword will then fire an unavoidable aimed conal AoE at the four closest players. The AoE will inflict vulnerability upon hit and the AoE will linger, meaning that you have to get out of it as soon as you can. Getting hit by two of these AoE or staying too long inside is fatal.
+
+
