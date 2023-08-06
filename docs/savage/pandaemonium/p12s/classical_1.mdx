@@ -19,6 +19,10 @@ import classical_theory_nukemaru from '/img/pandaemonium/p12s/classical_theory_n
 import classical_theory_bpog from '/img/pandaemonium/p12s/classical_theory_bpog.png';
 import classical_1_solution1 from '/img/pandaemonium/p12s/classical_1_solution1.png';
 import classical_1_solution2 from '/img/pandaemonium/p12s/classical_1_solution2.png';
+import classical_1_explosion from '/img/pandaemonium/p12s/classical_1_explosion.png';
+import classical_1_palladian_ray from '/img/pandaemonium/p12s/classical_1_palladian_ray.gif';
+import palladian_ray_K_spread from '/img/pandaemonium/p12s/palladian_ray_K_spread.png';
+import palladian_ray_yolo_spread from '/img/pandaemonium/p12s/palladian_ray_yolo_spread.png';
 
 Athena will start this mechanic off by immediately casting <Raidwide>The Classical Concepts</Raidwide>. This mechanic will generate a 3x4 grid of orbs over the arena while simultaneously inflicting debuffs that splits the party in pairs. Your partner can be easily identified by the same playstation marker and the green tether that appears shortly after.
 
@@ -63,7 +67,7 @@ In order to resolve this mechanic in a coordinated way, each pair must go to eac
 
 <Tabs>
 
-<TabItem value="JP" label="OX▽▢ (JP)">
+<TabItem value="JP" label="OX▽▢ (JP)" default>
 
 The preferred Playstation assignment in Elemental and Mana.
 
@@ -71,7 +75,7 @@ The preferred Playstation assignment in Elemental and Mana.
 
 </TabItem>
 
-<TabItem value="NA" label="BPOG (NA)">
+<TabItem value="NA" label="BPOG (Aether)">
 
 BPOG is an acronym which means Blue, Purple, Orange and Green. The O has been repurposed to being the circle, as there's no orange in Playstation markers.
 
@@ -95,7 +99,7 @@ Once the blue orb has been located, the player with Alpha must intercept an adje
     </tr>
 </table>
 
-If everything was done correctly, then each rogue orb will tether to a player instead of a blue orb.
+If everything was done correctly, then each rogue orb will tether to a player instead of a blue orb. The orbs are resolved once the purple tether attaches to you, but do not move out yet! You might accidentally break the green tether, which will kill you and your partner as a result.
 <table>
     <tr>
         <td><img src={classical_1_solution1} /></td>
@@ -103,10 +107,42 @@ If everything was done correctly, then each rogue orb will tether to a player in
     </tr>
 </table>
 
-The players will take damage when the orbs tether to them, so healers be wary. Once the purple tether disappears, stay away from the orbs as they will all explode in a small AoE. 
+The players will take damage when the orbs tether to them, so healers be wary. Once all the tethers disappears, stay away from the orbs as they will all explode in a small AoE. 
+
+<img src={classical_1_explosion} />
 
 ## Palladian Ray
 
-The mechanic is not over yet! Athena will now cast <strong>Palladian Ray</strong>, which signals her next mechanic. Athena will plunge down two giant swords on the arena, one at the west and one at the east. Each sword will then fire an unavoidable aimed conal AoE at the four closest players. The AoE will inflict vulnerability upon hit and the AoE will linger, meaning that you have to get out of it as soon as you can. Getting hit by two of these AoE or staying too long inside is fatal.
+The mechanic is not over yet! Athena will now cast <strong>Palladian Ray</strong>, which signals her next mechanic. Athena will stab the arena with her two tentacles, one at the west and one at the east. Each tentacle will fire an unavoidable aimed conal AoE at the four closest players. The AoE will inflict vulnerability upon hit and the AoE will linger, meaning that you have to get out of it as soon as you can. Getting hit by two of these AoE or staying too long inside the AoE is fatal. In order to resolve this mechanic properly, each player must position themselves in a way that ensures that the AoE cone does not hit anyone else.
+
+<img src={classical_1_palladian_ray} />
 
 
+<Tabs>
+<TabItem value="JP" label="Alpha north & Beta south (JP)" default>
+
+Elemental and Mana prefers resolving this mechanic in a coordinated manner. First, the party pre-positions themselves per column based on where their assigned blue orb was from the Playstation priority.  Alphas bait the cone northwards, while the Betas bait the cone southwards. Parties can decide whether they bait in a K-shape or an X-shape, but as a general rule, don't aim the cone at anyone and the shape shouldn't matter.
+
+<img src={palladian_ray_K_spread} />
+
+
+
+</TabItem>
+<TabItem value="NA" label="Relative spread (Aether)">
+
+Aether deals with the spread more pragmatically by following a few simple rules:
+- Each tentacle is baited by four people and which tentacle you bait is dependent on which side your assigned blue orb was.
+- Don't stand in the middle, aim it outwards and don't hit anyone.
+- There's no priority between Alpha or Beta, you take a spot and hope that the others dont run towards you when baiting.
+
+Generally, this mechanic is easily resolved as long as there aren't two people stacking on top of each other and if the ray isn't baited towards the middle of the arena.
+
+
+<img src={palladian_ray_yolo_spread} />
+
+
+</TabItem>
+</Tabs>
+
+
+Once the party has successfully dealt with <strong>Palladian Ray</strong>, Athena will wrap this mechanic up by casting <Raidwide>Ultima</Raidwide>. Heal up from the damage taken during the previous mechanics and mitigate the incoming raidwide.
