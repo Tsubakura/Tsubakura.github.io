@@ -17,6 +17,28 @@ import stable_system_icon_hr from '/img/pandaemonium/p12s/stable_system_icon_hr.
 import unstable_factor_icon_hr from '/img/pandaemonium/p12s/unstable_factor_icon_hr.png';
 import critical_factor_icon_hr from '/img/pandaemonium/p12s/critical_factor_icon_hr.png';
 import ruin_icon_hr from '/img/pandaemonium/p12s/ruin_icon_hr.png';
+import pangenesis_line_up_aether from '/img/pandaemonium/p12s/pangenesis_line_up_aether.png';
+import pangenesis_line_up_elemental from '/img/pandaemonium/p12s/pangenesis_line_up_elemental.png';
+import pangenesis_towers_setup_1 from '/img/pandaemonium/p12s/pangenesis_towers_setup_1.png';
+import pangenesis_towers_setup_2 from '/img/pandaemonium/p12s/pangenesis_towers_setup_2.png';
+import pangenesis_towers_setup_3 from '/img/pandaemonium/p12s/pangenesis_towers_setup_3.png';
+import pangenesis_towers_setup_4 from '/img/pandaemonium/p12s/pangenesis_towers_setup_4.png';
+import pangenesis_elemental_1 from '/img/pandaemonium/p12s/pangenesis_elemental_1.png';
+import pangenesis_elemental_2 from '/img/pandaemonium/p12s/pangenesis_elemental_2.png';
+import pangenesis_elemental_3 from '/img/pandaemonium/p12s/pangenesis_elemental_3.png';
+import pangenesis_elemental_4 from '/img/pandaemonium/p12s/pangenesis_elemental_4.png';
+import pangenesis_elemental_5 from '/img/pandaemonium/p12s/pangenesis_elemental_5.png';
+import pangenesis_elemental_resolution_1 from '/img/pandaemonium/p12s/pangenesis_elemental_resolution_1.gif';
+import pangenesis_elemental_6 from '/img/pandaemonium/p12s/pangenesis_elemental_6.png';
+import pangenesis_elemental_resolution_2 from '/img/pandaemonium/p12s/pangenesis_elemental_resolution_2.gif';
+import pangenesis_aether_1 from '/img/pandaemonium/p12s/pangenesis_aether_1.png';
+import pangenesis_aether_2 from '/img/pandaemonium/p12s/pangenesis_aether_2.png';
+import pangenesis_aether_3 from '/img/pandaemonium/p12s/pangenesis_aether_3.png';
+import pangenesis_aether_4 from '/img/pandaemonium/p12s/pangenesis_aether_4.png';
+import pangenesis_aether_5 from '/img/pandaemonium/p12s/pangenesis_aether_5.png';
+import pangenesis_aether_resolution_1 from '/img/pandaemonium/p12s/pangenesis_aether_resolution_1.gif';
+import pangenesis_aether_6 from '/img/pandaemonium/p12s/pangenesis_aether_6.png';
+import pangenesis_aether_resolution_2 from '/img/pandaemonium/p12s/pangenesis_aether_resolution_2.gif';
 
 
 After having successfully resolved Caloric Theory 1, Athena will cast <strong>Ekpyrosis</strong>. This attack is an exaflare, proximity explosion and a spread attack combined in one. In order to resolve this mechanic, the party first needs to run to the edge where the exaflares are starting in order to minimize the damage from the proximity explosions. The party then needs to spread out immediately in order to not hit each other with the targeted AoE. Once the spread has been resolved, each player dodges the exaflare that is coming from the other side.
@@ -53,47 +75,193 @@ After dealing with the raidwide as usual, Athena will now cast <Raidwide>Pangene
 
 Once Athena casts <Raidwide>Pangenesis</Raidwide>, all the players will be inflicted with several debuffs:
 - All players will get Stable System which lasts for 10 seconds.
-- A random player will get a 16s Umbral Tilt and 2 stacks of Unstable Factor.
-- A random player will get a 16s Astral Tilt and 2 stacks of Unstable Factor.
-- A random player will get a 20s Umbral Tilt and 2 stacks of Unstable Factor.
-- A random player will get a 20s Astral Tilt and 2 stacks of Unstable Factor.
-- Two random players will get 1 stack of Unstable Factor.
-- Two random players will only receive Stable System and nothing else.
+- One player will get a 16s Umbral Tilt and 2 stacks of Unstable Factor.
+- One player will get a 16s Astral Tilt and 2 stacks of Unstable Factor.
+- One player will get a 20s Umbral Tilt and 2 stacks of Unstable Factor.
+- One player will get a 20s Astral Tilt and 2 stacks of Unstable Factor.
+- Two players will get 1 stack of Unstable Factor. They will referred as 1.
+- Two players will only receive Stable System and nothing else. They will be referred as 0.
 
 <table width='70%'>
     <tr>
         <th>Debuff</th>
         <th>Description</th>
-        <th>Additional notes</th>
     </tr>
     <tr>
         <td><img src={unstable_factor_icon_hr} /></td>
-        <td><Title>Unstable Factor</Title>This is a debuff that you need to get rid of by fusing with another player. Whenever a fuse happens with a player, the player with the higher amount of Unstable Factor stacks will lose 1 stack. If two players with the same amount of Unstable Factor stacks try to fuse together, the resulting fusion will do nothing. The goal of this mechanic is to get rid of all the Unstable Factor stacks before the timer runs out. If the timer runs out, the player will explode in a DNA mass, killing everyone.</td>
-        <td></td>
+        <td><Title>Unstable Factor</Title>This is a debuff that you need to get rid of by fusing with another player. Whenever a fusion occurs with a player, the player with the higher amount of Unstable Factor stacks will lose 1 stack. If two players with the same amount of Unstable Factor stacks try to fuse together, the resulting fusion will do nothing. The goal of this mechanic is to get rid of all the Unstable Factor stacks before the timer runs out. If the timer runs out, the player will explode in a DNA mass, killing everyone.</td>
     </tr>
     <tr>
         <td><img src={stable_system_icon_hr} /></td>
-        <td><Title>Stable System</Title>Prevents a fusion with another player from happening. This debuff is applied at the start, which means that all players can only start fusing when the towers start to appear. This debuff is also applied for 2 seconds on players who successfully fuse.</td>
-        <td></td>
+        <td><Title>Stable System</Title>Prevents a fusion with another player from happening. This debuff is applied at the start, which means that all players can only start fusing when the towers start to appear. This debuff is also applied for 2 seconds on players who successfully fuse to prevent players from fusing in quick succession.</td>
     </tr>
     <tr>
         <td><img src={critical_factor_icon_hr} /></td>
-        <td><Title>Critical Factor</Title>While fusing, a player with Unstable Factor will randomly generate a slime and receive this debuff at the same time. The slimes will use a self-destruct attack on the players at the end by tethering to them, which results in a giant explosion. Having Critical Factor will cause the attack from the slime to become fatal instead. The two players who did not start with Unstable Factors will never get this debuff, allowing them to safely soak the slimes. <br /><br />There are only six players with Unstable Factor, so the amount of slimes generated will always be exactly 6.</td>
-        <td></td>
+        <td><Title>Critical Factor</Title>After fusing successfully, a player with Unstable Factor will randomly generate a slime and receive this debuff at the same time. The slimes will use a self-destruct attack on the players after all the towers are resolved by tethering to them, which results in a giant explosion. The Critical Factor debuff will cause the explosion from the slime to become fatal instead. The two players who did not start with Unstable Factors will never get this debuff, allowing them to safely soak the slimes. <br /><br />There are only six players with Unstable Factor, so the amount of slimes generated will always be exactly 6.</td>
     </tr>
     <tr>
         <td><img src={ruin_icon_hr} /></td>
         <td><Title>Fourfold-come Ruin</Title>Each slime will inflict a stack of Fourfold-come Ruin on anyone that is hit by the explosion. If the stack hits four, then the player will be inflicted with a Doom debuff that cannot be removed, effectively killing the player.</td>
-        <td></td>
     </tr>
     <tr>
         <td><img src={umbral_tilt_icon_hr} /></td>
-        <td><Title>Umbral Tilt</Title>Allows the soaking of dark towers, while preventing the player from soaking light towers.</td>
-        <td></td>
+        <td><Title>Umbral Tilt</Title>Allows the soaking of dark towers, while preventing the player from soaking light towers. For simplicity, this will be referred as light instead of Umbral.</td>
     </tr>
     <tr>
         <td><img src={astral_tilt_icon_hr} /></td>
-        <td><Title>Astral Tilt</Title>Allows the soaking of light towers, while preventing the player from soaking dark towers.</td>
-        <td></td>
+        <td><Title>Astral Tilt</Title>Allows the soaking of light towers, while preventing the player from soaking dark towers. For simplicity, this will be referred as dark instead of Astral.</td>
     </tr>
 </table>
+
+Check your debuff once <Raidwide>Pangenesis</Raidwide> is cast! The goal of the line up is for the party to identify who the 1s and 0s are. The 1s and 0s need to know who the other 1s and 0s are, because these players need to split up properly between the west and east halves of the arena. Depending on the strategy used, the 1s and 0s needs to either move up or down after the line up.
+
+<Tabs>
+<TabItem value="JP" label="1 up 0 down (JP)">
+As the strategy suggests, the 1s move up while the 0s move down. This is the strategy used in Elemental and Mana. Keep in mind that Japanese parties do not line up, they use the party list instead to find the 1s and 0s. In this example, ST and D1 moves west, while D2 and D4 moves east.
+<br />
+
+<img src={pangenesis_line_up_elemental} />
+
+</TabItem>
+<TabItem value="Aether" label="0+2 (Aether)">
+The 0s move up while the 1s move down. This is the preferred approach in Aether. In this example, D2 and H2 moves west, while D3 and MT moves east.
+<br />
+
+<img src={pangenesis_line_up_aether} />
+
+</TabItem>
+</Tabs>
+
+
+After inflicting everyone with the debuffs, Athena will cast <strong>Pantheos</strong>, which will spawn towers that the party needs to soak. Each tower needs to be soaked by two people, and one of the two players needs to have an elemental debuff that is the opposite of the tower. Failure to soak a tower properly will cause it to explode, killing everyone in the party. Upon successfully soaking a tower, one of the player will be inflicted with an elemental debuff that is the same as the tower that was soaked.
+
+There exists only two patterns for the Pantheon towers. The party will not know which pattern they get, until the first set of towers spawn in.
+
+<table>
+    <tr>
+        <th>1st Light tower west<br/>1st Dark tower east</th>
+        <th>1st Dark tower west<br/>1st Light tower east</th>
+    </tr>
+    <tr>
+        <td><img src={pangenesis_towers_setup_1} /></td>
+        <td><img src={pangenesis_towers_setup_2} /></td>
+    </tr>
+</table>
+
+In order to resolve this mechanic, the party needs to soak all towers and resolve all Unstable Factor stacks through fusion at the same time. The Stable System debuff prevents players from fusing at the start, so this means that the party can only fuse when the towers start to appear. This also means that the pair soaking the towers must also be a pair that can fuse correctly. 
+
+This puzzle looks daunting at first, but knowing how this mechanic works will severely limit the amount of possibilities that the players have to deal with. First, the player with the 16s elemental debuff must go to the first tower to counter the element of the tower. Second, the northern tower of the 2nd set of towers is always the opposite of the first tower. The player who gets an elemental debuff on the first tower can resolve the northern tower of the 2nd set, so in order to counteract the element of the southern tower, the 20s will assigned there. 
+
+<table>
+    <tr>
+        <th>1st Light tower west<br/>1st Dark tower east</th>
+        <th>1st Dark tower west<br/>1st Light tower east</th>
+    </tr>
+    <tr>
+        <td><img src={pangenesis_towers_setup_3} /></td>
+        <td><img src={pangenesis_towers_setup_4} /></td>
+    </tr>
+</table>
+
+With all the elemental debuffs assigned, the party can now decide whether you have 1s take the first tower or 0s take the first tower. Both are valid options, but they also determine how the subsequent towers needs to be soaked in order to get rid of all the Unstable Factor stacks on all players.
+
+<Tabs>
+<TabItem value="JP" label="1 up 0 down (JP)">
+
+Elemental and Mana approaches this mechanic by having the 1s soak the first tower. The resulting fusion will produce 1 and 1 Unstable Factor stacks, which forces them to split up for the next set of towers as 1 and 1 cannot fuse together. In order to resolve the fusion at the 2nd set of towers correctly, the 0s need to preposition themselves north at the 2nd set of towers.
+
+<table width='66%'>
+    <tr>
+        <td width='33%'>Once Athena finishes casting Pangenesis, check your debuff! Move up if you're 1 and move down if you're 0. The 1s and 0s can now preposition once they know which side they have to go to. The players with the elemental debuffs should stack at the center, because they do not know yet which side they have to go to, until the first tower spawns.</td>
+        <td width='33%'><img src={pangenesis_elemental_1} /></td>
+    </tr>
+    <tr>
+        <td>The first set of towers now appears. The west tower is light and the east tower is dark. The 16s elemental debuff players can now move in into the first tower. The players with a 20s elemental debuff can move in to preposition at the second set of towers. Using sprint is recommended if you have the 16s elemental debuff.</td>
+        <td><img src={pangenesis_elemental_2} /></td>
+    </tr>
+    <tr>
+        <td>The first set of towers are now resolved. One of the two players soaking the tower will now be inflicted with an elemental debuff. The player with an elemental debuff moves up to the top lane. The player who did not receive an elemental debuff will move to the bottom lane. <br /><br />Make absolutely sure that the pairs soaking the first towers have successfully fused first before moving!</td>
+        <td><img src={pangenesis_elemental_3} /></td>
+    </tr>
+    <tr>
+        <td>The second set of towers are now resolved. Once again, one of the two players on each tower will now be inflicted with an elemental debuff. The player with an elemental debuff switches lane. The player who did not receive an elemental debuff will continue to move forward. <br /><br />Again, make absolutely sure to fuse first before moving!</td>
+        <td><img src={pangenesis_elemental_4} /></td>
+    </tr>
+    <tr>
+        <td>The final set of towers are now resolved. All the pairs will now fuse for the last time. All Unstable Factors should now be resolved at this point. The party should now move south in preparation for the next mechanic.</td>
+        <td><img src={pangenesis_elemental_5} /></td>
+    </tr>
+    <tr>
+        <td>Here is the MT point of view with a 20s dark debuff.</td>
+        <td><img src={pangenesis_elemental_resolution_1} /></td>
+    </tr>
+</table>
+
+
+</TabItem>
+<TabItem value="Aether" label="0+2 (Aether)">
+
+Aether approaches this mechanic by having the 0s soak the first tower. The strategy abuses the fact that fusing 0 with a 2 will produce 0 and 1 Unstable Factor stacks, which means the pair can fuse again. This allows the party to eliminate the random factor of having to switch lanes for the first two sets of towers, because the pair at the first tower can both move north for the 2nd set of towers. The 1s will be taking the south tower of the 2nd set in this strategy.
+
+<table width='66%'>
+    <tr>
+        <td width='33%'>Once Athena finishes casting Pangenesis, check your debuff! Move up if you're 0 and move down if you're 1. The 1s and 0s can now preposition once they know which side they have to go to. The players with the elemental debuffs should stack at the center, because they do not know yet which side they have to go to, until the first tower spawns.</td>
+        <td width='33%'><img src={pangenesis_aether_1} /></td>
+    </tr>
+    <tr>
+        <td>The first set of towers now appears. The west tower is dark and the east tower is light. The 16s elemental debuff players can now move in into the first tower. The players with a 20s elemental debuff can move in to preposition at the second set of towers. Using sprint is recommended if you have the 16s elemental debuff.</td>
+        <td><img src={pangenesis_aether_2} /></td>
+    </tr>
+    <tr>
+        <td>The first set of towers are now resolved. After fusing properly, the pair at the first tower can go to north to take the 2nd set of towers. Because both players move to the same tower, it is irrelevant who has received the elemental debuff. The 1s and the 20s elemental debuffs will instead take the south tower of the 2nd set. <br /><br />Make absolutely sure that the pairs soaking the first towers have successfully fused first before moving!</td>
+        <td><img src={pangenesis_aether_3} /></td>
+    </tr>
+    <tr>
+        <td>The second set of towers are now resolved. Once again, one of the two players on each tower will now be inflicted with an elemental debuff. For the third set of towers, the player with an elemental debuff has to switch lane. The player who did not receive an elemental debuff will continue to move forward. <br /><br />Again, make absolutely sure to fuse first before moving!</td>
+        <td><img src={pangenesis_aether_4} /></td>
+    </tr>
+    <tr>
+        <td>The final set of towers are now resolved. All the pairs will now fuse for the last time. All Unstable Factors should now be resolved at this point. The party should now move south in preparation for the next mechanic.</td>
+        <td><img src={pangenesis_aether_5} /></td>
+    </tr>
+    <tr>
+        <td>Here is the MT point of view as 0 on the east side.</td>
+        <td><img src={pangenesis_aether_resolution_1} /></td>
+    </tr>
+</table>
+
+
+</TabItem>
+</Tabs>
+
+The mechanic is not over yet! Three slimes on each sides have been generated during the fusion process. These slimes will now try to lunge at the players, causing a giant explosion upon impact. At the same time, Athena will cast <Tankbuster>Palladian Grasp</Tankbuster> on the player with the highest enmity, which is the tentacle tankbuster that was seen at the beginning of the fight.
+
+Only the 0s can safely soak the slimes and they need to do so in a way that the explosion doesn't hit anyone else. The slime explosions will inflict stacks of Fourfold-come Ruin, so do not try to grab more than 3 slimes. This should not happen unless you intentionally grab the slimes from the other side. The damage inflicted by the slimes will bypass invulnerability, so do not try to invuln it. If the tank invulning ends up being selected as the 0, then it doesn't matter where the tank stands, as long as the incoming attacks does not end up hitting the party.
+
+
+<Tabs>
+<TabItem value="JP" label="Tankbuster on the west half (JP)" default>
+
+The 0s should grab three tethers on their respective sides and immediately run towards their waymarks. The west 0 takes waymark 3 while the east 0 takes waymark 4. The MT should be at the west side, ready to invuln the incoming tankbuster. The rest of the party stays at the east half. The 0 at north should immediately move over to the east side once he/she has successfully soaked the slimes, unless the 0 is also the MT.
+
+<table>
+    <tr>
+        <td><img src={pangenesis_elemental_6} /></td>
+        <td><img src={pangenesis_elemental_resolution_2} /></td>
+    </tr>
+</table>
+
+</TabItem>
+<TabItem value="NA" label="Tankbuster on the east half (Aether)">
+
+The 0s should grab three tethers on their respective sides and then head north. The west 0 should tuck himself/herself all the way up in the topleft corner. The east 0 should be directly above the B waymark, hugging the northern edge of the arena. The tank with invuln ready should be at the east side, ready to invuln the incoming tankbuster. The rest of the party stays at the west half. The 0 at north should immediately move over to the west side once he/she has successfully soaked the slimes, unless the 0 is also the tank doing the invulning.
+
+<table>
+    <tr>
+        <td><img src={pangenesis_aether_6} /></td>
+        <td><img src={pangenesis_aether_resolution_2} /></td>
+    </tr>
+</table>
+
+</TabItem>
+</Tabs>
