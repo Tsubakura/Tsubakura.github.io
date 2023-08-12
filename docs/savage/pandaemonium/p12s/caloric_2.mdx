@@ -1,9 +1,163 @@
 ---
 id: p12s_p2_caloric_2
 title: P12S - Caloric Theory 2
-sidebar_position: 18
 sidebar_label: Caloric Theory 2
 hide_title: false
 hide_table_of_contents: true
 slug: /savage/p12s_p2/caloric_2
 ---
+
+import caloric2_start from '/img/pandaemonium/p12s/caloric2_start.gif';
+import caloric_icon_hr from '/img/pandaemonium/p12s/caloric_icon_hr.png';
+import atmosfaction_icon_hr from '/img/pandaemonium/p12s/atmosfaction_icon_hr.png';
+import entropifaction_icon_hr from '/img/pandaemonium/p12s/entropifaction_icon_hr.png';
+import entropy_resistance_icon_hr from '/img/pandaemonium/p12s/entropy_resistance_icon_hr.png';
+import close_caloric_movement from '/img/pandaemonium/p12s/close_caloric_movement.jpg';
+import close_caloric_example from '/img/pandaemonium/p12s/close_caloric_example.png';
+import atmosfaction_example from '/img/pandaemonium/p12s/atmosfaction_example.png';
+import entropifaction_example from '/img/pandaemonium/p12s/entropifaction_example.png';
+import caloric2_elemental_1 from '/img/pandaemonium/p12s/caloric2_elemental_1.png';
+import caloric2_elemental_resolution_1 from '/img/pandaemonium/p12s/caloric2_elemental_resolution_1.gif';
+import caloric2_elemental_2 from '/img/pandaemonium/p12s/caloric2_elemental_2.png';
+import caloric2_elemental_3 from '/img/pandaemonium/p12s/caloric2_elemental_3.png';
+import caloric2_elemental_4 from '/img/pandaemonium/p12s/caloric2_elemental_4.png';
+import caloric2_elemental_5 from '/img/pandaemonium/p12s/caloric2_elemental_5.png';
+import caloric2_elemental_resolution_2 from '/img/pandaemonium/p12s/caloric2_elemental_resolution_2.gif';
+import caloric2_aether_1 from '/img/pandaemonium/p12s/caloric2_aether_1.png';
+import caloric2_aether_resolution_1 from '/img/pandaemonium/p12s/caloric2_aether_resolution_1.gif';
+import caloric2_aether_2 from '/img/pandaemonium/p12s/caloric2_aether_2.png';
+import caloric2_aether_3 from '/img/pandaemonium/p12s/caloric2_aether_3.png';
+import caloric2_aether_4 from '/img/pandaemonium/p12s/caloric2_aether_4.png';
+import caloric2_aether_5 from '/img/pandaemonium/p12s/caloric2_aether_5.png';
+import caloric2_aether_resolution_2 from '/img/pandaemonium/p12s/caloric2_aether_resolution_2.gif';
+import ekpyrosis_north_south_resolution from '/img/pandaemonium/p12s/ekpyrosis_north_south_resolution.gif';
+import ekpyrosis_west_east_resolution from '/img/pandaemonium/p12s/ekpyrosis_west_east_resolution.gif';
+
+Athena will start casting <Raidwide>Caloric Theory</Raidwide> again to signal the start of Caloric Theory 2. One random player will get a red marker, while the rest get a green marker. Once Athena is done casting, an aero circle will go off on all players with a green marker. Just like Caloric 1, hitting someone else with this attack is fatal because of Close Caloric, so make sure that everyone spreads out in a formation to avoid clipping each other.
+
+<img src={caloric2_start} />
+
+Once Athena finishes casting <Raidwide>Caloric Theory</Raidwide>, Athena will inflict the following debuffs on all players:
+- All players will start with two stacks of Close Caloric.
+  - The player with a red marker will start with three instead, due to taking a fire attack at the start.
+- All players will get Atmosfaction.
+- One random player with a green marker will get 8 stacks of Entropifaction.
+  - The player with a red marker will never start with the Entropifaction.
+
+<table width='70%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+        <th>Additional notes</th>
+    </tr>
+    <tr>
+        <td><img src={caloric_icon_hr} /></td>
+        <td><Title>Close Caloric</Title>All players with Atmosfaction start with two stacks of Close Caloric. The stack increases by one for every fire damage you take or by simply moving. Once you've gained a stack from moving, it will increase further after every 9 yalms. If the stack ever hits 5, then the player will explode and wipe the party. Dying will also cause the player to explode. <br /><br />For reference as to how much 9 yalms is, check the image to the right.</td>
+        <td><img src={close_caloric_movement} /></td>
+    </tr>
+    <tr>
+        <td><img src={atmosfaction_icon_hr} /></td>
+        <td><Title>Atmosfaction</Title>Upon the timer of this debuff running out, an aero circle will go off around the player. Any other player who gets hit by this aero circle will be sent flying across the arena. Because of Close Caloric, the player who was sent flying will also explode due to having moved too much. <br /><br />The image on the right shows you roughly how big the aero AoE is.</td>
+        <td><img src={atmosfaction_example} /></td>
+    </tr>
+    <tr>
+        <td><img src={entropifaction_icon_hr} /></td>
+        <td><Title>Entropifaction</Title>The player with this debuff will drop a telegraphed fire AoE puddle every 3 seconds at exactly where he/she is standing. This debuff can be transferred over to another player by simply touching another player. This debuff starts with eight stacks, so it will drop exactly eight fire puddles in total. <br /><br />The player with Entropifaction is easily identified by the giant flame above their head.</td>
+        <td><img src={entropifaction_example} /><img src={close_caloric_example} /></td>
+    </tr>
+    <tr>
+        <td><img src={entropy_resistance_icon_hr} /></td>
+        <td><Title>Entropy Resistance</Title>This debuff prevents the player from taking the Entropifaction debuff. This debuff is inflicted on the player passing the Entropifaction debuff in order to prevent the player from accidentally stealing the debuff back. </td>
+        <td></td>
+    </tr>
+</table>
+
+To resolve this mechanic correctly, the party must let all the Entropifaction stacks run out without it hitting anyone. This would be trivial if everyone had infinite movements, but due to Close Caloric, a single player cannot resolve all the Entropifaction stacks alone. All players with green markers starts with two stacks of Close Caloric, which allows exactly two AoE dodges. The first dodge should always be to pass the debuff to another player while simultaneously dodging the AoE. The second dodge is to get away from the AoE again once the debuff has been passed to another player. The second dodge should always be away from the center, because at the very end of this mechanic, the Atmosfaction will go off and you do not want that to hit anyone by accident. Keep in mind that the player with the red marker starts with three stacks instead, so the Entropifaction should **never** be passed to this player.
+
+All the general rules of Caloric 1 apply here as well! Avoid unnecessary movements and walk in a straight line without doing any weird movements. If you mess up by moving wrongly, then there's no turning back!
+
+Just like Caloric 1, the prepositioning in Caloric 2 is the most important part of this mechanic. The party needs to preposition themselves in a way that allows them to resolve this mechanic as smoothly as possible. 
+
+<Tabs>
+<TabItem value="JP" label="Nukemaru (JP)" default>
+
+Elemental and Mana follows the Nukemaru video guide for Caloric 2. Nukemaru's approach is to have the MT take the middle spot for flexing and have the party pass the Entropifaction counterclockwise.
+
+<table width='66%'>
+    <tr>
+        <td width='33%'>Once <Tankbuster>Crush Helm</Tankbuster> is resolved, everyone should loosely preposition themselves like this. Once Athena starts casting <Raidwide>Caloric Theory</Raidwide>, the MT should immediately locate who the player is with a red marker. The MT should swap places with that player, because the red marker should be in the middle.</td>
+        <td width='33%'><img src={caloric2_elemental_1} /></td>
+    </tr>
+    <tr>
+        <td>After the MT switches place with the red marker, wait until Athena finishes casting <Raidwide>Caloric Theory</Raidwide>. Remember to mitigate and heal this, because this raidwide hits quite hard!</td>
+        <td><img src={caloric2_elemental_resolution_1} /></td>
+    </tr>
+    <tr>
+        <td>One random player who had a green marker will be inflicted with Entropifaction. Once you see the AoE on the floor, move out and pass the debuff counterclockwise. In this example, the Entropifaction started at H2, so this player should pass it to D1 next.<br /><br />The player with the red marker in the middle should not move for the remainder of this mechanic, he/she only needs to stay still in the center and wait until the mechanic is over.</td>
+        <td><img src={caloric2_elemental_2} /></td>
+    </tr>
+    <tr>
+        <td>Once the debuff is passed, wait until the AoE appears on the floor. H2 should now dodge away from the center, while D1 should now pass the debuff to the next person, which is the ST. Each player basically does this, until there are no more players left to pass the debuff to. <br /><br />The preferred dodge is diagonal, but you can opt for a horizontal dodge instead. Just make absolutely sure that the way you're dodging will not cause any problems down the line for the other players.</td>
+        <td><img src={caloric2_elemental_3} /></td>
+    </tr>
+    <tr>
+        <td>The last person, in this case the D4, should run towards the position of where the Entropifaction started in order to drop the last stack. After the AoE puddle appears, you can dodge in any safe direction, even back to where you came from, because there are no more fire puddles after this.</td>
+        <td><img src={caloric2_elemental_4} /></td>
+    </tr>
+    <tr>
+        <td>Once the last person has dodged the last fire puddle, all the Atmosfactions will now resolve. If all players are properly spread out, then the Atmosfaction should not hit anyone.</td>
+        <td><img src={caloric2_elemental_5} /></td>
+    </tr>
+    <tr>
+        <td>Here is the MT point of view from the beginning until the Atmosfaction resolving.</td>
+        <td><img src={caloric2_elemental_resolution_2} /></td>
+    </tr>
+</table>
+
+</TabItem>
+<TabItem value="NA" label="Pastebin (Aether)">
+
+Aether follows the pastebin strategy instead. The pastebin strategy puts a ranged in the middle for flexing and have the party pass the Entropifaction clockwise.
+
+<table width='66%'>
+    <tr>
+        <td width='33%'>Once <Tankbuster>Crush Helm</Tankbuster> is resolved, everyone should loosely preposition themselves like this. Once Athena starts casting <Raidwide>Caloric Theory</Raidwide>, the D3 should immediately locate who the player is with a red marker. The D3 should swap places with that player, because the red marker should be in the middle.</td>
+        <td width='33%'><img src={caloric2_aether_1} /></td>
+    </tr>
+    <tr>
+        <td>After the D3 switches place with the red marker, wait until Athena finishes casting <Raidwide>Caloric Theory</Raidwide>. Remember to mitigate and heal this, because this raidwide hits quite hard!</td>
+        <td><img src={caloric2_aether_resolution_1} /></td>
+    </tr>
+    <tr>
+        <td>One random player who had a green marker will be inflicted with Entropifaction. Once you see the AoE on the floor, move out and pass the debuff clockwise. In this example, the Entropifaction started at OT, so this player should pass it to D2 next.<br /><br />The player with the red marker in the middle should not move for the remainder of this mechanic, he/she only needs to stay still in the center and wait until the mechanic is over.</td>
+        <td><img src={caloric2_aether_2} /></td>
+    </tr>
+    <tr>
+        <td>Once the debuff is passed, wait until the AoE appears on the floor. OT should now dodge away from the center, while D2 should now pass the debuff to the next person, which is the H2. Each player basically does this, until there are no more players left to pass the debuff to.<br /><br />The preferred dodge is away from the center, whether it horizontal, vertical or diagonal. Just make absolutely sure that the way you're dodging will not cause any problems down the line for the other players.</td>
+        <td><img src={caloric2_aether_3} /></td>
+    </tr>
+    <tr>
+        <td>The last person, in this case the D1, should run towards the position of where the Entropifaction started in order to drop the last stack. After the AoE puddle appears, you can dodge in any safe direction, even back to where you came from, because there are no more fire puddles after this.</td>
+        <td><img src={caloric2_aether_4} /></td>
+    </tr>
+    <tr>
+        <td>Once the last person has dodged the last fire puddle, all the Atmosfactions will now resolve. If all players are properly spread out, then the Atmosfaction should not hit anyone.</td>
+        <td><img src={caloric2_aether_5} /></td>
+    </tr>
+    <tr>
+        <td>Here is the MT point of view from the beginning until the Atmosfaction resolving.</td>
+        <td><img src={caloric2_aether_resolution_2} /></td>
+    </tr>
+</table>
+
+</TabItem>
+</Tabs>
+
+Once Caloric 2 is properly resolved, Athena will cast <strong>Ekpyrosis</strong> that is followed up with <Raidwide>Ultima</Raidwide>. Heal up and mitigate as needed. Nothing is different from the last time, so the party can resolve this mechanic the same way as last time.
+
+<table>
+    <tr>
+        <th><img src={ekpyrosis_west_east_resolution} /></th>
+        <th><img src={ekpyrosis_north_south_resolution} /></th>
+    </tr>
+</table>
