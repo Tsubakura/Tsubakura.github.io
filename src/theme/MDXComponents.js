@@ -5,6 +5,7 @@ import TabItem from '@theme/TabItem';
 
 import Title from '/src/components/Title.js';
 import Raidwide from '/src/components/Raidwide.js';
+import Enrage from '/src/components/Enrage.js';
 import Tankbuster from '/src/components/Tankbuster.js';
 import Role from '/src/components/Role.js';
 
@@ -12,6 +13,7 @@ import Role from '/src/components/Role.js';
 export default {
   ...MDXComponents,
   Raidwide,
+  Enrage,
   Tankbuster,
   Role,
   Title,
