@@ -81,6 +81,13 @@ const pandaemonium = [
     label: "P12S - Athena",
     items: [
       "savage/pandaemonium/p12s/p12s_p1",
+      "savage/pandaemonium/p12s/p12s_p1_paradeigma_1",
+      "savage/pandaemonium/p12s/p12s_p1_paradeigma_2",
+      "savage/pandaemonium/p12s/p12s_p1_superchain_1",
+      "savage/pandaemonium/p12s/p12s_p1_paradeigma_3",
+      "savage/pandaemonium/p12s/p12s_p1_palladion",
+      "savage/pandaemonium/p12s/p12s_p1_superchain_2a",
+      "savage/pandaemonium/p12s/p12s_p1_superchain_2b",
       "savage/pandaemonium/p12s/p12s_p2",
       "savage/pandaemonium/p12s/p12s_p2_gaiaochos_1",
       "savage/pandaemonium/p12s/p12s_p2_classical_1",

@@ -8,17 +8,157 @@ hide_table_of_contents: true
 slug: /savage/p12s_p1
 ---
 
+import markers_jp from '/img/pandaemonium/p12s/markers_jp.png';
+
 P12S consists of two phases. For phase two, check out [part 2](/savage/p12s_p2) of this fight.
 
-The strategy is mostly the same across all datacenters, with a few minor differences:
-- 
+The strategy is mostly the same across all datacenters:
+- Aether uses [pastebin](https://pastebin.com/gc93tBFY).
+  - Aether has DPS go CCW and support go CW in Paradeigma 2.
+  - Tanks need to flex for the healers in Paradeigma 3 if they both get the tower debuff.
+  - DPS positions are fixed depending on how your tethers are stretched.
+- Elemental and Mana follows [Nukemaru](https://www.youtube.com/watch?v=hkCG_VH4sI4).
+  - JP has support go CCW and DPS go CW in Paradeigma 2.
+  - Supports with towers and DPS all respect a priority system in Paradeigma 3 to decide who soaks which tower.
+
+General notes:
+- This raid introduces the use of Umbral and Astral, which are the light and dark elements.
+  - Taking another attack of the same element is fatal and will likely not resolve the mechanic properly.
+  - Players cannot soak towers of the same element.
+  - Keep this concept in mind, as these elements will make a return in part 2 of this fight.
 
 ## Major mechanics
-- Paradeigma 1
-- Paradeigma 2
-- Superchain Theory I
-- Paradeigma 3
-- Palladion (Limit Cut)
-- Superchain Theory IIA
-- Superchain Theory IIB
+- [Paradeigma 1](/savage/p12s_p1/paradeigma_1)
+- [Paradeigma 2](/savage/p12s_p1/paradeigma_2)
+- [Superchain Theory I](/savage/p12s_p1/superchain_1)
+- [Paradeigma 3](/savage/p12s_p1/paradeigma_3)
+- [Palladion (Limit Cut)](/savage/p12s_p1/palladion)
+- [Superchain Theory IIA](/savage/p12s_p1/superchain_2a)
+- [Superchain Theory IIB](/savage/p12s_p1/superchain_2b)
 
+## Setup
+
+<Tabs>
+<TabItem value="Elemental" label="Elemental" default>
+
+### Waymark
+
+```json
+{"Name":"P12S-1","MapID":943,"A":{"X":100.0,"Y":0.0,"Z":82.0,"ID":0,"Active":true},"B":{"X":118.0,"Y":0.0,"Z":100.0,"ID":1,"Active":true},"C":{"X":100.0,"Y":0.0,"Z":118.0,"ID":2,"Active":true},"D":{"X":82.0,"Y":0.0,"Z":100.0,"ID":3,"Active":true},"One":{"X":110.0,"Y":0.0,"Z":90.0,"ID":4,"Active":true},"Two":{"X":110.0,"Y":0.0,"Z":110.0,"ID":5,"Active":true},"Three":{"X":90.0,"Y":0.0,"Z":110.0,"ID":6,"Active":true},"Four":{"X":90.0,"Y":0.0,"Z":90.0,"ID":7,"Active":true}}
+```
+
+<img src={markers_jp} />
+
+### Macro
+
+    ■ Paradeigma 1 - Tanks invuln (mit. AA after)
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Paradeigma 2 - 十-formation
+    　Tethers：Pull opposite
+    　T/H：CCW from NW　　DPS：CW from NE
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Superchain Theory I, II　　※ All facing boss
+    　《Spread》　　　　《Pairs》　　 《IIA Pairs》
+    　　D1　D2　　　　　　  ▼　　　　　　  ▼
+    　MT　　　ST　　MT/D1      ST/D2　　MTD1
+    　　　  ★　　　　　　　　★　　　　　  ST D2
+    　H1　　　H2　　H1/D3　H2/D4　　H1D3　　　　　
+    　　D3　D4　　　　　　　　　　　　　H2D4
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Superchain Theory I - (L)ight and (D)ark
+    　　《Beams/4:4》　　　《Towers/AoE Spread》
+    　　　　　　★　　　　　　　MT/D1　　ST/D2
+    　(D) Beam　  (L) Beam　　　　　　★
+    　(L) Debuff　(D) Debuff　　(L) Towers (D)
+    　　　　　　　　　　　　　　H1/D3　　H2/D4
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Apodialogos ：H/D near + Tanks far
+    　 Peridialogos：Tanks near + H/D far
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Paradeigma 3 (Idyllshire)
+    　North：十-debuff    South：X-debuff
+    　North：MT > ST > H1 > H2：South
+    　DPS Towers：Mid > D1D2D3D4
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■ Palladion (Limit Cut) - Neverland
+    　　　　★
+    　　　　　2/4　　　※ 2,4 stacks along the
+    　　5/7　　6/8　　　　edge, not corner
+    　　　　1/3　　　　※ Drop puddles clockwise
+    　※ Beams：5, 7 → 6, 8 → 1, 3 → 2, 4
+    　※ Gather North after Limit Cut
+
+
+</TabItem>
+
+<TabItem value="Mana" label="Mana">
+
+### Waymark
+
+```json
+{"Name":"P12S-1","MapID":943,"A":{"X":100.0,"Y":0.0,"Z":82.0,"ID":0,"Active":true},"B":{"X":118.0,"Y":0.0,"Z":100.0,"ID":1,"Active":true},"C":{"X":100.0,"Y":0.0,"Z":118.0,"ID":2,"Active":true},"D":{"X":82.0,"Y":0.0,"Z":100.0,"ID":3,"Active":true},"One":{"X":110.0,"Y":0.0,"Z":90.0,"ID":4,"Active":true},"Two":{"X":110.0,"Y":0.0,"Z":110.0,"ID":5,"Active":true},"Three":{"X":90.0,"Y":0.0,"Z":110.0,"ID":6,"Active":true},"Four":{"X":90.0,"Y":0.0,"Z":90.0,"ID":7,"Active":true}}
+```
+
+<img src={markers_jp} />
+
+### Macro
+
+    ■パラ1回目 タンク無敵
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■パラ2回目 十字
+    線：対面に伸ばす
+    塔TH：北西から反時計、塔DPS：北東から時計
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■チェインⅠ、Ⅱ　※ボス基準
+    《8方向》　　　　　《ペア》　　　　　　《ペア半面》ⅡA
+            D1   D2       　　　　　　　　　　　　　　MTD1
+    MT              ST  　　MT/D1      ST/D2　　 　  STD2
+    　       ★        　　　　　　　★　　   　　     　H1D3
+    H1              H2　  　H1/D3      H2/D4  　  　 H2D4　　　　　
+        D3    D4     　　　　　　　　　　　　
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    《ビーム誘導/4:4》　　　《塔/天火散開》
+    　　　　★　　　　　　   MT/D1  　ST/D2
+    黒ビーム    白ビーム　　　　　　 ★
+    白デバフ    黒デバフ　　　　　白　　黒
+    　　　　　　　　　　 　H1/D3　  H2/D4　
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■アポ ：HDボス下　ペリ：HDボス背面サークル外
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■パラデイグマ3回目 イディル
+    　北：十字    南：X字
+    　北　MT＞ST＞H1＞H2　南
+    　DPS塔踏み:中央＞D1D2D3D4
+    ーーーーーーーーーーーーーーーーーーーーーーーー
+    ■サイコロ　ネバラン
+    　   ★
+    　       2/4（2,4は辺から頭割り）
+    5/7　　6/8
+    　   1/3
+    ※ビーム:5,7→6,8→1,3→2,4
+    ※サイコロ後北に集合
+
+</TabItem>
+
+<TabItem value="Aether" label="Aether">
+
+### Waymark
+
+```json
+SoonTM
+```
+
+<img src={markers_jp} />
+
+
+### Superchain protean spread
+
+The position for Superchain proteans are fixed, but feel free to pick a different spot if your party agrees to it.
+
+### Superchain IIA two-man stack
+
+The position for Superchain IIA is fixed and is usually skipped in reclears. Use it for prog if needed though.
+
+</TabItem>
+
+</Tabs>
