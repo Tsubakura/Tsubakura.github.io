@@ -109,6 +109,13 @@ const sidebars = {
     {type: 'doc', id: 'Cultural differences between DCs', label: 'Cultural differences between DCs'},
     {
       type: 'category',
+      label: '=w=',
+      items: [
+        {type: "doc", id: "=w=/dsr_uptime_exaflare", label: "DSR Uptime Exaflare"}
+      ]
+    },
+    {
+      type: 'category',
       label: 'Savage',
       items: [
         {type: "category", label: "Pandaemonium", items: pandaemonium}
