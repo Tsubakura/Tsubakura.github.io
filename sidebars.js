@@ -1,4 +1,46 @@
+const arcadion = [
+  {
+    type: "doc",
+    id: "savage/arcadion/index",
+    label: "Index"
+  },
+  {
+    type: "category",
+    label: "M1S - Black Cat",
+    items: [
+      "savage/arcadion/m1s/m1s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M2S - Honey B. Lovely",
+    items: [
+      "savage/arcadion/m2s/m2s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M3S - Brute Bomber",
+    items: [
+      "savage/arcadion/m3s/m3s"
+    ]
+  },
+  {
+    type: "category",
+    label: "P4S - Hesperos",
+    items: [
+      "savage/arcadion/m4s/m4s_p1",
+      "savage/arcadion/m4s/m4s_p2"
+    ]
+  },
+]
+
 const pandaemonium = [
+  {
+    type: "doc",
+    id: "savage/pandaemonium/index",
+    label: "Index"
+  },
   {
     type: "category",
     label: "P1S - Erichthonios",
@@ -118,6 +160,7 @@ const sidebars = {
       type: 'category',
       label: 'Savage',
       items: [
+        {type: "category", label: "Arcadion", items: arcadion},
         {type: "category", label: "Pandaemonium", items: pandaemonium}
       ]
     },
