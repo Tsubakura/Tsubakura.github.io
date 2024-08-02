@@ -8,29 +8,55 @@ const arcadion = [
     type: "category",
     label: "M1S - Black Cat",
     items: [
-      "savage/arcadion/m1s/m1s"
+      "savage/arcadion/m1s/m1s",
+      "savage/arcadion/m1s/m1s_nine_lives_1",
+      "savage/arcadion/m1s/m1s_mouser_1",
+      "savage/arcadion/m1s/m1s_nine_lives_2",
+      "savage/arcadion/m1s/m1s_mouser_2",
+      "savage/arcadion/m1s/m1s_raining_cats"
     ]
   },
   {
     type: "category",
     label: "M2S - Honey B. Lovely",
     items: [
-      "savage/arcadion/m2s/m2s"
+      "savage/arcadion/m2s/m2s",
+      "savage/arcadion/m2s/m2s_beat_1",
+      "savage/arcadion/m2s/m2s_alarm_pheromones_1",
+      "savage/arcadion/m2s/m2s_beat_2",
+      "savage/arcadion/m2s/m2s_alarm_pheromones_2",
+      "savage/arcadion/m2s/m2s_beat_3",
+      "savage/arcadion/m2s/m2s_rotten_heart",
     ]
   },
   {
     type: "category",
     label: "M3S - Brute Bomber",
     items: [
-      "savage/arcadion/m3s/m3s"
+      "savage/arcadion/m3s/m3s",
+      "savage/arcadion/m3s/m3s_doping_1",
+      "savage/arcadion/m3s/m3s_tag_team_1",
+      "savage/arcadion/m3s/m3s_final_fusedown",
+      "savage/arcadion/m3s/m3s_fusefield",
+      "savage/arcadion/m3s/m3s_doping_2",
+      "savage/arcadion/m3s/m3s_tag_team_2",
+      "savage/arcadion/m3s/m3s_fuse_or_foe"
     ]
   },
   {
     type: "category",
-    label: "P4S - Hesperos",
+    label: "M4S - Wicked Thunder",
     items: [
-      "savage/arcadion/m4s/m4s_p1",
-      "savage/arcadion/m4s/m4s_p2"
+      "savage/arcadion/m4s/m4s",
+      "savage/arcadion/m4s/m4s_bewitching_flight",
+      "savage/arcadion/m4s/m4s_electrope_edge_1",
+      "savage/arcadion/m4s/m4s_electrope_edge_2",
+      "savage/arcadion/m4s/m4s_electron_stream",
+      "savage/arcadion/m4s/m4s_electrope_transplant",
+      "savage/arcadion/m4s/m4s_cross_tail_switch",
+      "savage/arcadion/m4s/m4s_midnight_sabbath",
+      "savage/arcadion/m4s/m4s_chain_lightning",
+      "savage/arcadion/m4s/m4s_sunrise_sabbath"
     ]
   },
 ]
