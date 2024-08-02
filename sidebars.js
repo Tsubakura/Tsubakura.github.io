@@ -54,6 +54,7 @@ const arcadion = [
       "savage/arcadion/m4s/m4s_electron_stream",
       "savage/arcadion/m4s/m4s_electrope_transplant",
       "savage/arcadion/m4s/m4s_cross_tail_switch",
+      "savage/arcadion/m4s/m4s_twilight_sabbath",
       "savage/arcadion/m4s/m4s_midnight_sabbath",
       "savage/arcadion/m4s/m4s_chain_lightning",
       "savage/arcadion/m4s/m4s_sunrise_sabbath"
