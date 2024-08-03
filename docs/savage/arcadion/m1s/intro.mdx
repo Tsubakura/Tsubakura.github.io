@@ -3,9 +3,90 @@ id: m1s
 title: M1S - Black Cat
 sidebar_position: 1
 sidebar_label: Intro
-hide_title: true
+hide_title: false
 hide_table_of_contents: true
 slug: /savage/m1s
 ---
 
-Coming soon...
+import markers_jp from '/img/arcadion/m1s/markers_jp.jpg';
+
+Elemental and Mana follows [Inumaru](https://www.youtube.com/watch?v=S1SBXo9tLfo):
+- The Quadruple Crossing is done boss-relative, but PF is still split about true north and boss-relative at the time of this writing.
+- The one-tile strategy is used for Mouser.
+- Raining Cats is partially cheesed by using invulnerability from the tanks.
+
+
+## Major mechanics
+  - [Nine Lives 1](/savage/m1s/nine_lives_1)
+  - [Mouser 1](/savage/m1s/mouser_1)
+  - [Nine Lives 2](/savage/m1s/nine_lives_2)
+  - [Mouser 2](/savage/m1s/mouser_2)
+  - [Raining Cats](/savage/m1s/raining_cats)
+
+
+## Setup
+
+<Tabs>
+
+<TabItem value="Elemental" label="Elemental" default>
+
+### Waymark
+
+```json
+{"Name":"M1S","MapID":986,"A":{"X":100,"Y":0,"Z":90,"ID":0,"Active":true},"B":{"X":110,"Y":0,"Z":100,"ID":1,"Active":true},"C":{"X":100,"Y":0,"Z":110,"ID":2,"Active":true},"D":{"X":90,"Y":0,"Z":100,"ID":3,"Active":true},"One":{"X":110,"Y":0,"Z":95,"ID":4,"Active":true},"Two":{"X":110,"Y":0,"Z":105,"ID":5,"Active":true},"Three":{"X":90,"Y":0,"Z":105,"ID":6,"Active":true},"Four":{"X":90,"Y":0,"Z":95,"ID":7,"Active":true}}
+```
+
+<img src={markers_jp} />
+
+### Macro
+
+    【Quadruple Crossing (Fan AoEs at cardinals)】
+    　　　  MTD3　　　Baits：T/H → DPS
+    　 H1D1 ▲ H2D4　※ Boss-relative
+    　　　    STD2　　　※ Rotate CCW for pair stacks
+    【4:4 stacks】　　　　　【Splintering Nails】
+    　N/W：MTH1D1D3 　　　 　　(BOSS)　　
+    　S/E：STH2D2D4　　　　　T 　 　D　 　H
+    【Shockwave】
+    　■ Knockback　　　　■ Spread　(BOSS)
+    　　West → MTH1D1D3　　　MT/ST　　D1/D2
+    　　East → STH2D2D4　　　　D3/D4　　H1/H2
+    【Raining Cats】
+    　NW：MT → MT (invuln) → MT (invuln) → D1 
+    　NE： ST → ST (invuln) → ST (invuln) → D2
+    　Near (S)：H1D1D2　　Far (S)：H2D3D4
+
+
+</TabItem>
+
+<TabItem value="Mana" label="Mana">
+
+### Waymark
+
+```json
+{"Name":"M1S","MapID":986,"A":{"X":100,"Y":0,"Z":90,"ID":0,"Active":true},"B":{"X":110,"Y":0,"Z":100,"ID":1,"Active":true},"C":{"X":100,"Y":0,"Z":110,"ID":2,"Active":true},"D":{"X":90,"Y":0,"Z":100,"ID":3,"Active":true},"One":{"X":110,"Y":0,"Z":95,"ID":4,"Active":true},"Two":{"X":110,"Y":0,"Z":105,"ID":5,"Active":true},"Three":{"X":90,"Y":0,"Z":105,"ID":6,"Active":true},"Four":{"X":90,"Y":0,"Z":95,"ID":7,"Active":true}}
+```
+
+<img src={markers_jp} />
+
+### Macro
+
+    　【基本散開】 　 　｜【扇範囲誘導】(全てボス基準)
+    　D3 　MT 　D4 　 ｜ 　 　 　 MTD3
+    　H1　ボス　H2 　｜　H1D1 　ボス 　H2D4
+    　D1 　ST 　D2 　 ｜　 　 　 　STD2
+    【クアドラプルネイル】（十字固定処理）
+    　先:TH　後:DPS　※ペア割は扇誘導位置から反時計に動く
+    【4:4頭割り・衝撃波】（衝撃波は東西散開）
+    　北/西:MTH1D1D3　南/東:STH2D2D4
+    【スプレッドネイル】
+    　 　 　ボス
+    　T 　 　D　 　H
+    【レイニングキャッツ】(タンク無敵)
+    　北西:MT→MT(無敵)→MT(無敵)→D1　南側タゲサ：H1D1D2
+    　北東:ST →ST(無敵) →ST(無敵) →D2 　 南側外周：H2D3D4
+
+
+</TabItem>
+
+</Tabs>
