@@ -68,62 +68,62 @@ const pandaemonium = [
     id: "savage/pandaemonium/index",
     label: "Index"
   },
-  {
-    type: "category",
-    label: "P1S - Erichthonios",
-    items: [
-      "savage/pandaemonium/p1s/p1s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P2S - Hippokampos",
-    items: [
-      "savage/pandaemonium/p2s/p2s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P3S - Phoinix",
-    items: [
-      "savage/pandaemonium/p3s/p3s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P4S - Hesperos",
-    items: [
-      "savage/pandaemonium/p4s/p4s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P5S - Proto-Carbuncle",
-    items: [
-      "savage/pandaemonium/p5s/p5s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P6S - Hegemone",
-    items: [
-      "savage/pandaemonium/p6s/p6s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P7S - Agdistis",
-    items: [
-      "savage/pandaemonium/p7s/p7s"
-    ]
-  },
-  {
-    type: "category",
-    label: "P8S - Hephaistos",
-    items: [
-      "savage/pandaemonium/p8s/p8s"
-    ]
-  },
+  // {
+  //   type: "category",
+  //   label: "P1S - Erichthonios",
+  //   items: [
+  //     "savage/pandaemonium/p1s/p1s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P2S - Hippokampos",
+  //   items: [
+  //     "savage/pandaemonium/p2s/p2s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P3S - Phoinix",
+  //   items: [
+  //     "savage/pandaemonium/p3s/p3s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P4S - Hesperos",
+  //   items: [
+  //     "savage/pandaemonium/p4s/p4s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P5S - Proto-Carbuncle",
+  //   items: [
+  //     "savage/pandaemonium/p5s/p5s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P6S - Hegemone",
+  //   items: [
+  //     "savage/pandaemonium/p6s/p6s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P7S - Agdistis",
+  //   items: [
+  //     "savage/pandaemonium/p7s/p7s"
+  //   ]
+  // },
+  // {
+  //   type: "category",
+  //   label: "P8S - Hephaistos",
+  //   items: [
+  //     "savage/pandaemonium/p8s/p8s"
+  //   ]
+  // },
   {
     type: "category",
     label: "P9S - Kokytos",
