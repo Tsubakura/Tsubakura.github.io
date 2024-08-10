@@ -7,4 +7,56 @@ hide_table_of_contents: true
 slug: /savage/m3s/fusefield
 ---
 
-Coming soon...
+import bombarium_icon_hr from '/img/debuff/bombarium_icon_hr.png';
+
+Brute Bomber has figured out that those small bombs weren't enough to kill you, so he summons an even bigger bomb by casting <strong>Fusefield</strong>. On cast, the boss will summon a giant bomb in the middle that is connected with 4 short fuses and 4 long fuses. The boss will lit all eight fuses at once and if any of them reaches the bomb in the middle, the whole party will wipe instantly. At the same time, every party member will be inflicted by a new debuff called Bombarium.
+
+<table width='70%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+        <th width='30%'>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={bombarium_icon_hr} /></td>
+        <td><center><strong>Bombarium</strong></center><br />Allows the player to put out a fuse without causing a wipe, which effectively also cleanses this debuff. However, if this debuff timer reaches zero, then the player dies instead.<br /><br />The role groups will either start with 25 or 43 seconds, which dictates whether they get the short or the long fuse. </td>
+        <td><img src='https://ffxivkittenassets.z7.web.core.windows.net/m3s/fusefield_partylist.png' /></td>
+    </tr>
+</table>
+
+Once you see the bomb spawn in the middle, identify immediately whether you're the short fuse group or the long fuse group. The players with 25s gets the short fuse, while the 43s group gets the long fuse. This priority assignment is done using a north CW priority, which is also known as the snake priority for those who have done P8S.
+
+<table width='80%'>
+    <tr>
+        <th>CW from North, MT/D1 highest priority</th>
+        <td><Role role='MT' /><Role role='ST' /><Role role='H1' /><Role role='H2' /><br /><Role role='D1' /><Role role='D2' /><Role role='D3' /><Role role='D4' /></td>
+        <th>CCW from Northwest, H2/D4 highest priority</th>
+    </tr>
+</table>
+
+Here is a few examples as to how the fuses are assigned using this priority system.
+
+<table>
+    <tr>
+        <th>Example 1: Support 43s, DPS 25s</th>
+        <th>Example 1: Support 25s, DPS 43s</th>
+        <th>Example 1: Support 25s, DPS 43s</th>
+    </tr>
+    <tr>
+        <td><img src='https://ffxivkittenassets.z7.web.core.windows.net/m3s/fusefield_example1.png' /></td>
+        <td><img src='https://ffxivkittenassets.z7.web.core.windows.net/m3s/fusefield_example2.png' /></td>
+        <td><img src='https://ffxivkittenassets.z7.web.core.windows.net/m3s/fusefield_example3.png' /></td>
+    </tr>
+</table>
+
+Once every player is assigned to a fuse, you will now have to wait until the boss uses <strong>Bombarian Flame</strong>. That is your cue to start putting out the sparks on the fuses one at a time. Disabling a fuse causes a raidwide explosion which also inflicts a magic vulnerability, so you cannot rush this. Use the same snake priority to disable the fuses, starting with the short fuses first. 
+
+Some things to keep in mind while defusing this bomb:
+- The spark on the fuse has a weird delay in detecting whether players has stepped on it, so make sure to stand on it for at least a full second.
+- Do not pop the spark when the HP is low. Use your mitigations to help out your healers.
+- The magic vulnerability lasts for 2 seconds every fuse, so take your time.
+- Avoid stepping on the giant bomb in the middle when it is lit up, because doing so will inflict you with a burn which quickly leads to a very embarassing death.
+
+<img src='https://ffxivkittenassets.z7.web.core.windows.net/m3s/fusefield_example.gif' />
+
+After foiling his plan, he decides that he might as well just continue with trying to punch you to death. Brute Bomber casts <Tankbuster>Knuckle Sandwich</Tankbuster>, which you or your tanks should be familiar with at this point.
