@@ -35,11 +35,11 @@ const arcadion = [
     items: [
       "savage/arcadion/m3s/m3s",
       "savage/arcadion/m3s/m3s_doping_1",
-      "savage/arcadion/m3s/m3s_tag_team_1",
+      "savage/arcadion/m3s/m3s_chain_deathmatch_1",
       "savage/arcadion/m3s/m3s_final_fusedown",
       "savage/arcadion/m3s/m3s_fusefield",
       "savage/arcadion/m3s/m3s_doping_2",
-      "savage/arcadion/m3s/m3s_tag_team_2",
+      "savage/arcadion/m3s/m3s_chain_deathmatch_2",
       "savage/arcadion/m3s/m3s_fuse_or_foe"
     ]
   },
@@ -51,7 +51,7 @@ const arcadion = [
       "savage/arcadion/m4s/m4s_bewitching_flight",
       "savage/arcadion/m4s/m4s_electrope_edge_1",
       "savage/arcadion/m4s/m4s_electrope_edge_2",
-      "savage/arcadion/m4s/m4s_electron_stream",
+      "savage/arcadion/m4s/m4s_ion_cluster",
       "savage/arcadion/m4s/m4s_electrope_transplant",
       "savage/arcadion/m4s/m4s_cross_tail_switch",
       "savage/arcadion/m4s/m4s_twilight_sabbath",
