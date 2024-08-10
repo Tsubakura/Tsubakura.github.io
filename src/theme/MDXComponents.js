@@ -8,6 +8,7 @@ import Raidwide from '/src/components/Raidwide.js';
 import Enrage from '/src/components/Enrage.js';
 import Tankbuster from '/src/components/Tankbuster.js';
 import Role from '/src/components/Role.js';
+import KittenAsset from '/src/components/KittenAsset.js';
 
 
 export default {
@@ -17,6 +18,7 @@ export default {
   Tankbuster,
   Role,
   Title,
+  KittenAsset,
   Tabs,
   TabItem
 };
