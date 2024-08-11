@@ -56,8 +56,9 @@ const arcadion = [
       "savage/arcadion/m4s/m4s_cross_tail_switch",
       "savage/arcadion/m4s/m4s_twilight_sabbath",
       "savage/arcadion/m4s/m4s_midnight_sabbath",
-      "savage/arcadion/m4s/m4s_chain_lightning",
-      "savage/arcadion/m4s/m4s_sunrise_sabbath"
+      "savage/arcadion/m4s/m4s_raining_swords",
+      "savage/arcadion/m4s/m4s_sunrise_sabbath",
+      "savage/arcadion/m4s/m4s_sword_quiver"
     ]
   },
 ]
