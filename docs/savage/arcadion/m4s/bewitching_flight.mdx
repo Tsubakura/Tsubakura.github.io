@@ -11,7 +11,7 @@ Upon pulling Wicked Thunder, it is recommended that the MT pulls the boss immedi
 
 ## Bewitching Flight
 
-Upon teleporting north, the boss will spawn cubes on the western part of the arena that will shoot horizontally in a straight line, while the boss herself will light up her wings with lasers. The intention of the boss is clear, as she will now cast <strong>Bewitching Flight</strong> in order to run the party through with her lasers. The cubes on the west side of the map will simultaneously fire a laser while she is dashing, which will hit anyone who wasn't paying attention.
+Upon teleporting north, the boss will spawn cubes on the western part of the arena that will shoot horizontally in a straight line. At the same time, the boss herself will light up her wings with the intention of running these lasers through the party once she casts <strong>Bewitching Flight</strong>. The cubes on the west side of the map will simultaneously fire a laser while she is dashing, which will hit anyone who wasn't paying attention.
 
 Identify where the cubes are and don't stand in its line of fire. Then, identify where the lasers are on the wings of the boss and avoid staying in the same column as the lasers that are protruding out of her.
 
@@ -91,4 +91,62 @@ The sequence of attacks is very fast paced, so it will take some practice before
 
 ## Widening/Narrowing Witch Hunt
 
-WIP...
+After resolving the initial barrage of attacks, the boss will now cast either <strong>Widening Witch Hunt</strong> or <strong>Narrowing Witch Hunt</strong>. These attacks combine chariot/donut with the witch hunt mechanic, which is also telegraphed on the boss while she is casting the attack. The attacks happen in sets of 4, and the attacks alternate between each sets from donut to chariot and vice versa, and farthest to closest targets, and vica versa:
+- **Widening Witch Hunt**: Out first, Chariot > Donut > Chariot > Donut
+- **Narrowing Witch hunt**: In first, Donut > Chariot > Donut > Chariot
+
+At the same time, <strong>Witch Hunt</strong> will target two players every set that meets the criteria of farthest/closest, attacking in total of eight times that needs to be split among the party.
+
+This mechanic is a bit tricky, because the witch hunts order is not dependent on whether its in or out first. The boss can cast <strong>Widening Witch Hunt</strong> in combination with either a closest or a farthest telegraph, which means that there are 4 different combinations that can happen while doing this mechanic. On the bright side, a strategy exists that streamlines this process which allows you to focus on either going in first or out first.
+
+### DN's Witch Hunt
+
+[Team DN](https://x.com/Lial_Varia/status/1818672413585928380) came up with a strategy that involves fixing the movements of the party, which allows the party to ignore whether the witch hunts are farthest or closest. If everyone follows the same movements, then the witch hunts will naturally spread across the party. To be clear, this is not a braindead strategy, but it makes the process of solving the mechanic easier.
+
+Similarly to Wingwan in M3S, the melee DPS and the healer clockspots are swapped in this strategy.
+
+<table width='40%'>
+    <tr>
+        <td><KittenAsset path='m4s/witch_hunt_clockspot.png' /></td>
+    </tr>
+</table>
+
+Identify your clockspot and use the reference below to find out how your movement will be, depending on whether its in first or out first.
+
+<table>
+    <tr>
+        <th><strong>Widening Witch Hunt (out first)</strong></th>
+        <th><strong>Narrowing Witch Hunt (in first)</strong></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m4s/witch_hunt_widening.png' /></td>
+        <td><KittenAsset path='m4s/witch_hunt_narrowing.png' /></td>
+    </tr>
+</table>
+
+If everyone does their movements correctly, then the order of pairs being attacked by witch hunt should be as follows:
+- **Closest**: Tanks > Healer > Melee > Ranged
+- **Farthest**: Healer > Tanks > Ranged > Melee
+
+Doing the fixed movement should allow the witch hunt to resolve naturally regardless of the witch hunt proximity, but feel free to use your own method of solving if you understand the mechanic and this strategy enough to optimize in it. The most important detail is that everyone does not get hit a second time by the witch hunt. And finally, do not try to cheese this mechanic through tank invulnerability, because the witch hunt clones will just ignore it.
+
+<table>
+    <tr>
+        <th>Widening Witch Hunt (out first)<br />Witch Hunt farthest</th>
+        <th>Widening Witch Hunt (out first)<br />Witch Hunt closest</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m4s/witch_hunt_widening_farthest.gif' /></td>
+        <td><KittenAsset path='m4s/witch_hunt_widening_closest.gif' /></td>
+    </tr>
+    <tr>
+        <th>Narrowing Witch Hunt (in first)<br />Witch Hunt farthest</th>
+        <th>Narrowing Witch Hunt (in first)<br />Witch Hunt closest</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m4s/witch_hunt_narrowing_farthest.gif' /></td>
+        <td><KittenAsset path='m4s/witch_hunt_narrowing_closest.gif' /></td>
+    </tr>
+</table>
+
+Wicked Thunder will cast another <Raidwide>Wrath of Zeus</Raidwide> once you've dealt with all her witch hunts, which effectively ends her wings phase.
