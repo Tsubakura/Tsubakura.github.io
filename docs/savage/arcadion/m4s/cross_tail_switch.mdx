@@ -7,6 +7,11 @@ hide_table_of_contents: true
 slug: /savage/m4s/cross_tail_switch
 ---
 
+import mustard_bomb_icon_hr from '/img/debuff/mustard_bomb_icon_hr.png';
+import mustard_bombproof_icon_hr from '/img/debuff/mustard_bombproof_icon_hr.png';
+import fire_resistance_down_icon_hr from '/img/debuff/fire_resistance_down_icon_hr.png';
+
+
 Take your time to heal up and/or revive anyone who happen to be yeeted into the void instead. The boss will teleport to you shortly, initiating the 2nd phase of this fight. Take note that her auto attacks hits like a truck during this phase, so all supports should actively help the MT with mitigations or heals. Consider using your mitigations to mitigate auto attacks instead, as there aren't many tankbusters during this phase.
 
 ## Exaflares
@@ -15,7 +20,7 @@ After giving you a short break, the boss will cast <Raidwide>Cross Tail Switch</
 
 <KittenAsset path='m4s/cross_tail_switch_castbar.png' />
 
-Once you've survived the initial barrage, the arena will be littered with exaflares. Ignore the exaflares on the middle two columns. The middle column exaflares are never safe and only serves to distract you from the actual threat. Split up your light party groups between west and east, because the boss will cast <strong>Wicked Blaze</strong>, which is a multi-hit stack marker. 
+Once you've survived the initial barrage, the arena will be littered with exaflares. Ignore the exaflares on the middle two columns. The middle column exaflares are never safe and only serves to distract you from the actual threat. The sides however, are always randomized and will always go horizontally. Split up your light party groups between west and east, because the boss will cast <strong>Wicked Blaze</strong>, which is a multi-hit stack marker. 
 
 <table width='50%'>
     <tr>
@@ -42,3 +47,81 @@ The exaflares are quite fast, but you should have enough time to walk all the wa
 </table>
 
 ## Wicked Special
+
+After you've resolved the exaflares, the boss will cast a series of attacks as part of her mini tutorial, starting with <strong>Wicked Special</strong>. Once she casts <strong>Wicked Special</strong>, she will either pull out her sword or her dual lasers. Depending on what she pulls out, she will either cleave the middle or the sides of the arena. Remember this attack, as she likes to use this while you're in the middle of a major mechanic.
+
+<table>
+    <tr>
+        <th>Flame Sword<br />Middle two tiles unsafe</th>
+        <th>Dual Lasers<br />1.5 tile on each side unsafe</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m4s/wicked_special_flame_sword.gif' /></td>
+        <td><KittenAsset path='m4s/wicked_special_dual_cannons.gif' /></td>
+    </tr>
+</table>
+
+
+## Mustard Bomb
+
+After resolving <strong>Wicked Special</strong>, the boss will cast the next mechanic which will reappear later on. The boss casts <Tankbuster>Mustard Bomb</Tankbuster>, which spawns two tethers that needs to be taken by the tanks. Spread out as four other players will also be randomly targeted by an untelegraphed AoE attack.
+
+<table width='50%'>
+    <tr>
+        <td><KittenAsset path='m4s/mustard_bomb_position.png' /></td>
+    </tr>
+</table>
+
+Once the cast goes off, the party will be introduced with a few new debuffs.
+
+<table width='80%'>
+    <tr>
+        <th>Debuff</th>
+        <th width='60%'>Description</th>
+        <th>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={mustard_bomb_icon_hr} /></td>
+        <td><center><strong>Mustard Bomb</strong></center><br />The tanks who took the tethers will now have a mustard bomb placed on them. These bombs can be taken away by simply having a player touch you. Upon losing the mustard bomb, the player will gain Mustard Bombproof.</td>
+        <td rowspan='3'><KittenAsset path='m4s/mustard_bomb_partylist.png' /></td>
+    </tr>
+    <tr>
+        <td><img src={mustard_bombproof_icon_hr} /></td>
+        <td><center><strong>Mustard Bombproof</strong></center><br />Applied when someone takes the mustard bomb off you. The player with debuff will not be able to take away the mustard bomb.</td>
+    </tr>
+    <tr>
+        <td><img src={fire_resistance_down_icon_hr} /></td>
+        <td><center><strong>Fire Resistance Down</strong></center><br />Everyone who got hit by an explosion, the tanks included, will have their fire resistance lowered. You cannot take the mustard bomb, so avoid the player with the mustard bomb at all cost.</td>
+    </tr>
+</table>
+
+Two random players will not be attacked by an explosion, allowing them to freely take off the mustard bomb from the tanks. Use the following priority system to determine which tank you take the mustard bomb away from, and stay away from the party to resolve this mechanic.
+
+<table>
+    <tr>
+        <td><Role role='MT' /></td>
+        <td><Role role='D1' /><Role role='D3' /><Role role='H1' /><Role role='H2' /><Role role='D4' /><Role role='D2' /></td>
+        <td><Role role='ST' /></td>
+    </tr>
+</table>
+
+<KittenAsset path='m4s/mustard_bomb_example.gif' />
+
+## Aetherial Conversion and Tail Thrust
+
+The final mechanic which she will use throughout the rest of the fight is <strong>Aetherial Conversion</strong> and <strong>Tail Thrust</strong>. Similarly to M2S, <strong>Aetherial Conversion</strong> stores the attack while <strong>Tail Thrust</strong> executes it, which means this attack is a memory check. <strong>Aetherial Conversion</strong> will store either blue aether (knockback) or red aether (AoE) in her two tentacles. The order in which she charges her tentacles will also decide the order in which she uses the tentacles to attack once she casts <strong>Tail Thrust</strong>.
+
+The impact points are the two red lights on the arena floor, so align yourself next to them if its a knockback, or go up and dodge to the other side if its red aether. Keep in mind the order of her tentacles being charged, because that determines whether she hits left to right, or right to left.
+
+<table>
+    <tr>
+        <th>Blue Aether (deals damage, careful!)</th>
+        <th>Red Aether</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m4s/tail_thrust_blue.gif' /></td>
+        <td><KittenAsset path='m4s/tail_thrust_red.gif' /></td>
+    </tr>
+</table>
+
+This is the only time that she will use <strong>Tail Thrust</strong> directly after charging her tentacles up with <strong>Aetherial Conversion</strong>. From here onwards, you can expect that she will use <strong>Tail Thrust</strong> only after a major mechanic has been resolved.

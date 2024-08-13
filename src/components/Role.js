@@ -9,7 +9,7 @@ import D2 from '/img/assets/00_ROLE/D2.png';
 import D3 from '/img/assets/00_ROLE/D3.png';
 import D4 from '/img/assets/00_ROLE/D4.png';
 
-export default function Raidwide({children, role}) {
+export default function Role({children, role}) {
     let returnValue = '';
     switch(role){
         case 'MT': returnValue = MT; break;
