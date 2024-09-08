@@ -179,6 +179,13 @@ const sidebars = {
     {type: 'doc', id: 'Cultural differences between DCs', label: 'Cultural differences between DCs'},
     {
       type: 'category',
+      label: 'Raid 101',
+      items: [
+        {type: "doc", id: "raid101/intro", label: "Introduction to Raid 101"}
+      ]
+    },
+    {
+      type: 'category',
       label: '=w=',
       items: [
         {type: "doc", id: "=w=/dsr_uptime_exaflare", label: "DSR Uptime Exaflare"}
