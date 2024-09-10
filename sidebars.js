@@ -204,7 +204,17 @@ const sidebars = {
       label: 'Criterion',
       items: [
         {
-          type: "category", label: "Mount Rokkon", items: [
+          type: "category", label: "Another Sil'dihn Subterrane", items: [
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane", label: "Intro"},
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_adds_1", label: "Adds group 1"},
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_1", label: "Silkie"},
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_adds_2", label: "Adds group 2"},
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_2", label: "Gladiator of Sil'dih"},
+            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_3", label: "Shadowcaster Zeless Gah"}
+          ]
+        },
+        {
+          type: "category", label: "Another Mount Rokkon", items: [
             {type: "doc", id: "criterion/mount_rokkon/mount_rokkon", label: "Intro"}
           ]
         }
