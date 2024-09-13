@@ -179,7 +179,7 @@ const sidebars = {
     {type: 'doc', id: 'Cultural differences between DCs', label: 'Cultural differences between DCs'},
     {
       type: 'category',
-      label: 'Raid 101',
+      label: 'Raid 101 FAQ',
       items: [
         {type: "doc", id: "raid101/intro", label: "Introduction to Raid 101"}
       ]
@@ -207,10 +207,36 @@ const sidebars = {
           type: "category", label: "Another Sil'dihn Subterrane", items: [
             {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane", label: "Intro"},
             {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_adds_1", label: "Adds group 1"},
-            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_1", label: "Silkie"},
+            {
+              type: "category", label: "Boss 1 - Silkie", items: [
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_1/sildihn_subterrane_boss_1_intro", label: "Intro"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_1/sildihn_subterrane_boss_1_intro_fresh_puff_1", label: "Fresh Puff 1"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_1/sildihn_subterrane_boss_1_intro_fresh_puff_2", label: "Fresh Puff 2"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_1/sildihn_subterrane_boss_1_intro_fresh_puff_3", label: "Fresh Puff 3"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_1/sildihn_subterrane_boss_1_intro_fresh_puff_4", label: "Fresh Puff 4"}
+              ]
+            },
             {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_adds_2", label: "Adds group 2"},
-            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_2", label: "Gladiator of Sil'dih"},
-            {type: "doc", id: "criterion/sildihn_subterrane/sildihn_subterrane_boss_3", label: "Shadowcaster Zeless Gah"}
+            {
+              type: "category", label: "Boss 2 - Gladiator of Sil'dih", items: [
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_intro", label: "Intro"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_specter_of_might", label: "Specter of Might"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_curse_of_the_fallen", label: "Curse of the Fallen"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_hateful_visage", label: "Hateful Visage"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_accursed_visage", label: "Accursed Visage"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_2/sildihn_subterrane_boss_2_curse_of_the_monument", label: "Curse of the Monument"}
+              ]
+            },
+            {
+              type: "category", label: "Boss 3 - Shadowcaster Zeless Gah", items: [
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_intro", label: "Intro"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_infern_brand_1", label: "Infern Brand 1"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_infern_brand_2", label: "Infern Brand 2"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_infern_brand_3", label: "Infern Brand 3"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_infern_brand_4", label: "Infern Brand 4"},
+                {type: "doc", id: "criterion/sildihn_subterrane/boss_3/sildihn_subterrane_boss_3_infern_brand_5", label: "Infern Brand 5"}
+              ]
+            }
           ]
         },
         {
