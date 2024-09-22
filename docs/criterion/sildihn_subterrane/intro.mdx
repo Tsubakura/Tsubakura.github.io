@@ -8,11 +8,27 @@ slug: /criterion/sildihn_subterrane/intro
 pagination_prev: null
 ---
 
-Mana uses a combination of strategies from different stratmakers and does not follow game8 for the most part:
-- Boss 1 follows [ZizieZip](https://x.com/ZizieZip/status/1582379825720741889) braindead strategies to resolve [Fresh Puff 2](/criterion/sildihn_subterrane/boss_1/fresh_puff_2) and [Fresh Puff 4](/criterion/sildihn_subterrane/boss_1/fresh_puff_4).
-  - Alternatively, there is a simplified way of resolving [Fresh Puff 2](/criterion/sildihn_subterrane/boss_1/fresh_puff_2), which is much easier to execute but not 100% compatible with Mana.
-- Boss 2 follows [Hamkatsu](https://www.youtube.com/watch?v=TDlhDJhSC2M).
-- Boss 3 follows [Nukemaru](https://www.youtube.com/watch?v=UPhrf4jc3wg), but uses Hamkatsu basic spread positions.
+At the time of this writing, Elemental has no official PF strategy although I am trying to establish one:
+- The Materia DC strat is used as the base, with game8 to fix positions that are left ambiguous:
+  - The Materia DC clockspot is intentionally used, because this becomes the default in Mount Rokkon and Aloalo Island for JP as well.
+  - For [Curse of the Fallen](/criterion/sildihn_subterrane/boss_2/curse_of_the_fallen), stack goes west and the blue debuff goes to east.
+  - For [Curse of the Monument](/criterion/sildihn_subterrane/boss_2/curse_of_the_monument), the towers are resolved using the TMRH snake priority.
+- Mana uses a combination of strategies from different stratmakers and does not follow game8 for the most part:
+  - Boss 1 follows [ZizieZip](https://x.com/ZizieZip/status/1582379825720741889) braindead strategies to resolve [Fresh Puff 2](/criterion/sildihn_subterrane/boss_1/fresh_puff_2) and [Fresh Puff 4](/criterion/sildihn_subterrane/boss_1/fresh_puff_4).
+  - Boss 2 follows [Hamkatsu](https://www.youtube.com/watch?v=TDlhDJhSC2M).
+  - Boss 3 follows [Nukemaru](https://www.youtube.com/watch?v=UPhrf4jc3wg), but uses Hamkatsu basic spread positions.
+- Here is a list of differences between Materia and Mana:
+  - The basic clockspots.
+  - [Fresh Puff 2](/criterion/sildihn_subterrane/boss_1/fresh_puff_2): Mana follows [ZizieZip](https://x.com/ZizieZip/status/1582379825720741889)'s fixed way of resolving the puffs.
+  - [Curse of the Monument](/criterion/sildihn_subterrane/boss_2/curse_of_the_monument): Chains are broken west/east, with melee going east and ranged going west.
+  - [Infern Brand 1](/criterion/sildihn_subterrane/boss_3/infern_brand_1): Supports go north while DPS go south. The safe spots utilized are also different compared to what is used in every other EN speaking datacenters.
+
+General notes to expect in PF:
+- The first tankbuster from the Aqueduct Belladonna is almost always invulned.
+- The **Blessed Beacon** (wild charge) after [Infern Brand 4](/criterion/sildihn_subterrane/boss_3/infern_brand_4) is cheesed by having the tank stand in front of the boss with invulnerability.
+- PF will not do [Infern Brand 5](/criterion/sildihn_subterrane/boss_3/infern_brand_5) the intended way and instead, opt to kill the boss before the mechanic wipes the party.
+
+## Savage
 
 Keep the following in mind on the savage version of this fight:
 - Upon engaging your first enemy, a global enrage timer of 24 minutes will start.
@@ -24,11 +40,6 @@ Keep the following in mind on the savage version of this fight:
   - [Fresh Puff 4](/criterion/sildihn_subterrane/boss_1/fresh_puff_4) cannot be skipped.
   - [Infern Brand 5](/criterion/sildihn_subterrane/boss_3/infern_brand_5) can be skipped with melee LB and/or a party composition that brings sufficient DPS.
 
-General notes to expect in PF:
-- The first tankbuster from the Aqueduct Belladonna is almost always invulned.
-- The **Blessed Beacon** (wild charge) after [Infern Brand 4](/criterion/sildihn_subterrane/boss_3/infern_brand_4) is cheesed by having the tank stand in front of the boss with invulnerability.
-- PF will not do [Infern Brand 5](/criterion/sildihn_subterrane/boss_3/infern_brand_5) the intended way and instead, opt to kill the boss before the mechanic wipes the party.
-
 ## Phases
 
 - [Adds 1](/criterion/sildihn_subterrane/adds_1)
@@ -38,28 +49,28 @@ General notes to expect in PF:
 - [Boss 3 - Shadowcaster Zeless Gah](/criterion/sildihn_subterrane/boss_3/intro)
 
 
-## Macro
+## General Macro
 
-### English
+### English (OCE Strat)
 
     Basic spread positions（True North）
-     　  MT　　｜D1　　MT
-     D1　  D2  ｜
-     　  H1  　  ｜H1　　D2
-    ■ Boss 1 -------------------------------------------------
+    　   T  　　｜ T　   　M
+    H           M ｜
+            R          ｜H 　  　R
+    ■ Boss 1 ---------------------------------------------------------------------------
     Puff 2 → Away from center | Don't hit donut with ice
     Puff 4 → ZizieZip: Start A and dodge 1 tile left/right
-    ■ Boss 2 (Hamkatsu) --------------------------------------
-    Fallen → Stack West | Debuff East | Debuff swap with D2
-    Chains → West H1D2 | East MTD1
-    Towers → North: MT > D1 > D2 > H1 
-    ■ Boss 3 (Nukemaru) --------------------------------------
-    Beacon (Wild charge): MT/D1 swap if needed
-    Brand 1 → N: MTH1 | S: D1D2 | Inner: MTD1 | Wall: H1D2
-    Brand 3 → Red: North | Blue: South | West: Out | East: In
+    ■ Boss 2 ---------------------------------------------------------------------------
+    Curse of the Fallen → Stack West | Debuff East 
+    Chains → North Melee | South Ranged
+    Towers → North CW: T > M > R > H 
+    ■ Boss 3 ---------------------------------------------------------------------------
+    Brand 1 → N: Melee | S: Support | Close: DPS | Far: Support
+    Brand 3 → Orange North | West: Out
+                          Blue South       | East: In
 
 
-### Japanese
+### Japanese (Mana PF Strat)
 
     通し基本散開  （北を基準に散開）
      　  MT　　｜近D　　MT
