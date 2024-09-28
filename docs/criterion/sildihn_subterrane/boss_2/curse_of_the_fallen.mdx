@@ -7,4 +7,79 @@ hide_table_of_contents: true
 slug: /criterion/sildihn_subterrane/boss_2/curse_of_the_fallen
 ---
 
-Coming soon...
+import echo_of_the_fallen_icon_hr from '/img/debuff/echo_of_the_fallen_icon_hr.png';
+import thunderous_echo_icon_hr from '/img/debuff/thunderous_echo_icon_hr.png';
+import lingering_echoes_icon_hr from '/img/debuff/lingering_echoes_icon_hr.png';
+
+The gladiator will cast <strong>Curse of the Fallen</strong>, which will inflict a numerous of debuffs on all players. 
+
+<table width='70%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+        <th width='40%'>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={echo_of_the_fallen_icon_hr} /></td>
+        <td><center><strong>Echo of the Fallen</strong></center><br />Once the timer runs out, a small AoE will detonate around each player. While not immediately fatal on normal mode, do avoid hitting each other by spreading out properly.<br /><br />This debuff will never go off at the same time as <strong>Thunderous Echo</strong>.</td>
+        <td rowspan='3'><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_spread_first.png' /><br /><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_stack_first.png' /></td>
+    </tr>
+    <tr>
+        <td><img src={thunderous_echo_icon_hr} /></td>
+        <td><center><strong>Thunderous Echo</strong></center><br />Once the timer runs out, a stack that is meant to be soaked by three players will go off on the designated player. Although you can cheese this with mitigations on normal mode, this option is not viable on savage due to the increased damage you take.<br /><br />This debuff will never go off at the same time as <strong>Echo of the Fallen</strong>.</td>
+    </tr>
+    <tr>
+        <td><img src={lingering_echoes_icon_hr} /></td>
+        <td><center><strong>Lingering Echoes</strong></center><br />Once the timer runs out, the player with this debuff will leave behind a lingering AoE that deals damage over time if you remain in it.<br /><br />This debuff will instantly kill everyone if dropped on the player with the <strong>Thunderous Echo</strong>, so stay away from your party members if you see this debuff on you.</td>
+    </tr>
+</table>
+
+Once the debuffs have been applied, your party needs to immediately identify two things.
+
+First, the party need to identify who the players are with <strong>Thunderous Echo</strong> and <strong>Lingering Echoes</strong>. The stack should go west while the player with the <strong>Lingering Echoes</strong> should preferably be east. The other players who have neither will go to west and preposition themselves in order to signal the other players whether they will spread north or south. The next step is checking the timers of the debuffs to determine whether it is stack first or spread first. Once you know which one happens first, then the party should adjust accordingly.
+
+Keep in mind that the clockspots aren't applied for this mechanic, so be flexible when prepositioning! For those who are familiar with DSR, you can use the same prepositioning movement for the meteor towers in P2 in order to notify your party members which spread position you're going to take.
+
+## Ring of Might
+
+The gladiator will jump back to the middle and prepare <strong>Ring of Might</strong>. Upon cast, three rings will appear on the arena. The gladiator will then start charging randomly between 1 to 3 times, with the final charge being a large glow that you've seen before in the last mechanic. Once the gladiator has finished charging, it will use a chariot that goes into a donut. The size of the chariot and donut are dependent on the amount of times the gladiator has charged, which is also outlined by the rings you see.
+
+This is the same mechanic as seen in the variant dungeon, except this is now combined with the echoes debuffs that you have to deal with. 
+
+<table width='100%'>
+    <tr>
+        <th width='30%'>Notes</th>
+        <th>Spread first</th>
+        <th>Stack first</th>
+    </tr>
+    <tr>
+        <td>The player with the stack should go west, while the player with the blue debuff should immediately head east. The remaining players should preposition themselves, so that there will be no confusion as to who goes north and south.<br /><br />Meanwhile, the gladiator will most likely be casting <strong>Ring of Might</strong> at this point. Keep your eyes on the boss and identify how many times the boss has charged up. For this example, the boss has charged up two times.</td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_spread_part1.png' /></td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_stack_part1.png' /></td>
+    </tr>
+    <tr>
+        <td>The gladiator will now use its chariot. At the same time, the first set of debuff mechanics will resolve.<br /><br />This is your cue to immediately move into the zone where the chariot went off, because a donut will soon follow. Move in and stack or spread as necessary, depending on which debuff had resolved first.</td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_spread_part2.png' /></td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_stack_part2.png' /></td>
+    </tr>
+    <tr>
+        <td>The donut now appears and the last set of debuff should now be resolved.<br /><br />If you were the player with the <strong>Lingering Echoes</strong>, then remember to get out of the lingering AoE that you left behind in order to avoid taking more damage.</td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_spread_part3.png' /></td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_stack_part3.png' /></td>
+    </tr>
+</table>
+
+The positions in the above diagrams should allow the party to resolve the mechanics safely while minimizing the chances of accidentally clipping each other with the AoEs. If the gladiator has charged 2 or 3 times, then feel free to drop the <strong>Lingering Echoes</strong> wherever you want, as long as its not on top of the other players.
+
+<table>
+    <tr>
+        <th>Example 1</th>
+        <th>Example 2</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_example1.webm' /></td>
+        <td><KittenAsset path='ass/boss2/boss_2_curse_of_the_fallen_example2.webm' /></td>
+    </tr>
+</table>
+
+The gladiator will wrap this mechanic up with a <Raidwide>Flash of Steel</Raidwide> once the dust settles.
