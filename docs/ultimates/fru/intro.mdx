@@ -9,18 +9,35 @@ slug: /ultimates/fru
 pagination_prev: null
 ---
 
+import damage_down_icon_hr from '/img/debuff/damage_down_icon_hr.png';
+import mark_of_mortality_1_icon_hr from '/img/debuff/mark_of_mortality_1_icon_hr.png';
+import banner from '/img/fru/fru_banner.png';
+
+<img src={banner} width='50%' />
+<br /><br />
+
 Majority of the PFs follows this specific pastebin: https://pastebin.com/4UtwvXQu
 - There are some minor differences in the DPS priority, double check with your party whether it is D1234, D3412 or D3124.
 
 Changes are to be expected soon, but should likely be minimal and have no bearing in understanding how the mechanics work.
 
-## Phases
-- Phase 1 - Fatebreaker
-- Phase 2 - Usurper of Frost
-- Phase 3 - Oracle of Darkness
-- Phase 4 - Gaia and Shiva
-- Phase 5 - Pandora
 
+## Damage down penalties
+
+<table width='80%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><img src={damage_down_icon_hr} /></td>
+        <td><center><strong>Damage Down</strong></center><br />Taking any damage that results from failing a mechanic will inflict a damage down. The observed damage penalty is at least -90%, effectively making dying and reviving more optimal than just letting the timer run out in most cases.</td>
+    </tr>
+    <tr>
+        <td><img src={mark_of_mortality_1_icon_hr} /></td>
+        <td><center><strong>Mark of Mortality</strong></center><br />Newly introduced in this ultimate, this debuff is applied whenever a stack mechanic was not soaked by the minimum required amount of players. E.g. a stack meant for 4-players is only soaked by 3-players, resulting all three players getting a Mark of Mortality.<br /><br />Functionally, this debuff is the same as a damage down and should be avoided at all cost.</td>
+    </tr>
+</table>
 
 ## Setup
 
@@ -28,25 +45,40 @@ There are currently multiple waymarks going around, which will affect Crystalliz
 
 <Tabs>
 
-<TabItem value="OCE" label="OCE" default>
+<TabItem value="Inner clockspot waymarks (Tuufless)" label="Inner clockspot waymarks (Tuufless)" default>
 
-## OCE waymarks
-Waymarks from Materia DC. This is my personal favorite.
-
-```json
-{"Name":"FRU OCE","MapID":1006,"A":{"X":100.012,"Y":0.0,"Z":91.275,"ID":0,"Active":true},"B":{"X":108.293,"Y":0.0,"Z":100.026,"ID":1,"Active":true},"C":{"X":99.964,"Y":0.0,"Z":108.349,"ID":2,"Active":true},"D":{"X":91.969,"Y":0.0,"Z":99.987,"ID":3,"Active":true},"One":{"X":90.977,"Y":0.0,"Z":90.679,"ID":4,"Active":true},"Two":{"X":109.154,"Y":0.0,"Z":90.916,"ID":5,"Active":true},"Three":{"X":109.042,"Y":0.0,"Z":108.973,"ID":6,"Active":true},"Four":{"X":90.987,"Y":0.0,"Z":108.899,"ID":7,"Active":true}}
-```
-
-</TabItem>
-
-<TabItem value="Outer" label="Outer" default>
-
-## Inner waymarks
-Inner waymarks, used to determine where you have to stand in Crystallize Time in order to not fly into the wall during the rewind. This is the one used by Tuufless.
+## Inner clockspot waymarks
+Inner waymarks, showing you the bare minimum of where you have to stand during Crystallize Time in order to not fly into the wall during the rewind. This is the one used by Tuufless. In case you're used to the other waymarks, make absolutely sure to stand beyond where the waymark suggests.
 
 ```json
 {"Name":"FRU Tuufless","MapID":1006,"A":{"X":100.0,"Y":0.0,"Z":90.0,"ID":0,"Active":true},"B":{"X":110.0,"Y":0.0,"Z":100.0,"ID":1,"Active":true},"C":{"X":100.0,"Y":0.0,"Z":110.0,"ID":2,"Active":true},"D":{"X":90.0,"Y":0.0,"Z":100.0,"ID":3,"Active":true},"One":{"X":92.929,"Y":0.0,"Z":92.929,"ID":4,"Active":true},"Two":{"X":107.071,"Y":0.0,"Z":92.929,"ID":5,"Active":true},"Three":{"X":107.071,"Y":0.0,"Z":107.071,"ID":6,"Active":true},"Four":{"X":92.929,"Y":0.0,"Z":107.071,"ID":7,"Active":true}}
 ```
+<KittenAsset path='fru/fru_waymark2.png' wrapper='div' />
+
+
+</TabItem>
+
+<TabItem value="Default clockspot waymarks" label="Default clockspot waymarks">
+
+## Default clockspot waymarks
+The one most commonly seen in PF, with some variations as to how far they are placed from the center. Puts the waymark reference for Crystallize Time rewind closer to the wall to account for leeway and human error, but is less effective as a reference for Fulgent Blade due to the cardinal waymarks being placed further away.
+
+```json
+{"Name":"FRU Elemental","MapID":1006,"A":{"X":100.0,"Y":0.0,"Z":88.5,"ID":0,"Active":true},"B":{"X":111.5,"Y":0.0,"Z":100.0,"ID":1,"Active":true},"C":{"X":100.0,"Y":0.0,"Z":111.5,"ID":2,"Active":true},"D":{"X":88.5,"Y":0.0,"Z":100.0,"ID":3,"Active":true},"One":{"X":91.5,"Y":0.0,"Z":91.5,"ID":4,"Active":true},"Two":{"X":108.5,"Y":0.0,"Z":91.5,"ID":5,"Active":true},"Three":{"X":108.5,"Y":0.0,"Z":108.5,"ID":6,"Active":true},"Four":{"X":91.5,"Y":0.0,"Z":108.5,"ID":7,"Active":true}}
+```
+<KittenAsset path='fru/fru_waymark3.png' wrapper='div' />
+
+</TabItem>
+
+<TabItem value="OCE clockspot waymarks" label="OCE waymarks">
+
+## OCE clockspot waymarks
+Waymarks from Materia DC that combines the two most used waymarks. This is my personal favorite.
+
+```json
+{"Name":"FRU OCE","MapID":1006,"A":{"X":100.012,"Y":0.0,"Z":91.275,"ID":0,"Active":true},"B":{"X":108.293,"Y":0.0,"Z":100.026,"ID":1,"Active":true},"C":{"X":99.964,"Y":0.0,"Z":108.349,"ID":2,"Active":true},"D":{"X":91.969,"Y":0.0,"Z":99.987,"ID":3,"Active":true},"One":{"X":90.977,"Y":0.0,"Z":90.679,"ID":4,"Active":true},"Two":{"X":109.154,"Y":0.0,"Z":90.916,"ID":5,"Active":true},"Three":{"X":109.042,"Y":0.0,"Z":108.973,"ID":6,"Active":true},"Four":{"X":90.987,"Y":0.0,"Z":108.899,"ID":7,"Active":true}}
+```
+<KittenAsset path='fru/fru_waymark1.png' wrapper='div' />
 
 </TabItem>
 
