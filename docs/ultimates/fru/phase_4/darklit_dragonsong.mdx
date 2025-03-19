@@ -8,4 +8,95 @@ hide_table_of_contents: true
 slug: /ultimates/fru/p4/darklit_dragonsong
 ---
 
-WIP
+import dark_water_3_icon_hr from '/img/debuff/dark_water_3_icon_hr.png';
+import refulgent_chain_icon_hr from '/img/debuff/refulgent_chain_icon_hr.png';
+import refulgent_fate_icon_hr from '/img/debuff/refulgent_fate_icon_hr.png';
+import lightsteeped_3_icon_hr from '/img/debuff/lightsteeped_3_icon_hr.png';
+
+After defeating Gaia, Shiva Mitron will reappear either north or south of the arena, opposite where Gaia was. While Gaia disappears, Shiva will now cast <strong>Materialization</strong> and spawn the <strong>Fragment of Fate</strong> at the northern part of the map. The crystal will not spawn if you destroyed any of the dark crystals during the intermission in phase 2.
+
+For now, drag Shiva to the middle in preparation for the next mechanic. Make sure to have both tanks establish their aggro as soon as they can, because from here onwards, the boss will auto attack two players with the highest enmity at the same time.
+
+<KittenAsset path='fru/p4/p4_intro.webm' wrapper='div' />
+
+## Fragment of Fate
+
+Your goal in phase 4 is simple, you must defeat both Gaia and Shiva without the <strong>Fragment of Fate</strong> shattering to pieces. If the fragment did not spawn or if it got destroyed anytime during phase 4, then clearing this phase will summon Eden instead who will then wipe the party.
+
+The <strong>Fragment of Fate</strong> will continuously take damage throughout the fight, but it will never shatter as long as no stray attacks end up hitting the crystal. And to prevent people from cheesing this phase, the fragment has a debuff that prevents healers from healing it.
+
+Throughout the fight, the <strong>Fragment of Fate</strong> will occasionally pulse and cause a small raidwide. The damage from the fragment is negligible but can be dangerous in combination with the attacks from Shiva and Gaia. Healers, make sure to mitigate and top up your party members after every strong raidwide.
+
+## Akh Rai
+
+Get ready once the tank pulls Shiva to the middle, as she will soon transform into her Hraesvelgr form. Similar to E8S, this transformation will also be accompanied with an untelegraphed laser that snapshots on your location when her wings appear. Run out of the middle once you see the wings appear in order to dodge the laser from the sky.
+
+For obvious reasons, do not bait the laser on the <strong>Fragment of Fate</strong>. 
+
+<KittenAsset path='fru/p4/akh_rai.webm' wrapper='div' />
+
+If you are the ST, then this is your last chance to establish the 2nd aggro. Failure to do so means that Shiva will now auto attack your more frail party members, likely killing off your DPS members and causing a wipe.
+
+Gaia will now reappear in preparation for the first major mechanic of P4, which also happens to be your 2 minute burst + pot window. Have the ST establish main aggro on Gaia and have the party immediately preposition themselves in a donut lineup, similar to that during <strong>Light Rampant</strong> back in phase 2. Make sure to focus your 2 minute burst as much as you can on Gaia, because it is essential that the HP of those two bosses stay in balance. This will become relevant later.
+
+<KittenAsset path='fru/p4/darklit_start.png' wrapper='div' width='30%' />
+
+## Darklit Dragonsong
+
+Once Gaia reappears, Shiva will cast <Raidwide>Darklit Dragonsong</Raidwide>, which by itself is a very strong raidwide. While Shiva is casting her spell, Gaia will target two players with a delayed stack marker spell. Identify those two players, as they might have to make adjust depending on how the next set of mechanics goes. 
+
+<KittenAsset path='fru/p4/darklit_start.webm' wrapper='div' />
+
+Mitigate as necessary, and once Shiva finishes her cast, you will be confronted with familiar debuffs that you've seen before in the last two phases.
+
+<table width='70%'>
+    <tr>
+        <th width='8%' align='center'>Debuff</th>
+        <th width='50%'>Description</th>
+    </tr>
+    <tr>
+        <td><img src={dark_water_3_icon_hr} /></td>
+        <td><center><strong>Spell-in-Waiting: Dark Water III</strong></center><br />A stack which must be soaked by at least four players. Soaking this attack with less than four players will inflict a Mark of Mortality on the players instead. This attack can damage the Fragment of Fate, so be careful!<br /><br />Two random players will be selected with this debuff and one of the stack players will always have the Refulgent Fate as well. You can identify these players from the giant delayed spell marker above their heads.</td>
+    </tr>
+    <tr>
+        <td><img src={refulgent_chain_icon_hr} /><img src={refulgent_fate_icon_hr} /></td>
+        <td><center><strong>Refulgent Chain/Fate</strong></center><br />Two DPS, one healer and one tank, all random, will receive this debuff, with each player tethering themselves to two random players who also has this debuff. Refulgent Chain will become Refulgent Fate once the timer expires, which will make the tether breakable. If the tether breaks, then you will blow up spectacularly and wipe the party.<br /><br />The tether breaks if the two tethered players are either too close to too far from each other. <strong>This means that you cannot stretch it too far either!</strong></td>
+    </tr>
+    <tr>
+        <td><img src={lightsteeped_3_icon_hr} /></td>
+        <td><center><strong>Lightsteeped</strong></center><br />Similarly to <strong>Light Rampant</strong> in phase 2, accumulating five stacks of this debuff will cause you to explode, effectively wiping the party. Every party member will start with three stacks of Lightsteeped.</td>
+    </tr>
+</table>
+
+Aside from the debuffs, the <Raidwide>Darklit Dragonsong</Raidwide> is a series of combination attacks that can be broken down in the following order:
+1. Two towers appears that needs to be soaked by two people each. At the same time, Shiva will cast <strong>The Path of Light</strong> which shoots proteans on the four players closest to Shiva.
+2. Gaia will now jump a random player with her <strong>Spirit Taker</strong> attack, forcing everyone to spread out in order to not get yeeted into the wall.
+3. Shiva immediately follows up with <strong>Hallowed Wings</strong>, which cleaves one side of the arena. This is also the moment when the <strong>Dark Water III</strong> will detonate.
+4. Finally, Gaia will now use <Tankbuster>Somber Dance</Tankbuster>, which is a two part tankbuster that first targets the farthest player followed by the closest player. 
+
+
+### The Path of Light and the two towers
+
+The two towers will always spawn north and south, and each tower requires two people to properly soak. Shiva herself will fire proteans on the four closest players once she finishes casting <strong>The Path of Light</strong>. Each of these attacks will inflict a stack of Lightsteeped, so a player cannot take both the protean and the tower as everyone starts with three stacks of Lightsteeped. The players with Refulgent Chain/Fate cannot be the ones baiting <strong>The Path of Light</strong>, as that requires them to be close which will break the tethers. So by process of elimination, the tethered players must soak the towers while the non-tethered players must bait the proteans without it hitting anyone else.
+
+The start of this mechanic is messy, as you will be flooded with information while having to deal with a bad line of sight situation. Pay attention to the details without too much tunnelvisioning during your 2 minute burst, as solving this mechanic requires you to be observant. This mechanic will resolve itself mostly once the first few steps are done correctly.
+
+Your first goal is to identify how the players are tethered to each other. You want the bow-tie shape, because that allows the tethered players to soak the towers without breaking the tethers. If your party either gets the box or the hourglass shape, then your party members have to make a swap in order to create the bow-tie shape.
+
+<table>
+    <tr>
+        <th>Hourglass<br />Tank and leftmost DPS must swap.</th>
+        <th>Box<br />Tank and rightmost DPS must swap.</th>
+        <th>Bow-tie<br />No swap needed.</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='fru/p4/darklit_tether_template_1.png' /></td>
+        <td><KittenAsset path='fru/p4/darklit_tether_template_2.png' /></td>
+        <td><KittenAsset path='fru/p4/darklit_tether_template_3.png' /></td>
+    </tr>
+</table>
+
+Once the bow tie has been sorted out, the non-tethered players should get in position to bait the proteans from Shiva without it hitting anyone else. Below is a breakdown of how it goes from here.
+
+
+W.I.P.
