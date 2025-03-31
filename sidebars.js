@@ -61,6 +61,34 @@ const arcadion = [
       "savage/arcadion/m4s/m4s_sword_quiver"
     ]
   },
+  {
+    type: "category",
+    label: "M5S - Dancing Green",
+    items: [
+      "savage/arcadion/m5s/m5s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M6S - Sugar Riot",
+    items: [
+      "savage/arcadion/m6s/m6s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M7S - Brute Abombinator",
+    items: [
+      "savage/arcadion/m7s/m7s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M8S - Howling Blade",
+    items: [
+      "savage/arcadion/m8s/m8s"
+    ]
+  }
 ]
 
 const pandaemonium = [
