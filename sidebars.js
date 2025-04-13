@@ -65,28 +65,55 @@ const arcadion = [
     type: "category",
     label: "M5S - Dancing Green",
     items: [
-      "savage/arcadion/m5s/m5s"
+      "savage/arcadion/m5s/m5s",
+      "savage/arcadion/m5s/m5s_disco_1",
+      "savage/arcadion/m5s/m5s_arcady_night_fever",
+      "savage/arcadion/m5s/m5s_ride_the_waves",
+      "savage/arcadion/m5s/m5s_frogtourage_1",
+      "savage/arcadion/m5s/m5s_disco_2",
+      "savage/arcadion/m5s/m5s_arcady_night_encore",
+      "savage/arcadion/m5s/m5s_frogtourage_2"
     ]
   },
   {
     type: "category",
     label: "M6S - Sugar Riot",
     items: [
-      "savage/arcadion/m6s/m6s"
+      "savage/arcadion/m6s/m6s",
+      "savage/arcadion/m6s/m6s_color_clash",
+      "savage/arcadion/m6s/m6s_sugarscape_1",
+      "savage/arcadion/m6s/m6s_soul_sugar",
+      "savage/arcadion/m6s/m6s_sugarscape_2"
     ]
   },
   {
     type: "category",
     label: "M7S - Brute Abombinator",
     items: [
-      "savage/arcadion/m7s/m7s"
+      "savage/arcadion/m7s/m7s",
+      "savage/arcadion/m7s/m7s_sinister_seeds",
+      "savage/arcadion/m7s/m7s_thorny_deathmatch",
+      "savage/arcadion/m7s/m7s_demolition_deathmatch",
+      "savage/arcadion/m7s/m7s_stoneringers_1",
+      "savage/arcadion/m7s/m7s_debris_deathmatch",
+      "savage/arcadion/m7s/m7s_stoneringers_2"
     ]
   },
   {
     type: "category",
     label: "M8S - Howling Blade",
     items: [
-      "savage/arcadion/m8s/m8s"
+      "savage/arcadion/m8s/m8s",
+      "savage/arcadion/m8s/m8s_millennial_decay",
+      "savage/arcadion/m8s/m8s_terrestrial_titans",
+      "savage/arcadion/m8s/m8s_tactical_pack",
+      "savage/arcadion/m8s/m8s_terrestrial_rage",
+      "savage/arcadion/m8s/m8s_beckon_moonlight",
+      "savage/arcadion/m8s/m8s_elemental_purge",
+      "savage/arcadion/m8s/m8s_twofold_tempest",
+      "savage/arcadion/m8s/m8s_champion_circuit",
+      "savage/arcadion/m8s/m8s_lone_wolf_lament",
+      "savage/arcadion/m8s/m8s_howling_eight",
     ]
   }
 ]
