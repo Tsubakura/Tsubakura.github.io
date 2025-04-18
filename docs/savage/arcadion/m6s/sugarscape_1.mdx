@@ -8,4 +8,95 @@ hide_table_of_contents: true
 slug: /savage/m6s/sugarscape_1
 ---
 
-WIP
+import sweltering_icon_hr from '/img/debuff/sweltering_icon_hr.png';
+import heating_up_icon_hr from '/img/debuff/heating_up_icon_hr.png';
+import burning_up_icon_hr from '/img/debuff/burning_up_icon_hr.png';
+
+You are recommended to pull the boss up north, as the boss will teleport north regardless for her next major mechanic. Pre-emptively pulling the boss north will minimize melee downtime, which can make your party happy for what is a minimal optimization.
+
+## Sugarscape
+
+Once Sugar Riot teleports north, she will now cast <strong>Sugarscape</strong> and turn the arena into a desert. Upon changing the landscape, your party will now also be introduced to a new set of debuffs that you need to be wary of.
+
+<table width='70%'>
+    <tr>
+        <th>Debuff</th>
+        <th width='90%'>Description</th>
+    </tr>
+    <tr>
+        <td><img src={sweltering_icon_hr} /></td>
+        <td><center><strong>Sweltering</strong></center><br />All your party members will continuously take bleed damage for the duration of the desert phase. While not a problem by itself, the bleed can potentially cause casualties in combination with other damage sources or when party members are forced out of AoE heal range.<br /><br />The bleed will expire once the desert phase is over, but in the meantime, the healers need to be constantly on the alert and heal up their party as needed.</td>
+    </tr>
+    <tr>
+        <td><img src={heating_up_icon_hr} /></td>
+        <td><center><strong>Heating Up</strong></center><br />Known as defamation, the player with this debuff will cause a gigantic AoE explosion around him/her once the timer runs out. This is fatal to other players if you clip them by accident, so excessive greeding is not recommended.<br /><br />One random tank, one random DPS and both healers will get this debuff upon entering the desert phase, with the tank and DPS having a shorter timer.</td>
+    </tr>
+    <tr>
+        <td><img src={burning_up_icon_hr} /></td>
+        <td><center><strong>Burning Up</strong></center><br />When the timer runs out, the player with this debuff will explode in a small stack AoE that needs to be soaked by the party. This attack goes off at the same time as the first set of Heating Up debuffs.<br /><br />One random DPS will be selected for this debuff, but you do not need to pay attention who this player is.</td>
+    </tr>
+</table>
+
+Amongst the tanks, identify who has the defamation debuff. If the defamation debuff is on the MT, then you might want to tank swap here in order to allow your party the necessary uptime while the MT retreats to resolve his/her defamation during the next mechanic. Keep Sugar Riot north, because the next mechanic will be easier to execute if the boss remains north.
+
+## Cactuses
+
+Sugar Riot will now draw cactuses on the landscape using <strong>Layer</strong>. Similarly to the normal mode, cactuses will spawn all around the desert and explode in a small AoE once it reaches a certain size. The cactuses aren't completely random, as there are a few fixed patterns that you can recognize once you've done this enough. Being at north will also help immensely to your effort of not getting hit by cactuses.
+
+<KittenAsset path='m6s/cactuses.webm' wrapper='div' />
+
+There's nothing special about the cactuses, except to just dodge and not get hit by them. However, what should be kept in mind is that the timers for <strong>Heating Up</strong> and <strong>Burning Up</strong> will expire as the cactuses stops spawning. Use this moment of respite to run away from the party if you have the defamation. For reference, the tank goes southwest while the DPS goes southeast.
+
+<KittenAsset path='m6s/cactuses_position.png' wrapper='div' width='40%' />
+
+After resolving the stack and defamations, Sugar Riot will teleport back to the center of the arena and cast <strong>Sticky Mousse</strong>. You have seen this before, so spread out and deal with it accordingly.
+
+## Quicksand
+
+Sugar Riot will cast <strong>Layer</strong> again for the second time, this time drawing a quicksand in the middle of the landscape. The quicksand will spawn in the middle, which forces everyone to move to any of the corners. However, as you might have remembered, the healers still have a defamation debuff that they have to resolve. In order for the healers to not blow up the party, each of the healers need to go into their own separate corner, while the rest of the party takes the 3rd corner.
+
+<KittenAsset path='m6s/quicksand_positions.png' wrapper='div' width='40%' />
+
+The above image shows the default positions for everyone during this mechanic. However, chances are, there is a cactus on top of your designated safespot, which prevents you from using that corner. If your corner becomes unavailable due to a cactus spawning there, then your new designated safespot will be the southwest corner.
+
+<table>
+    <tr>
+        <th>Northeast unsafe</th>
+        <th>Northwest unsafe</th>
+        <th>Southeast unsafe</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m6s/quicksand_positions_northeast.png' /></td>
+        <td><KittenAsset path='m6s/quicksand_positions_northwest.png' /></td>
+        <td><KittenAsset path='m6s/quicksand_positions_southeast.png' /></td>
+    </tr>
+</table>
+
+You have roughly 7 seconds to reach your safe corner before the quicksand sucks anyone in who are unfortunate, leading to instant death. The quicksand is still active after the defamation has resolved, so wait until the quicksand disappears before you move back to the middle.
+
+<KittenAsset path='m6s/quicksand.webm' wrapper='div' />
+
+## Pudding Graf Bombs
+
+Sugar Riot will teleport back to the middle and prepare another <strong>Double Style</strong>, this time drawing a normal bomb and a winged bomb artwork. One of the bombs will tether to all support or DPS, while the other bomb will tether to the other group. The normal bombs are blue tethers, while the winged bombs are purple.
+
+The bombs have a very short fuse, which means its impractical to let it detonate while still being far enough to not get caught in the blast. So in order to not get blown up, your goal in this mechanic is to drop the bombs into the quicksand in order to properly dispose of them. And luckily, a quicksand happens to spawn right at that moment.
+
+The bombs are imbued with pudding AoE, so everyone must properly spread out in order for the AoE to not clip each other. The role group with normal bombs should spread out inside the quicksand, while the winged bomb group can spread out on the solid ground. Using the quicksand as the new north, your party's spread position will look something like the following below.
+
+<table width='80%'>
+    <tr>
+        <th>Support winged bombs, DPS normal bombs</th>
+        <th>DPS winged bombs, support normal bombs</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m6s/quicksand_bombs_1.png' /></td>
+        <td><KittenAsset path='m6s/quicksand_bombs_2.png' /></td>
+    </tr>
+</table>
+
+Regarding the winged bombs, these bombs will fly in the direction you were looking at when the bomb appeared. Keeping that in mind, avoid doing any last second sudden movements, as you might find your bomb flying backwards into your party instead if you do that. Generally, once you're positioned correctly, the winged bomb will resolve itself by just simply attacking the boss.
+
+<KittenAsset path='m6s/quicksand_bombs.webm' wrapper='div' />
+
+Don't forget to move out of the quicksand once you've dropped your bomb, less you want to meet an untimely end by being sucked into the ground. Once the bombs are properly disposed off, or not and your party members died from it, Sugar Riot will cast <Raidwide>Mousse Mural</Raidwide>, ending the desert phase. And to check whether your tanks still remember it, the raidwide is followed up by a <Tankbuster>Color Riot</Tankbuster>.
