@@ -8,4 +8,95 @@ hide_table_of_contents: true
 slug: /savage/m6s/color_clash
 ---
 
-WIP
+import cool_tint_icon_hr from '/img/debuff/cool_tint_icon_hr.png';
+import warm_tint_icon_hr from '/img/debuff/warm_tint_icon_hr.png';
+import wingmark_icon_hr from '/img/debuff/wingmark_icon_hr.png';
+
+Upon pulling Sugar Riot, the boss will auto attack a few times before going into <Raidwide>Mousse Mural</Raidwide>, which is the raidwide for this fight. After dealing with the raidwide, your party will be introduced to some mechanics that will reoccur multiple times throughout the fight.
+
+## Color Riot
+
+<Tankbuster>Color Riot</Tankbuster> is a two-target tankbuster that targets the furthest and the closest player from the boss. While the proximity is nothing special by itself, the tankbusters each have a color property which inflicts the said color weakness on the tank. This tankbuster will occur multiple times throughout the fight and a tank may not soak the same color twice in a row, which means the tanks are forced to alternate the color they soak whenever the boss casts <Tankbuster>Color Riot</Tankbuster>.
+<div>
+    <img src={cool_tint_icon_hr} /><img src={warm_tint_icon_hr} />
+</div>
+
+<KittenAsset path='m6s/color_riot.webm' wrapper='div' />
+
+The party should be behind the boss, around the ring of the boss circle. With the party in the correct position, the two tanks should then preposition themselves to become the closest and farthest targets in order to soak the tankbuster. The MT is always closest and ST is always farthest for the very first cast of <Tankbuster>Color Riot</Tankbuster>. The farthest player **can** uptime as long as the other party members cooperate, but be ready to play safe when necessary.
+
+<KittenAsset path='m6s/color_riot.png' width='40%' />
+
+Keep in mind that the color that is pointed upwards will target the closest player, **not** the farthest player! And as a reminder, all <Tankbuster>Color Riot</Tankbuster> are resolved in a **boss relative** position.
+
+
+## Color Clash
+
+Sugar Riot introduces her first major mechanic here, <strong>Color Clash</strong>, which is essentially either a pair or a light party stack that is made harder by other overlapping mechanics. Notably, Sugar Riot will cast <strong>Wingmark</strong> to give everyone a wing debuff, which will probably leads to the first of many causes of deaths when you least expect it.
+
+<table width='100%'>
+    <tr>
+        <th>Debuff</th>
+        <th width='50%'>Description</th>
+        <th>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={wingmark_icon_hr} /></td>
+        <td><center><strong>Wingmark</strong></center><br />You have wings now! Once this debuff expires, you will fly forward in the direction you're facing. This direction can change last second through movement or from using skills, but not from auto attacks. The distance is roughly 3/4 of the arena width, so be careful not to fly into the wall!<br /><br />The number waymarks currently in use by PF can be used to accurately determine where you can safely stand in order to reach your safe corner.</td>
+        <td><KittenAsset path='m6s/color_riot_wingmark.webm' /></td>
+    </tr>
+</table>
+
+The wingmark is on a 21 second timer, so ignore it for now and focus on the boss. Sugar Riot will cast <strong>Color Clash</strong> and fire bullets into the sky. Two means light party stack, while four means partner stack. This mechanic will resolve later, so remember for now whether the stack is light party or partners.
+
+<KittenAsset path='m6s/color_clash.webm' wrapper='div' />
+
+### Double Style
+
+This mechanic would be pretty easy if you can utilize the whole arena, so in order to make it harder, Sugar Riot is going to limit the safe space you can utilize for the stack mechanic. This is done by her casting <strong>Double Style</strong>, which will create two artworks that will materialize. The normal and flying bombs make a return from normal mode, but the savage version introduces two new artworks that you will now have to deal with in this fight:
+- **Bombs**: Three bombs that will explode in a large AoE after some time. Avoid them!
+- **Winged Bombs**: Unlike the normal bombs, these bombs will fly to the other side before exploding.
+- **Succubus**: Has the appearance of an emo girl, this artwork is essentially a defamation (big AoE). You're never safe next to a succubus, so stay away from it!
+- **Morbol**: Fires a 90 degrees cone from the wall towards the center. Your safespot is always next to a morbol if one ever spawns in this mechanic.
+
+No matter which combination you get, there's always one corner that is safe. Your goal in this mechanic is to identify this safe corner, so that your party can resolve the <strong>Color Clash</strong> mechanic that was cast earlier. Once you have identified this safe corner, your goal then is to align yourself properly for the windmark jump so that you won't end up flying into a wall. Finally upon landing successfully, you now have 1-2 seconds to adjust your position in order to resolve the stack.
+
+<table>
+    <tr>
+        <th>Light Party</th>
+        <th>Pairs</th>
+    </tr>
+    <tr>
+        <th><KittenAsset path='m6s/color_clash_lightparty.png' /></th>
+        <th><KittenAsset path='m6s/color_clash_pair.png' /></th>
+    </tr>
+</table>
+
+Here below is some possible patterns you can use as reference.
+
+<table>
+    <tr>
+        <th>Example 1<br />Two Morbol, light party<br /><Role role='D2' /></th>
+        <th>Example 2<br />Flying bombs + Morbol, pairs<br /><Role role='D3' /></th>
+        <th>Example 3<br />Bombs + Succubus, light party<br /><Role role='ST' /></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m6s/color_clash_example1.webm' /></td>
+        <td><KittenAsset path='m6s/color_clash_example2.webm' /></td>
+        <td><KittenAsset path='m6s/color_clash_example3.webm' /></td>
+    </tr>
+</table>
+
+## Sticky Mousse
+
+Immediately after resolving <strong>Color Clash</strong>, Sugar Riot will cast <strong>Sticky Mousse</strong> next. <strong>Sticky Mousse</strong> will target two random non-tank players with mousse, which will bind the said player from moving. Anyone hit by the mousse will detonate shortly after, with each blast requiring four players each to soak the stack.
+
+<KittenAsset path='m6s/sticky_mousse.webm' wrapper='div' />
+
+Spread out properly first! If the initial mousse ends up clipping anyone, then the attack becomes unresolvable due to the clipped player also turning into a stack bomb. Once you see the mousse land on the players, that is your cue to shift to the closest player to help soak the stack.
+
+<KittenAsset path='m6s/sticky_mousse_spread.png' wrapper='div' width='30%' />
+
+The mousse will never target a tank, so both tanks can hang around in the middle where the boss is and flex to whichever group needs bodies for the stack. Make sure that both players with mousse have four players each, as the damage can become fatal otherwise unless heavily mitigated!
+
+After resolving the <strong>Sticky Mousse</strong>, Sugar Riot will now end this introductory phase by casting another <Tankbuster>Color Riot</Tankbuster> to test whether your party understood the color and proximity mechanics. All the other mechanics you've encountered so far will also reappear multiple times throughout the fight, so make sure that you've understood them before you venture further into your progression.
