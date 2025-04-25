@@ -8,4 +8,61 @@ hide_table_of_contents: true
 slug: /savage/m5s/arcady_night_fever
 ---
 
-WIP
+import wavelength_a_icon_hr from '/img/debuff/wavelength_a_icon_hr.png';
+import wavelength_b_icon_hr from '/img/debuff/wavelength_b_icon_hr.png';
+
+Dancing Green will summon his backup dancers with <strong>Ensemble Assemble</strong>. These humanoid frogs with a broccoli afro will appear on the stage north, but ignore them for now, because Dancing Green is going to make you dance with <strong>Arcady Night Fever</strong>.
+
+This mechanic features a <strong>Grooviness</strong> meter, which will keep track of how well your party is performing during this mechanic. More will be explained down below.
+
+## Arcady Night Fever
+
+Once this mechanic starts, Dancing Green will continuously alternate between chariot and donut, which the players need to dodge by moving in and out and back in, until this mechanic is over. While Dancing Green is casting a chariot or a donut, one player will be randomly targeted for a protean. This protean will repeat once, so immediately sidestep while dodging in or out, in order to dodge the 2nd protean. The protean inflicts a magical vulnerability, so avoid clipping other players with it by spreading out while doing this funny dance.
+
+<table width='90%'>
+    <tr>
+        <td width='58%'>First, spread out your party like this. For those who have done Zelenia Extreme, this is the exact same setup used for Escelon's Fall. <br /><br />The first attack is always chariot, so you can pre-position yourself at max melee range after having spread out.</td>
+        <td><KittenAsset path='m5s/arcady_night_fever_part1.png' /></td>
+    </tr>
+    <tr>
+        <td>Dancing Green will now target a random support or a DPS with a protean. This attack will inflict a debuff on you, but ignore that for now. If you are the one who got hit, then remember to sidestep on the next cycle!<br /><br />In this example, the D4 got hit first. The protean will never target the same role group twice in a row, so the next protean will now target a random support.</td>
+        <td><KittenAsset path='m5s/arcady_night_fever_part2.png' /></td>
+    </tr>
+    <tr>
+        <td>The next cycle is a donut, so everyone get inside the hitbox of the boss. D4 should immediately sidestep to avoid the repeat protean, after which he/she can return back to his/her original position. You do not need to worry about being hit as long as you stay inside your own role group half, because as mentioned before, the protean will never target the same role group twice in a row.<br /><br /> At the same time, the protean now struck H1. The H1 should now be prepared to dodge his/her protean on the next cycle.</td>
+        <td><KittenAsset path='m5s/arcady_night_fever_part3.png' /></td>
+    </tr>
+    <tr>
+        <td>Now its a chariot again and a random DPS gets targeted again, while H1 dodges by sidestepping. This process will continuously repeat until all players have been hit at least once. Unless someone has died during this mechanic, everyone will always be hit only once during this mechanic.<br /><br /><KittenAsset path='m5s/arcady_night_fever_example.webm' /></td>
+        <td><KittenAsset path='m5s/arcady_night_fever_part4.png' /></td>
+    </tr>
+</table>
+
+## Let's dance!
+
+Once this initial phase is over, it is now the right time to focus on the frogs in the background and the debuffs you've accumulated while doing the previous mechanic.
+
+<table width='80%'>
+    <tr>
+        <th>Debuff</th>
+        <th width='65%'>Description</th>
+        <th>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={wavelength_a_icon_hr} /><img src={wavelength_b_icon_hr} /></td>
+        <td><center><strong>Wavelength A/B</strong></center><br />One role group is assigned with Wavelength A, while the other role group is assigned with Wavelength B. When the timer of this debuff runs out, the player with this debuff will explode in a very small AoE. <br /><br />The explosion, if taken alone, will inflict a strong bleed and counts as having failed the mechanic. However, if a player with Wavelength A and a player with Wavelength B explode at the same time while stacked, then the two explosions will negate each other, negating all damage taken altogether.<br /><br />There are four different timers, which accounts for four partner stacks during this mechanic.</td>
+        <td><KittenAsset path='m5s/wavelength_partylist.png' /></td>
+    </tr>
+</table>
+
+Identify your debuff timer using the party list, and quickly line up from top to bottom in the order of lowest to highest timer. Use the center of the square tiles on the floor to coordinate this lineup! If done correctly, your correct partner with the same timer will naturally find you and the wavelength mechanic should resolve itself.
+
+<KittenAsset path='m5s/arcady_night_fever_dance.png' wrapper='div' width='40%' />
+
+Once you've found your partner in the lineup, shift your attention to the frogs. Similarly to normal mode, the direction they're pointing shows you how the room will be cleaved in which order. The cleaves will only be left or right, so stay with your partner and nudge left/right to dodge all the halfroom cleaves.
+
+<KittenAsset path='m5s/arcady_night_fever_dance.webm' wrapper='div' />
+
+Once the half-room cleaves are done, the boss will wrap this mechanic with <Raidwide>Let's Pose!</Raidwide>, which will judge your performance during this mechanic so far. If your performance during <strong>Arcady Night Fever</strong> is flawless, then this raidwide will deal no damage and you will get a <strong>Perfect Groove</strong> screen popup that grants you a temporary damage up buff. This performance check is on an individual basis, so you can still get the buff even if the rest of your party are making mistakes left and right.
+
+Regardless of your performance, the <strong>Grooviness</strong> meter will be added onto your LB charge. At 100, which would mean everyone in your party performed flawlessly, it will be equal to a LB1 charge.
