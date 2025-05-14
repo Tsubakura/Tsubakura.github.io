@@ -104,6 +104,8 @@ const arcadion = [
     label: "M8S - Howling Blade",
     items: [
       "savage/arcadion/m8s/m8s",
+      "savage/arcadion/m8s/m8s_stonefang_windfang",
+      "savage/arcadion/m8s/m8s_eminent_revolutionary_reign",
       "savage/arcadion/m8s/m8s_millennial_decay",
       "savage/arcadion/m8s/m8s_terrestrial_titans",
       "savage/arcadion/m8s/m8s_tactical_pack",
