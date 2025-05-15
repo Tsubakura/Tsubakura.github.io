@@ -8,4 +8,87 @@ hide_table_of_contents: true
 slug: /savage/m8s/tactical_pack
 ---
 
-WIP
+import stonepack_icon_hr from '/img/debuff/stonepack_icon_hr.png';
+import windpack_icon_hr from '/img/debuff/windpack_icon_hr.png';
+import earthborne_end_icon_hr from '/img/debuff/earthborne_end_icon_hr.png';
+import windborne_end_icon_hr from '/img/debuff/windborne_end_icon_hr.png';
+
+The Howling Blade, impressed by your skills so far, decides to have his minions fight you while he takes a break. Once the boss finishes casting <strong>Tactical Pack</strong>, a green wolf head and a yellow wolf head will spawn on the arena and tether to the party. Each of the heads will target one random tank, one random healer and two random DPS. Upon identifying your tether color, your goal is to stretch your tether and go towards the wolf head that you're not tethered to.
+
+<KittenAsset path='m8s/tactical_pack_intro.webm' wrapper='div' />
+
+Once you're in position, the adds will cast a small raidwide before they become targetable. The middle area will become a death wall, so stay out of it during this mechanic.
+
+## Tactical Pack
+
+Once targetable, each of the adds will target a random non-tank of the opposite element with a line AoE, while tankbustering the player with the highest enmity. While that is happening, you will notice that you're now being chased by a yellow cube or a green orb. These entities will chase the wolf head of the same color, which you as a party will have to avoid. If the orb/cube touches the wolf heads or if a player without the correct debuff touches it, then the resulting explosion will kill everyone.
+
+What debuff you might ask? Well, when the adds became targetable, everyone in the party was given a set of debuffs that they need to resolve during this mechanic. Below is a breakdown of what these debuffs are.
+
+<table width='100%'>
+    <tr>
+        <th width='10%'>Debuff</th>
+        <th width='60%'>Description</th>
+        <th>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={windpack_icon_hr} /><img src={stonepack_icon_hr} /></td>
+        <td><center><strong>Windpack & Stonepack</strong></center><br />This debuff will effectively prevent you from doing any damage to the same color wolf head of the pack you belong to. This is why you need to go to the opposite wolf head that you're not tethered to, because you cannot attack the head you're tethered to anyway.<br /><br />Keep in mind that your pack color changes upon cleansing your Windborne End or Earthborne End.</td>
+        <td rowspan='2'><KittenAsset path='m8s/tactical_pack_partylist.png' /></td>
+    </tr>
+    <tr>
+        <td><img src={windborne_end_icon_hr} /><img src={earthborne_end_icon_hr} /></td>
+        <td><center><strong>Windborne End & Earthborne End</strong></center><br />The player with this debuff must cleanse this before the timer reaches zero. Failure to do so will cause the player to die instantly. To cleanse this debuff, simply touch the green orb if you have the Windborne End or the yellow cube if you have the Earthborne End. Cleansing your debuff will also inflict 20% damage on the wolf head of the opposite color.<br /><br />Touching the cube/orb will generate a small raidwide that inflicts a magical vulnerability on everyone for 3 seconds, so you only have time for two cleanses per set. The timers of this debuff can start at 20, 36 or 53, and keep in mind that this debuff will never target a tank.</td>
+    </tr>
+</table>
+
+Identify first where the green cube and yellow cube have spawned. These two spawn north/south of the arena, but which one spawns where is completely random. These objects will always chase the same color, so have your tanks preposition themselves in a way that allows them to run away from the same color, while the rest of the party places themselves on the other side of the head. This should allow your party to resolve the line AoE and the tankbuster without either of them clipping anyone unintended by accident.
+
+<table>
+    <tr>
+        <th>Counterclockwise</th>
+        <th>Clockwise</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m8s/tactical_pack_setup_counterclockwise.png' /></td>
+        <td><KittenAsset path='m8s/tactical_pack_setup_clockwise.png' /></td>
+    </tr>
+</table>
+
+### Tanks
+
+As tanks, identify which head you're tethered to and go to the other head. Your job as a tank is simple, you simply run as far as you can without accidentally touching the cube or orb, while also mitigating yourself properly to defend yourself against the tankbusters.
+
+There are three sets of tankbusters (<Tankbuster>Pack Predation</Tankbuster>) and each tankbuster will put you near death if you take them raw, so make sure to cycle through your mitigations so that you always have at least 20% worth of mitigations for every set. Don't worry about saving your personal mitigations, you will not need them anytime soon, so feel free to use them liberally during this mechanic.
+
+<KittenAsset path='m8s/tactical_pack_tank.webm' wrapper='div' />
+
+### Non-tanks
+
+As DPS and healers, your job is to cleanse your debuff, which also simultaneously will help in getting rid of the orb/cube, at the right times without accidentally wiping your party. After every line AoE and tankbuster, your party is given a grace period where you are permitted up to two cleanses before the adds resume their next set of line AoE and tankbusters. To balance the timers and to prevent the debuff from killing anyone, your party has to cleanse one yellow and one green every time you're given an opportunity to cleanse. 
+
+Now, if you're following game8, then make sure its <Raidwide>green first, yellow second</Raidwide>. After that, there are two approaches to identifying whether it is your turn or not to cleanse. You can either look at your party list, identify all the player with the same debuffs and use process of elimination to determine when it is your turn to cleanse. Alternatively, you can just check whether your own timer is 20s or lower every time a line AoE is about to go off, which is the method that requires less brainpower to execute.
+
+<table>
+    <tr>
+        <th>Example 1<br />Windborne End 36s</th>
+        <th>Example 2<br />Earthborne End 20s</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m8s/tactical_pack_nontank_wind.webm' /></td>
+        <td><KittenAsset path='m8s/tactical_pack_nontank_earth.webm' /></td>
+    </tr>
+</table>
+
+
+Your Windpack/Stonepack element changes after a cleanse, so don't go back to your old group but push ahead and join the other group instead. As Windborne End, you can immediately run for it once the line AoE goes off due to how little damage the raidwide does. As Earthborne End though, make sure to wait until the magical vulnerability has expired before you touch the cube for your cleanse. And finally, remember its **green first** if you're doing game8, or someone in your party will remind you after you've accidentally wiped the party.
+
+Don't worry about killing the adds too fast before the players could cleanse. That has been recognized as a bug and has been fixed as of now, so you if you manage to kill the head fast enough, then that will also cleanse all debuffs and destroy the orb/cube instantly, without wiping the party.
+
+## Ravenous Saber
+
+Once every player has performed their cleanse successfully, your party will now have to finish off the adds if they haven't done so yet. If your party is too slow in killing the adds, then the adds will enrage with a slow cast of <Enrage>Forlorn Wind</Enrage>/<Enrage>Forlorn Stone</Enrage>. But if you did manage to defeat the adds on time, then the boss will cast a strong untelegraphed raidwide <Raidwide>Ravenous Saber</Raidwide> in an attempt to wipe your party.
+
+<KittenAsset path='m8s/ravenous_saber.webm' wrapper='div' />
+
+This raidwide deals physical damage, so remember that Feint is effective while Addle and DRK/GNB 90s are almost useless. Ultimately, you can bruteforce heal through this if push comes to shove, but for a comfy experience, you want to have at least 5 effective mitigations to survive the incoming barrage.
