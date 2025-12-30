@@ -117,6 +117,34 @@ const arcadion = [
       "savage/arcadion/m8s/m8s_lone_wolf_lament",
       "savage/arcadion/m8s/m8s_howling_eight",
     ]
+  },
+  {
+    type: "category",
+    label: "M9S - Vamp Fatale",
+    items: [
+      "savage/arcadion/m9s/m9s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M10S - The Xtremes",
+    items: [
+      "savage/arcadion/m10s/m10s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M11S - The Tyrant",
+    items: [
+      "savage/arcadion/m11s/m11s"
+    ]
+  },
+  {
+    type: "category",
+    label: "M12S - The Lindwurm",
+    items: [
+      "savage/arcadion/m12s/m12s"
+    ]
   }
 ]
 
