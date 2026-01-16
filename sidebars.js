@@ -122,7 +122,12 @@ const arcadion = [
     type: "category",
     label: "M9S - Vamp Fatale",
     items: [
-      "savage/arcadion/m9s/m9s"
+      "savage/arcadion/m9s/m9s",
+      "savage/arcadion/m9s/m9s_screech_1",
+      "savage/arcadion/m9s/m9s_aetherletting",
+      "savage/arcadion/m9s/m9s_screech_2",
+      "savage/arcadion/m9s/m9s_hell_in_a_cell",
+      "savage/arcadion/m9s/m9s_undead_deathmatch"
     ]
   },
   {
