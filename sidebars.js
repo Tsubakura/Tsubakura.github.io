@@ -134,7 +134,14 @@ const arcadion = [
     type: "category",
     label: "M10S - The Xtremes",
     items: [
-      "savage/arcadion/m10s/m10s"
+      "savage/arcadion/m10s/m10s",
+      "savage/arcadion/m10s/m10s_flame_floater",
+      "savage/arcadion/m10s/m10s_sickest_takeoff",
+      "savage/arcadion/m10s/m10s_insane_air",
+      "savage/arcadion/m10s/m10s_snaking",
+      "savage/arcadion/m10s/m10s_watery_grave",
+      "savage/arcadion/m10s/m10s_split_arena",
+      "savage/arcadion/m10s/m10s_xtreme_snaking"
     ]
   },
   {
