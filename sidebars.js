@@ -165,7 +165,18 @@ const arcadion = [
     type: "category",
     label: "M12S - The Lindwurm",
     items: [
-      "savage/arcadion/m12s/m12s"
+      "savage/arcadion/m12s/m12s_p1",
+      "savage/arcadion/m12s/m12s_mortal_slayer",
+      "savage/arcadion/m12s/m12s_act_1",
+      "savage/arcadion/m12s/m12s_act_2",
+      "savage/arcadion/m12s/m12s_act_3",
+      "savage/arcadion/m12s/m12s_curtain_call",
+      "savage/arcadion/m12s/m12s_slaughtershed",
+      "savage/arcadion/m12s/m12s_p2",
+      "savage/arcadion/m12s/m12s_replication_1",
+      "savage/arcadion/m12s/m12s_replication_2",
+      "savage/arcadion/m12s/m12s_blood_mana",
+      "savage/arcadion/m12s/m12s_idyllic_dream",
     ]
   }
 ]
