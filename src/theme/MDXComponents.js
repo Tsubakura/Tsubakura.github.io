@@ -11,6 +11,7 @@ import Tankbuster from '/src/components/Tankbuster.js';
 import Color from '/src/components/Color.js';
 import Role from '/src/components/Role.js';
 import KittenAsset from '/src/components/KittenAsset.js';
+import LargeText from '/src/components/LargeText.js'
 
 
 export default {
@@ -23,6 +24,7 @@ export default {
   Role,
   Title,
   KittenAsset,
+  LargeText,
   Tabs,
   TabItem
 };
