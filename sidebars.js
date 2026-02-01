@@ -153,7 +153,7 @@ const arcadion = [
       "savage/arcadion/m11s/m11s_trophy_weapons",
       "savage/arcadion/m11s/m11s_void_stardust",
       "savage/arcadion/m11s/m11s_dominion",
-      "savage/arcadion/m11s/m11s_charybdistopia",
+      "savage/arcadion/m11s/m11s_ultimate_trophy_weapons",
       "savage/arcadion/m11s/m11s_orbital_omen",
       "savage/arcadion/m11s/m11s_meteorain",
       "savage/arcadion/m11s/m11s_majestic_meteor",
