@@ -10,6 +10,7 @@ import Flare from '/src/components/Flare.js';
 import Tankbuster from '/src/components/Tankbuster.js';
 import Color from '/src/components/Color.js';
 import Role from '/src/components/Role.js';
+import Waymark from '/src/components/Waymark.js';
 import KittenAsset from '/src/components/KittenAsset.js';
 import LargeText from '/src/components/LargeText.js'
 
@@ -22,6 +23,7 @@ export default {
   Tankbuster,
   Color,
   Role,
+  Waymark,
   Title,
   KittenAsset,
   LargeText,
