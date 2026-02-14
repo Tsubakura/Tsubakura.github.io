@@ -7,3 +7,160 @@ hide_title: false
 hide_table_of_contents: true
 slug: /savage/m12s/act_2
 ---
+
+
+
+
+import first_in_line_icon_hr from '/img/debuff/first_in_line_icon_hr.png';
+import second_in_line_icon_hr from '/img/debuff/second_in_line_icon_hr.png';
+import third_in_line_icon_hr from '/img/debuff/third_in_line_icon_hr.png';
+import fourth_in_line_icon_hr from '/img/debuff/fourth_in_line_icon_hr.png';
+import bonds_of_flesh_a_icon_hr from '/img/debuff/bonds_of_flesh_a_icon_hr.png';
+import bonds_of_flesh_b_icon_hr from '/img/debuff/bonds_of_flesh_b_icon_hr.png';
+import unbreakable_flesh_a_icon_hr from '/img/debuff/unbreakable_flesh_a_icon_hr.png';
+import unbreakable_flesh_b_icon_hr from '/img/debuff/unbreakable_flesh_b_icon_hr.png';
+
+
+Upon resolving Act 1, you will now have to deal with <strong>Grotesquerie: Act 2</strong>. Similar to Act 1, this cast will inflict another set of debuffs that your party will have to resolve.
+
+<table width='90%'>
+    <tr>
+        <th width='5%'>Debuff</th>
+        <th>Description</th>
+        <th width='30%'>Additional note</th>
+    </tr>
+    <tr>
+        <td><img src={bonds_of_flesh_a_icon_hr} /><img src={unbreakable_flesh_a_icon_hr} /></td>
+        <td><center><strong>Bonds of Flesh α & Unbreakable Flesh α</strong></center><br />Upon the timer running out, the player with this debuff will form a fleshy chain with their Beta counterpart. This chain can be destroyed by stretching it long enough, which will cause both players involved in the chain to explode in a small AoE.<br /><br />The chain will only account for the distance after it has formed, so do not stretch it until the debuff timer has ran out. Failure to break the chain will cause both players to continuously take damage until they die. </td>
+        <td rowspan='2'><KittenAsset path='m12s/act2_partylist.png' /></td>
+    </tr>
+    <tr>
+        <td><img src={bonds_of_flesh_b_icon_hr} /><img src={unbreakable_flesh_b_icon_hr} /></td>
+        <td><center><strong>Bonds of Flesh β & Unbreakable Flesh β</strong></center><br />This debuff functions exactly the same as its Alpha variant, but on top of causing a small AoE explosion upon breaking the chain, this debuff will also cause the player to spawn a tower on their location when the chain is broken.<br /><br />The player cannot soak their own tower due to a vulnerability, so they must rely on another player to soak it for them.</td>
+    </tr>
+</table>
+
+Due to how similar the debuffs and this mechanic are to Program Loop in TOP, this mechanic quickly received the nickname looper. For those who are in the know, it should not take hard for them to understand how this mechanic works and what the steps are to resolve it.
+
+## Initial towers
+
+After the boss has inflicted the debuffs on you, the boss will throw four lumps of flesh in a specific order onto the arena. These lumps of flesh will later become a tower that needs to be soaked by an Alpha player. If you happen to have an Alpha debuff, then you will need to track your tower and soak it when the time comes.
+
+<KittenAsset path='m12s/act2_tower_spawn_example.webm' wrapper='div' />
+
+How do you know which tower is your responsibility? In case the nickname "looper" didn't give it away for you, you do not want a scenario where you have to soak the tower at the same time as when your debuff is going to go off. Both the towers and the debuff resolution will temporarily inflict a vulnerability, so you want a sufficient grace period in between for the vulnerability to expire.
+
+So with all this in mind, the tower assignment will be as follows, which is applicable for both Alpha and Beta debuff groups.
+
+<table>
+    <tr>
+        <th>Debuff</th>
+        <th>Tower</th>
+    </tr>
+    <tr>
+        <td><img src={first_in_line_icon_hr} /></td>
+        <td><img src={third_in_line_icon_hr} /></td>
+    </tr>
+    <tr>
+        <td><img src={second_in_line_icon_hr} /></td>
+        <td><img src={fourth_in_line_icon_hr} /></td>
+    </tr>
+    <tr>
+        <td><img src={third_in_line_icon_hr} /></td>
+        <td><img src={first_in_line_icon_hr} /></td>
+    </tr>
+    <tr>
+        <td><img src={fourth_in_line_icon_hr} /></td>
+        <td><img src={second_in_line_icon_hr} /></td>
+    </tr>
+</table>
+
+As an Alpha player, you will only need to track the one tower that you're responsible of. The first two blobs will always spawn around the center, while the last two are always on the corners of the arena. Upon seeing the first two blobs spawn, it is possible to deduce where tower 3 and 4 will spawn, because both even/odd number towers will always both at the top/bottom halves of the arena. See below for all possible patterns.
+
+<table>
+    <tr>
+        <td><KittenAsset path='m12s/act2_blob_pattern1.png' /></td>
+        <td><KittenAsset path='m12s/act2_blob_pattern2.png' /></td>
+        <td><KittenAsset path='m12s/act2_blob_pattern3.png' /></td>
+        <td><KittenAsset path='m12s/act2_blob_pattern4.png' /></td>
+    </tr>
+</table>
+
+## Act 2
+
+Once all four towers have been placed, the boss will forcefully drag all players to the middle and form a coil, similar to what you've seen in normal mode. Unlike normal mode though, the gap in which you can exit from the coil are now at the cardinals, but that the boss spins counterclockwise has remained the same.
+
+While the Alpha players are busy taking care of all the towers around the arena, the Beta players must solve their own set of towers which are created every time a chain breaks. The Beta players will spend the majority of the time inside the coil, only going out once they have finished their responsibility of soaking their respective tower.
+
+The diagrams below should give you an overview of how the mechanic should go, assuming everything goes well.
+
+<table>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m12s/act2_part1.png' /></td>
+        <td><KittenAsset path='m12s/act2_part2.png' /></td>
+        <td><KittenAsset path='m12s/act2_part3.png' /></td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m12s/act2_part4.png' /></td>
+        <td><KittenAsset path='m12s/act2_part5.png' /></td>
+        <td><KittenAsset path='m12s/act2_part6.png' /></td>
+    </tr>
+</table>
+
+Some things to keep in mind...
+- The snake will always spin 90 degrees <strong>counterclockwise</strong> every time it rotates.
+- Always start in the middle of the arena when your chain hasn't appeared!
+  - This point cannot be stressed enough, you must start as close as possible to your partner before the debuff timer runs out.
+- The Beta player positions for stretching their chain and tower soaking are always opposite of each other.
+- The coil opening will be in front of you after soaking the Beta towers inside, use this to your advantage on the 3rd and 4th tower to escape the coil quickly.
+
+Here are some PoVs which you can use to get a general feel of what is going on inside this mechanic.
+
+<table>
+    <tr>
+        <th>Example 1<br /><img src={second_in_line_icon_hr} /><img src={bonds_of_flesh_b_icon_hr} /></th>
+        <th>Example 2<br /><img src={third_in_line_icon_hr} /><img src={bonds_of_flesh_a_icon_hr} /></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m12s/act2_example1.webm' /></td>
+        <td><KittenAsset path='m12s/act2_example2.webm' /></td>
+    </tr>
+    <tr>
+        <th>Example 3<br /><img src={second_in_line_icon_hr} /><img src={bonds_of_flesh_a_icon_hr} /></th>
+        <th>Example 4<br /><img src={fourth_in_line_icon_hr} /><img src={bonds_of_flesh_b_icon_hr} /></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m12s/act2_example3.webm' /></td>
+        <td><KittenAsset path='m12s/act2_example4.webm' /></td>
+    </tr>
+</table>
+
+## Car crash
+
+There are times when either Alpha 1 or Alpha 2 has to run all the way around the arena in order to get to their tower. These patterns are prone to accidents, because theres a chance that either Alpha 1 or Alpha 2 would get killed by another player while running towards their tower, resulting in the "car crash".
+
+Fortunately, the most consistent way of preventing such an accident from happening is to have the outside player use sprint. There are other methods, like giving the way of right to the other player, or running clockwise instead if that allows you to reach your tower faster, but using sprint will always work no matter which pattern you are dealing with.
+
+<table>
+    <tr>
+        <th>Collision!</th>
+        <th>Full speed ahead!</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m12s/act2_collision.png' /></td>
+        <td><KittenAsset path='m12s/act2_canttouchme.png' /></td>
+    </tr>
+</table>
+
+
+
