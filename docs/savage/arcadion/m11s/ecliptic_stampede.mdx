@@ -7,3 +7,153 @@ hide_title: false
 hide_table_of_contents: true
 slug: /savage/m11s/ecliptic_stampede
 ---
+
+After having survived <strong>Majestic Meteor</strong>, you will now have to deal with the 2nd most infamous mechanic of this fight, which is <strong>Ecliptic Stampede</strong>. While not as bad as <strong>Majestic Meteor</strong>, this mechanic is as capable in wiping your party over small mistakes, which ranges from accidentally baiting the two-way fireball to people forgetting whether it is DXA or Totanv2.
+
+<KittenAsset path='m11s/stampede_intro.webm' wrapper='div' />
+
+The H1 and D3 should preposition up north, while the H2 and D4 should preposition down south. Everyone else should be dead center, under the boss.
+
+As mentioned earlier, this mechanic has two strategies circulating in JP PF: DXA (Game8) and Totanv2. At its core, both strategies resolves the majority of this mechanic the same way, with some minor differences in the priority system and how the towers are handled. The exact differences will be further elaborated below.
+
+## Mariokart and fire puddles
+
+Once the boss finishes casting <strong>Ecliptic Stampede</strong>, a few things will happen in sequence. At the start, two random players out of the four furthest players away from the boss will be targeted with a red circle, marking them as the fire puddle droppers. At the same time, the northeast and the southwest corners are marked with a proximity AoE, which forces the fire puddle droppers to start at northwest and southeast corners.
+
+Whoever gets the marker should head to the safe corner of their respective side. If both the healer and ranged DPS on the same side gets selected for the marker, then the player who needs to adjust will depend on what strategy you're doing.
+
+<table width='50%'>
+    <tr>
+        <th width='50%'>DXA (Game8)</th>
+        <th width='50%'>Totanv2</th>
+    </tr>
+    <tr>
+        <td>Ranged DPS always adjusts, if both players on the same sides are marked.</td>
+        <td><Role role='H1' /><LargeText>&gt;</LargeText><Role role='D3' /><LargeText>&gt;</LargeText><Role role='H2' /><LargeText>&gt;</LargeText><Role role='D4' /><br />The higher priority will go north, while the lower priority goes south. This means that D3 will flex for H1, while H2 will flex for D4.</td>
+    </tr>
+</table>
+
+Whoever did not get selected for the marker should join the party in the middle, under the boss. This is important, because once the proximity markers resolve, the boss will drop six AoE puddles on all the unmarked players, forcing them to mariokart. The marked players will be targeted by six fire puddles instead, each AoE leaving behind a goop of lava that acts as a denial of area effect.
+
+<table>
+    <tr>
+        <td><KittenAsset path='m11s/stampede_fire_puddles.webm' /></td>
+        <td rowspan='2' width='50%'><KittenAsset path='m11s/stampede_mariokart.png' /></td>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m11s/stampede_mariokart.webm' /></td>
+    </tr>
+</table>
+
+
+## Towers
+
+Four towers will spawn on each intercardinal direction around the boss, two of them being tank towers and two of them which needs to be soaked by two players each. The two players who are still dropping fire puddles will be busy, so they do not need to deal with the towers.
+
+The placement of the towers are completely random, but there is always two of each, which means that your party must use some sort of priority system to properly resolve the towers. This is where the major difference between DXA and Totanv2 comes into play, because the approach is vastly different between these two strategies.
+
+<table>
+    <tr>
+        <th colspan='2' width='50%'>DXA (Game8)</th>
+        <th colspan='2' width='50%'>Totanv2</th>
+    </tr>
+    <tr>
+        <td colspan='2'><KittenAsset path='m11s/stampede_towers_dxa.png' /></td>
+        <td colspan='2'><KittenAsset path='m11s/stampede_towers_totan.png' /></td>
+    </tr>
+    <tr>
+        <td colspan='2'>The snake priority is <strong>west clockwise</strong>! Although not considered part of the DXA strategy, you are free to intentionally bait the tether so that your partner can uptime. This can be an useful tech if you're playing a job like VPR or if you're a ranged D2.</td>
+        <td colspan='2'>The snake priority is <strong>north clockwise</strong>! The melee must be closer to the boss than their ranged partner when soaking the tower. This is to ensure that the tether will go to the ranged player.</td>
+    </tr>
+    <tr>
+        <td><center><Role role='MT' /><LargeText>&gt;</LargeText><Role role='ST' /></center></td>
+        <td><center><Role role='D1' /><Role role='D2' /><LargeText>&gt;</LargeText><Role role='Ranged' /><Role role='Ranged' /></center></td>
+        <td><center><Role role='MT' /><LargeText>&gt;</LargeText><Role role='ST' /></center></td>
+        <td><center><Role role='D1' /><Role role='Ranged' /><LargeText>&gt;</LargeText><Role role='D2' /><Role role='Ranged' /></center></td>
+    </tr>
+    <tr>
+        <td colspan='2'><center><Role role='Ranged' /><LargeText>=</LargeText><Role role='H1' /><Role role='H2' /><Role role='D3' /><Role role='D4' /></center></td>
+        <td colspan='2'><center><Role role='Ranged' /><LargeText>=</LargeText><Role role='H1' /><LargeText>&gt;</LargeText><Role role='D3' /><LargeText>&gt;</LargeText><Role role='H2' /><LargeText>&gt;</LargeText><Role role='D4' /></center></td>
+    </tr>
+</table>
+
+
+## Tethers
+
+After soaking the towers, a portal will appear on each cardinal direction, up to four, that will target one player from every tower that was soaked with a tether. In case of two-man towers, the portal will target the player that is closer to the wall when the tower was soaked.
+
+Each of the portals will shoot a line AoE fireball at the player it is tethered to, inflicting a fire vulnerability in the process. The fireball is lethal if its not stretched or if anyone accidentally gets clipped in the crossfire, so have the tethered players immediately stretch them out and rotate clockwise.
+
+
+<table>
+    <tr>
+        <td><KittenAsset path='m11s/stampede_tethered_player.webm' /></td>
+        <td rowspan='2' width='50%'><KittenAsset path='m11s/stampede_tethers.png' /></td>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m11s/stampede_tether_middle.webm' /></td>
+    </tr>
+</table>
+
+## Fireballs
+
+Now, this is the last part of the mechanic and the biggest reason why this mechanic has gotten its infamy. While the tethered players were stretching their tethers, the Tyrant in the middle will cast either <strong>Two-way Fireball</strong> or <strong>Four-way Fireball</strong>.
+
+The <strong>Two-way Fireball</strong> will shoot a 4-man stack fireball at the two closest players, while <strong>Four-way Fireball</strong> will shoot a 2-man stack fireball at the four closest players. The attack itself is a wild charge, so the players with a fire vulnerability must hide behind other players to safely take this attack without dying.
+
+To deal with this mechanic properly, your party need a priority system that can account for both fireball patterns.
+
+<table>
+    <tr>
+        <th colspan='2' width='50%'>DXA (Game8)</th>
+        <th colspan='2' width='50%'>Totanv2</th>
+    </tr>
+    <tr>
+        <td><center><strong>Northwest</strong><br />The fire puddle dropper from north.</center></td>
+        <td><center><strong>Northeast</strong><br />The melee player that did not get tethered.</center></td>
+        <td><center><strong>Northwest</strong><br />The fire puddle dropper from north.</center></td>
+        <td><center><strong>Northeast</strong><br /><Role role='D1' /></center></td>
+    </tr>
+    <tr>
+        <th colspan='4'>Four-way Fireball</th>
+    </tr>
+    <tr>
+        <td colspan='2'><KittenAsset path='m11s/stampede_fourway_fireball_dxa.png' /></td>
+        <td colspan='2'><KittenAsset path='m11s/stampede_fourway_fireball_totan.png' /></td>
+    </tr>
+    <tr>
+        <td><center><strong>Southwest</strong><br />The ranged player that did not get tethered.</center></td>
+        <td><center><strong>Southeast</strong><br />The fire puddle dropper from south.</center></td>
+        <td><center><strong>Southwest</strong><br /><Role role='D2' /></center></td>
+        <td><center><strong>Southeast</strong><br />The fire puddle dropper from south.</center></td>
+    </tr>
+    <tr>
+        <th colspan='4'>Two-way Fireball</th>
+    </tr>
+    <tr>
+        <td colspan='2'><KittenAsset path='m11s/stampede_twoway_fireball_dxa.png' /></td>
+        <td colspan='2'><KittenAsset path='m11s/stampede_twoway_fireball_totan.png' /></td>
+    </tr>
+    <tr>
+        <td colspan='4'><center>Collapse on the west/east sides. Fire puddle droppers, stay outside the boss's hitbox!</center></td>
+    </tr>
+</table>
+
+Due to the nature of how this attack targets the closest players, the <strong>Two-way Fireball</strong> is incredibly prone to causing accidents. Other common causes of deaths/wipes is the lack of heals and mitigations, people completely forgetting that they had to bait the fireballs, or simply by being too close to the boss, causing you to be hit by multiple fireballs that are coming out. 
+
+The rules and priority system are in place, but run with the assumption that things will go wrong. If you can adjust, then try to adjust to save yourself a headache. You are recommended to save your LB3 for this specific moment, as a healer LB3 is what saves your run in the later weeks from whatever happens in PF.
+
+<table>
+    <tr>
+        <th>Four-way Fireball<br /><Role role='D3' /></th>
+        <th>Two-way Fireball<br /><Role role='D3' /></th>
+        <th>Two-way Fireball<br /><Role role='MT' /></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='m11s/stampede_example_fourway.webm' /></td>
+        <td><KittenAsset path='m11s/stampede_example_twoway.webm' /></td>
+        <td><KittenAsset path='m11s/stampede_example_twoway2.webm' /></td>
+    </tr>
+</table>
+
+Once you've survived the barrage of fireballs, the boss will wrap this phase up with <Raidwide>Crown of Arcadia</Raidwide>. If anything went wrong during <strong>Ecliptic Stampede</strong>, then now is your last chance to press your healer LB3.
