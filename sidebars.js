@@ -310,13 +310,13 @@ const fru = {
         {type: "doc", id: "ultimates/fru/phase_3/ultimate_relativity"},
         {type: "doc", id: "ultimates/fru/phase_3/apocalypse"}
       ]
-    },,
+    },
     {
       type: "category", label: "Phase 4 - Gaia and Shiva", items: [
         {type: "doc", id: "ultimates/fru/phase_4/darklit_dragonsong"},
         {type: "doc", id: "ultimates/fru/phase_4/crystallize_time"}
       ]
-    },,
+    },
     {
       type: "category", label: "Phase 5 - Pandora", items: [
         {type: "doc", id: "ultimates/fru/phase_5/timeline"},
@@ -327,6 +327,45 @@ const fru = {
     },
   ]
 };
+
+const dmu = {
+  type: "category", label: "Dancing Mad (DMU/UMAD)", items: [
+    {type: "doc", id: "ultimates/dmu/dmu_intro"},
+    {
+      type: "category", label: "Phase 1 - Kefka", items: [
+        {type: "doc", id: "ultimates/dmu/phase_1/graven_image_1"},
+        {type: "doc", id: "ultimates/dmu/phase_1/graven_image_2"},
+        {type: "doc", id: "ultimates/dmu/phase_1/graven_image_3"}
+      ]
+    },
+    {
+      type: "category", label: "Phase 2 - God Kefka", items: [
+        {type: "doc", id: "ultimates/dmu/phase_2/forsaken"},
+        {type: "doc", id: "ultimates/dmu/phase_2/trine"}
+      ]
+    },
+    {
+      type: "category", label: "Phase 3 - Exdeath and Chaos", items: [
+        {type: "doc", id: "ultimates/dmu/phase_3/bowels_of_agony"},
+        {type: "doc", id: "ultimates/dmu/phase_3/black_hole"}
+      ]
+    },
+    {
+      type: "category", label: "Phase 4 - Kefka Says", items: [
+        {type: "doc", id: "ultimates/dmu/phase_4/kefka_says"},
+      ]
+    },
+    {
+      type: "category", label: "Phase 5 - Ultimate Kefka", items: [
+        {type: "doc", id: "ultimates/dmu/phase_5/flood"},
+        {type: "doc", id: "ultimates/dmu/phase_5/maddening_orchestra"},
+        {type: "doc", id: "ultimates/dmu/phase_5/celestriad"},
+        {type: "doc", id: "ultimates/dmu/phase_5/stray_apocalypse"},
+        {type: "doc", id: "ultimates/dmu/phase_5/forsaken"}
+      ]
+    }
+  ]
+}
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
@@ -408,7 +447,8 @@ const sidebars = {
       type: 'category',
       label: 'Ultimates',
       items: [
-        fru
+        fru,
+        dmu
       ]
     }
   ]
