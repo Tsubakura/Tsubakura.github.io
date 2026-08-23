@@ -9,4 +9,70 @@ slug: /ultimates/dmu
 pagination_prev: null
 ---
 
-WIP...
+import damage_down_icon_hr from '/img/debuff/damage_down_icon_hr.png';
+import banner from '/img/dmu/dmu_banner.png';
+
+<img src={banner} width='70%' />
+<br /><br />
+
+
+Mana PF is universally following [Yan-flash](https://yan-flash.com/ultimate/yosei-ranbu).
+
+Meanwhile, Elemental has two pastebins in circulation:
+- [Lisbin](https://pastebin.com/uHvTvYu8), or commonly referred to as pastebin in PF description.
+- [Megabin](https://pastebin.com/8HN6chgM)
+
+The strategies are for the most part streamlined, but there are some minor differences which needs to be taken into account. This guide will list the differences if applicable, but assume otherwise that its uniform.
+
+### Aditional notes
+- During the first phase, you are required to resolve the mechanics correctly in order to progress to phase 3.
+  - Doing the mechanics correctly will result in Kefka giving extra dialogues once you clear phase 1. 
+  - If the mechanics were done incorrectly or simply ignored, then defeating Kefka in phase 2 will cause your run to end prematurely by giving you a fake clear screen instead.
+- 0s burst is the default in PF no matter whether you are in Mana or Elemental, as this helps align your burst windows for both phase 2 and 4.
+- For phase 3, the five tankbusters are done ISSIS or ISISS, depending on the preferences of the tanks.
+  - The **I** means invulnerability and **S** means swap.
+  - Mana PF defaults to doing ISSIS with no swap after the limit cut.
+  - The timestamp for the first tankbuster in phase 3 is 7:59, so take that into account as that affects how you handle the tankbusters in phase 1.
+- By far the most common approach to tankbusters in phase 1 is MT kitchen sink > ST kitchen sink > ST invuln > MT invuln.
+  - In case of a MT WAR, you can opt to kitchen sink the last tankbuster in phase 1 instead, so that you can use Holmgang at the start of phase 2 instead.
+  - This common approach is not possible in a GNB/PLD scenario due to their long invuln timer.
+    - To work around this, the pair must resolve the phase 1 tankbusters through MT invuln > ST kitchen sink > MT kitchen sink > ST invuln.
+- For the **Maddening Orchestras** in phase 5, whoever invulned first during phase 3 should also be the one invulning first in phase 5.
+  - There are tank comps like WAR/DRK that allows flexibility, but the above approach will work in any comps, including parties with both a GNB and a PLD.
+
+
+## Damage down penalties
+
+<table width='80%'>
+    <tr>
+        <th>Debuff</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><img src={damage_down_icon_hr} /></td>
+        <td><center><strong>Damage Down</strong></center><br />Taking any damage that results from failing a mechanic will inflict a damage down. The observed damage penalty is at least -90%, effectively making dying and reviving more optimal than just letting the timer run out in most cases.</td>
+    </tr>
+</table>
+
+## Setup
+
+<Tabs>
+
+<TabItem value="Mana" label="Mana" default>
+
+## Mana waymarks
+
+<KittenAsset path='dmu/dmu_mana.png' wrapper='div' />
+
+
+</TabItem>
+
+<TabItem value="Elemental" label="Elemental">
+
+## Elemental
+
+<KittenAsset path='dmu/dmu_elemental.png' wrapper='div' />
+
+</TabItem>
+
+</Tabs>
