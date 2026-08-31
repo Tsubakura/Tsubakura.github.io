@@ -2,7 +2,8 @@ import React from 'react';
 import ReactPlayer from 'react-player'
 
 export default function image({children, path, wrapper = 'span', width}) {
-    let assetURL = 'https://ffxivkittenassets.z7.web.core.windows.net/'
+    //let assetURL = 'https://ffxivkittenassets.z7.web.core.windows.net/'
+    let assetURL = 'https://ffxivkittenassets.com/'
     //let assetURL = 'https://ffxivkittenassetcdn.azureedge.net/'
     //let assetURL = 'https://ffxivkittenassetcdn-h6e7b4h5bbfxakgm.z01.azurefd.net/'
     return (
