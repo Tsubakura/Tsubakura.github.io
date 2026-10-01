@@ -11,6 +11,9 @@ pagination_prev: null
 
 import damage_down_icon_hr from '/img/debuff/damage_down_icon_hr.png';
 import banner from '/img/dmu/dmu_banner.png';
+import attack from '/img/assets/Signs/mark_tar1.png'
+import chain from '/img/assets/Signs/mark_link1.png'
+import ignore from '/img/assets/Signs/mark_stop1.png'
 
 <img src={banner} width='70%' />
 <br /><br />
@@ -42,6 +45,58 @@ The strategies are for the most part streamlined, but there are some minor diffe
 - For the **Maddening Orchestras** in phase 5, whoever invulned first during phase 3 should also be the one invulning first in phase 5.
   - Assuming MT takes Exdeath during phase 3, the invuln order will naturally become MT > ST in phase 5.
   - There are tank comps like WAR/DRK that allows flexibility, but the above approach will work in any comps, including parties with both a GNB and a PLD.
+
+## Self mark macros
+
+There are mechanics where you are expected to self mark. Avoid manually marking yourself with a specific marker if you don't know what you're doing, because doing so can cause you to remove other people's markers. Instead, use these macros below to mark yourself with the first available marker.
+
+<table>
+  <tr>
+    <td><img src={attack} /></td>
+    <td><img src={chain} /></td>
+    <td><img src={ignore} /></td>
+  </tr>
+  <tr>
+<td>
+
+```
+/mk attack <me>
+/micon attack1 marking
+```
+
+</td>
+<td>
+
+```
+/mk bind <me>
+/micon bind1 marking
+```
+
+</td>
+<td>
+
+```
+/mk ignore <me>
+/micon ignore1 marking
+```
+
+</td>
+  </tr>
+</table>
+
+To clear your whole party from markers, you can use the following macro.
+
+```
+/micon "Clear" Waymark
+/mk off <1>
+/mk off <2>
+/mk off <3>
+/mk off <4>
+/mk off <5>
+/mk off <6>
+/mk off <7>
+/mk off <8>
+```
 
 
 ## Damage down penalties
