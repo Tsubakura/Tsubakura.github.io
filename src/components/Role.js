@@ -15,6 +15,10 @@ import Healer from '/img/assets/00_ROLE/Healer.png';
 import Ranged from '/img/assets/00_ROLE/RangedRole.png';
 import Support from '/img/assets/00_ROLE/Support.png';
 import DPS from '/img/assets/00_ROLE/DPS.png';
+import WAR from '/img/assets/01_TANK/Job/Warrior.png';
+import DRK from '/img/assets/01_TANK/Job/DarkKnight.png';
+import GNB from '/img/assets/01_TANK/Job/Gunbreaker.png';
+import PLD from '/img/assets/01_TANK/Job/Paladin.png';
 
 export default function Role({children, role}) {
     let returnValue = '';
@@ -35,6 +39,10 @@ export default function Role({children, role}) {
         case 'Ranged': returnValue = Ranged; break;
         case 'Support': returnValue = Support; break;
         case 'DPS': returnValue = DPS; break;
+        case 'WAR': returnValue = WAR; break;
+        case 'DRK': returnValue = DRK; break;
+        case 'GNB': returnValue = GNB; break;
+        case 'PLD': returnValue = PLD; break;
     }
     return (
         <img src={returnValue} width='36px' />
