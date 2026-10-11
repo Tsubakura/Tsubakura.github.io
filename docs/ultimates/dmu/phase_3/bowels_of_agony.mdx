@@ -8,4 +8,282 @@ hide_table_of_contents: true
 slug: /ultimates/dmu/p3/bowels_of_agony
 ---
 
-WIP...
+import entropy_icon_hr from '/img/debuff/entropy_icon_hr.png';
+import dynamic_fluid_icon_hr from '/img/debuff/dynamic_fluid_icon_hr.png';
+import headwind_icon_hr from '/img/debuff/headwind_icon_hr.png';
+import tailwind_icon_hr from '/img/debuff/tailwind_icon_hr.png';
+
+Kefka now realizes what is going on and is now issuing a direct challenge to you, the player, for ruining his ultimate encounter.
+
+Once the cutscene finishes, Kefka will summon Chaos and Exdeath into the arena. Both of the bosses will cast <strong>The Decisive Battle</strong> to inflict a debuff on the four closest players to them. These debuffs will prevent you from attacking the other boss: Epic Hero (A) will only allow you to attack Chaos, while Fated Hero (B) only allows you to attack Exdeath. 
+
+<KittenAsset path='dmu/p3/phase_start.webm' wrapper='div'/>
+
+Each boss requires four players, so your party needs to assign four players to each bosses each:
+- D1 and D2 should always be assigned to Chaos, while D3 and D4 shoudl always be assigned to Exdeath.
+- Each boss should be assigned one healer and it does not matter who goes where, as long as the healers can agree on something.
+- The tank who is going to take Exdeath must be able to invuln his first tankbuster, the other tank can take Chaos.
+
+If there are no discussions in between, then the default setup for each boss is as follows.
+
+<table>
+    <tr>
+        <th>Chaos</th>
+        <th>Exdeath</th>
+    </tr>
+    <tr>
+        <td><Role role='ST' /><Role role='H2' /><Role role='D1' /><Role role='D2' /></td>
+        <td><Role role='MT' /><Role role='H1' /><Role role='D3' /><Role role='D4' /></td>
+    </tr>
+</table>
+
+Take note though that this default setup is impossible in certain tank comps, so you will have to be proactive in communicating what your intentions are if that is the case.
+
+## Which tank should take which boss?
+
+The options you have as a tank is heavily dependent on two factors:
+- What tank you're playing, because you have to take into account the tank invuln cooldown.
+- Whether you are MT or ST, because of how tankbusters in P1 are resolved.
+
+Here's a chart which explains your options depending on what setup you have in your party and how you handle the tankbusters in phase 1.
+
+<table>
+    <tr>
+        <th>MT</th>
+        <th>ST</th>
+        <th><Tankbuster>Revolting Ruin III</Tankbuster></th>
+        <th><Tankbuster>Hyperdrive</Tankbuster></th>
+        <th><Tankbuster>Hyperdrive</Tankbuster></th>
+        <th><Tankbuster>Revolting Ruin III</Tankbuster></th>
+        <th>Chaos</th>
+        <th>Exdeath</th>
+    </tr>
+    <tr>
+        <td><center><Role role='WAR' /></center></td>
+        <td><center>Any</center></td>
+        <td><center>MT Mitigations</center></td>
+        <td><center>ST Mitigations</center></td>
+        <td><center>ST Invuln</center></td>
+        <td><center>MT Invuln or Mitigations</center></td>
+        <td colspan='2'><center>Any</center></td>
+    </tr>
+    <tr>
+        <td><center><Role role='DRK' /></center></td>
+        <td><center>Any</center></td>
+        <td><center>MT Mitigations</center></td>
+        <td><center>ST Mitigations</center></td>
+        <td><center>ST Invuln</center></td>
+        <td><center>MT Invuln</center></td>
+        <td colspan='2'><center>Any</center></td>
+    </tr>
+    <tr>
+        <td><center><Role role='GNB' /><Role role='PLD' /></center></td>
+        <td><center>Any</center></td>
+        <td><center>MT Mitigations</center></td>
+        <td><center>ST Mitigations</center></td>
+        <td><center>ST Invuln</center></td>
+        <td><center>MT Invuln</center></td>
+        <td><center>MT</center></td>
+        <td><center>ST</center></td>
+    </tr>
+    <tr>
+        <td><center><Role role='GNB' /><Role role='PLD' /></center></td>
+        <td><center>Any</center></td>
+        <td><center>MT Mitigations</center></td>
+        <td><center>ST Mitigations</center></td>
+        <td><center>MT Invuln</center></td>
+        <td><center>ST Invuln</center></td>
+        <td><center>ST</center></td>
+        <td><center>MT</center></td>
+    </tr>
+</table>
+
+This table takes into account of both ISISS and ISSIS. The invuln timing for PLD in ISISS is much tighter though, so for the truly safe option in ISISS, make sure that you send PLD to Chaos so that you don't have to worry about invuln timings.
+
+For PLD and GNB, there are ways to handle phase 1 if you want to be MT and also want to be the one to take Exdeath no matter what. Keep in mind that it does break the conventional way of how phase 1 is normally handled, so go with the assumption that most players will not agree with your plan.
+
+A word of note before we continue exploring this phase: The auto attacks from both Chaos and Exdeath hits like a truck (70k-80k damage per strike), and they will keep attacking both tanks nonstop throughout phase 3. As healers, it is your responsibility to keep both of them alive. The tanks need their mitigations for the tankbusters, so there are times that they are unable to spare mitigations for the auto attacks.
+
+## Bowels of Agony
+
+Once your party has sorted out who wants to take which boss, drag both bosses to the center once the debuffs are assigned. After a few auto attacks, Chaos will cast <Raidwide>Bowels of Agony</Raidwide> to summon some elemental orbs onto the arena while also inflicting some debuffs on the party. This attack is also a raidwide, albeit a weak one, so it will not oneshot you even if you have no mitigations up.
+
+<KittenAsset path='dmu/p3/bowels_of_agony_start.webm' wrapper='div' />
+
+### Debuffs
+
+First, let's explore what the individual debuffs do.
+
+<table width='100%'>
+    <tr>
+        <th width='7%'>Debuff</th>
+        <th width='65%'>Description</th>
+        <th>Additional Notes</th>
+    </tr>
+    <tr>
+        <td><img src={entropy_icon_hr} /></td>
+        <td><center><strong>Entropy</strong></center><br />When the timer of this debuff expires, a small fire AoE will detonate on the player affected with this debuff.<br /><br />One random support and one random DPS will be inflicted with this debuff at the start.</td>
+        <td rowspan='4'><KittenAsset path='dmu/p3/agony_partylist.png' /></td>
+    </tr>
+    <tr>
+        <td><img src={dynamic_fluid_icon_hr} /></td>
+        <td><center><strong>Dynamic Fluid</strong></center><br />When the timer of this debuff expires, a donut will go off around the player affected with this debuff.<br /><br />One random support and one random DPS will be inflicted with this debuff at the start.</td>
+    </tr>
+    <tr>
+        <td><img src={headwind_icon_hr} /></td>
+        <td><center><strong>Headwind</strong></center><br />The knockback power of an attack will be doubled if received from the <strong>front</strong>, which will effectively throw you off the arena and kill you. To cleanse this debuff, the source of a knockback attack must hit your <strong>character's back</strong> instead.<br /><br />Failing to cleanse this debuff, because you used anti-knockback, will cause you to die instantly instead.</td>
+    </tr>
+    <tr>
+        <td><img src={tailwind_icon_hr} /></td>
+        <td><center><strong>Tailwind</strong></center><br />The knockback power of an attack will be doubled if received from the <strong>back</strong>, which will effectively throw you off the arena and kill you. To cleanse this debuff, the source of a knockback attack must hit your <strong>character's front</strong> instead.<br /><br />Failing to cleanse this debuff, because you used anti-knockback, will cause you to die instantly instead.</td>
+    </tr>
+</table>
+
+### Orbs
+
+Aside from the debuffs, you might also notice that some orbs have been spawned after <Raidwide>Bowels of Agony</Raidwide>. 
+
+<table>
+    <tr>
+        <td><KittenAsset path='dmu/p3/fire_orb.png' /></td>
+        <td>This orb will shoot a donut towards the nearest players once the timer of <strong>Entropy</strong> expires. The amount of players it will shoot a donut towards at corresponds with the amount of <strong>Entropy</strong> debuffs that has expired, which should be two in normal circumstances.<br /><br />Getting hit by this attack will induce a knockback effect, which can be used to cleanse <strong>Tailwind</strong> and <strong>Headwind</strong></td>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p3/water_orb.png' /></td>
+        <td>This orb will shoot an AoE towards the nearest players once the timer of <strong>Dynamic Fluid</strong> expires. The amount of players it will shoot a donut towards at corresponds with the amount of <strong>Dynamic Fluid</strong> debuffs that has expired, which should be two in normal circumstances.<br /><br />Any others players, aside from the one that are directly targeted by the orb, will receive a knockback effect if hit by this attack, which can be used to cleanse <strong>Tailwind</strong> and <strong>Headwind</strong></td>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p3/wind_orb.png' /></td>
+        <td>This orb will shoot a two-man stack towards the nearest player every time <strong>Tailwind</strong> or <strong>Headwind</strong> gets cleansed. Although intended to be a two-man stack, this attack can be resolved with different methods by using a lot of mitigations to negate the damage.</td>
+    </tr>
+</table>
+
+The wind orb will randomly spawn in one of the intercardinal locations. The fire and water spawn locations are random as well, but they are always 90 degrees from where the wind orb is spawned. Below are some examples to illustrate the orb spawn patterns.
+
+<table>
+    <tr>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_orb_spawn1.png' /></td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_orb_spawn2.png' /></td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_orb_spawn3.png' /></td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_orb_spawn4.png' /></td>
+    </tr>
+</table>
+
+Now with the mechanics dissected, the goal of your party is as follows: Every member must cleanse their <strong>Tailwind</strong> or <strong>Headwind</strong>. The *intended* way for your party to resolve this is to cleanse two player each using the fire and water orb. At the end of the sequence, Exdeath will do a knockback attack which allows you to cleanse the remaining four players. 
+
+However, the PF scene has a very different idea in mind: What if we just make Exdeath cleanse all eight players at the same time and also somehow make it work...?
+
+### Tank LB3 Strategy
+
+Cleansing all eight at once is normally suicide, because that would unleash eight 2-man stack attacks from the wind orb which would slaughter your party. But people found out that this attack doesn't inflict any vulnerabilities, which opens up opportunities to cheese it with mitigations. And what better to use then a tank LB3 to mitigate all the damage?
+
+<table>
+    <tr>
+        <th>1</th>
+        <td width='50%'>Once <Raidwide>Bowels of Agony</Raidwide> is cast, the tanks will have to get to work. First, pull Chaos towards where the wind orb is. Exdeath, on the other hand, should be pulled opposite of where the wind orb is. Both bosses should be pulled to the edge as much as possible.<br /><br />D3 and D4 are responsible for baiting the water orbs, so they should position themselves near the water orb. The party will wipe if the water orb is not baited by D3 and D4, so avoid making the mistake of positioning yourself at the fire orb instead. As for the rest of the players, they can follow the Chaos tank to where the wind orb is. </td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_1.png' /></td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td>Once in position, the Chaos tank can spin the boss around and stand on the ring of the boss's hitbox. D1 and D2 should stand at the edge of the arena, while H1 and H2 should stack together with the Chaos tank. As for the Exdeath tank, once you see Exdeath cast <strong>Thunder III</strong>, the tank should join and stack together with the support group at Chaos. The A/B debuffs will disappear at this point, so feel free to attack whichever boss you like.<br /><br />The first set of debuffs will expire at this point once Exdeath finishes his cast, so make sure that you are at your correct positions. No matter whether it is <strong>Entropy</strong> or <strong>Dynamic Fluid</strong>, you can use the same static positions to resolve both mechanics.</td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_2a.webm' /><br /><KittenAsset path='dmu/p3/bowels_of_agony_2b.webm' /></td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td>After resolving the first set of debuffs, Exdeath will cast <Tankbuster>Thunder III</Tankbuster>. He is not tethering to the void this time, so you're now dealing with a proximity tankbuster instead that hits two times consecutively. Each tankbuster inflicts a vulnerability, so a tank cannot soak both hits in a row without an invuln. Fortunately, assuming everything was planned correctly, the invuln for the Exdeath tank should be up at this point, so send him/her to Exdeath and have that tank soak both busters.<br /><br />Once both busters are soaked, pull Exdeath to Chaos and make sure that he is moved into the middle of Chaos. This can be achieved by moving to the edge and not stopping your pull at where the support group are stacking.</td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_3.webm' /></td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <td>Hopefully, the Chaos tank pointed Chaos towards the center of the arena properly, because it will determine the difficulty of this next mechanic. Chaos will now randomly do either <strong>Longitudinal Implosion</strong> or <strong>Latitudinal Implosion</strong>, which is a 90 degrees cone AoE cone attack that is fired at both front/back or sides. <strong>Longitudinal Implosion</strong> will cause Chaos to shoot front/back first, before shooting the sides, while <strong>Latitudinal Implosion</strong> does the opposite. If you have trouble remembering this, then another way to identify which directions are cleaved first is by looking at the purple smoke that is emitted by Chaos when he is casting the attack.<br /><br />The second set of debuffs will resolve shortly after the cone cleaves, so make sure to get back to your positions once you're done dodging the cone cleaves.</td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_4a.webm' /><br /><KittenAsset path='dmu/p3/bowels_of_agony_4b.webm' /></td>
+    </tr>
+    <tr>
+        <th>5</th>
+        <td>Once the 2nd set of debuffs has resolved, the D3 must now run off all the way to the opposite of the arena to bait <strong>Umbra Smash</strong>, which is a proximity attack that targets the farthest player from him. Once Chaos has locked in, which you know if you see the castbar starting, then your job as D3 is to run back to support stack near Chaos.<br /><br />Meanwhile, while Chaos is doing his <strong>Umbra Smash</strong>, Exdeath is charging up his <strong>Vacuum Wave</strong>, which is a knockback attack that originates from Exdeath. This is your only opportunity to cleanse your Tailwind/Headwind debuff, so have everyone position themselves at where the support group is stacking, and expose your front or back towards Exdeath in order to cleanse this debuff. If possible, try to change your target to Exdeath so that you won't accidentally turn the wrong way when Chaos jumps over you.<br /><br />To survive the attack from the wind orb that comes after, you will need tank LB3, a shield and two additional mitigations. Using your D3 mitigation here is recommended, while the healers can cover the rest.</td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_5.webm' /></td>
+    </tr>
+</table>
+
+There are two references that tanks can use to time their tank LB3. Either they press the LB3 when the castbar hits V of <strong>Vacuum Wave</strong> on Exdeath or they press it the moment they see the 2nd Kefka dash appear on the map.
+
+<KittenAsset path='dmu/p3/lb3_reference.png' wrapper='div' />
+
+
+### Wait, what's with Kefka dashing around?
+
+While executing the last few mechanics, you might notice that Kefka was turning purple and dashing around the arena. This is part of a limit cut mechanic that immediately occurs right after you resolve you Tailwind/Headwind debuffs. 
+
+First, identify which direction Kefka's first dash is. Second, identify whether Kefka is diving clockwise or in a counterclockwise motion. This must be done at the same time as when you're getting ready to receive the knockback from Exdeath, or worse as D3, at the same time as when you're running back to the support group after you bait Chaos's <strong>Umbra Smash</strong>. You will not get a second chance to identify where you have to go for this limit cut, so keep your eyes peeled while making sure that you resolve your Tailwind/Headwind properly.
+
+<KittenAsset path='dmu/p3/limit_cut.webm' wrapper='div' />
+
+Once you've identified where Kefka dashed first and in which direction he is making his dashes, your party will now have to position themselves in between each telegraphed dashes. This must be done in a numbered order in the same direction as Kefka was dashing, but in a descending order starting from 8. Logically, people will think that you will start from 1 and ascend, but that's just another one of Kefka's attempt at trolling you.
+
+<table>
+    <tr>
+        <th>Clockwise</th>
+        <th>Counterclockwise</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p3/limit_cut_clockwise.png' /></td>
+        <td><KittenAsset path='dmu/p3/limit_cut_counterclockwise.png' /></td>
+    </tr>
+</table>
+
+Once you've identified your spot, you can use the lines on the floor as reference to find out where you can stand safely. There is some error margin, but deviating from this reference point can potentially cause accidents, which is preferably avoided if possible.
+
+<KittenAsset path='dmu/p3/limit_cut_floor_reference.png' wrapper='div' width='40%' />
+
+This mechanic can be quite tricky, so here are some examples that can be used as reference material.
+
+<table>
+    <tr>
+        <th>Example 1<br />3 clockwise</th>
+        <th>Example 2<br />1 counterclockwise</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p3/limit_cut_example1.webm' /></td>
+        <td><KittenAsset path='dmu/p3/limit_cut_example2.webm' /></td>
+    </tr>
+</table>
+
+
+### Post Limit-Cut
+
+Once the limit cut is resolved, Exdeath will prepare two <Tankbuster>Thunder III</Tankbuster> to tankbuster both tanks again, twice. As a reminder, this attack is proximity based, so everyone except the tank receiving the buster should not be anywhere near the tank or inside the boss's hitbox.
+
+<KittenAsset path='dmu/p3/thunder_tankbuster_after_limit_cut.webm' wrapper='div' />
+
+After the first set of <Tankbuster>Thunder III</Tankbuster>, both Chaos and Exdeath will reapply the debuffs again using <strong>The Decisive Battle</strong>, so make sure that all players are standing near their respective boss to get the correct debuff. Alternatively, the ranged players that need the Exdeath debuff can also choose to stand very far away instead, as long as all four Chaos players are standing near Chaos in order to receive his A debuff.
+
+### Tankbuster strategy
+
+If your party is doing ISISS, then the Chaos tank will use their invuln to deal with the 2nd tankbuster that Exdeath is sending. However, if you're doing ISSIS, which is the default in Mana, then you will be swapping for both busters. No matter which strategy you're using, the Exdeath tank will always take the first hit, while the Chaos tank will take the 2nd hit.
+
+ISSIS is especially dangerous for WAR and GNB, because they cannot utilize their short mitigation on both busters due to their cooldown. The tankbuster is estimated to be around 580k damage on a high roll, so its impossible for a tank to survive this attack if they are missing their short mitigation, assuming they didn't receive any extra help from healers, casters or phys ranged.
+
+To work around this problem, the tanks need to time their rampart so that it covers both tankbusters. There is 17 seconds between the first and the second <Tankbuster>Thunder III</Tankbuster>, so you have a short window to press your rampart in a way that it covers both attacks. As such, the recommended tank mitigation plan is as follows:
+- Secondary, Short and Rampart, in that order, to deal with the first tankbuster.
+- After that, you use your 40% in combination with your rampart to deal with the second tankbuster.
+
+To make the attacks safer to deal with, the Chaos tank should use their reprisal on the first <Tankbuster>Thunder III</Tankbuster> while the Exdeath uses their reprisal on the second cast of <Tankbuster>Thunder III</Tankbuster>. Targeted mitigations like feint, addle and dismantle are welcomed, because they will be useless for any other mechanic during this phase.
+
+Finally, healers should assume at all times that the tanks will die if they don't help them. Even assuming the tanks will survive the busters, their HP might be so low that they might die from the next auto attack, so the healers should try to help them as much as they can.
+
+### Examples
+
+Here are some PoVs as references that showcases everything from the beginning of phase 3 until the resolutions of both tankbusters.
+
+<table>
+    <tr>
+        <th>Example 1<br /><Role role='MT' /></th>
+        <th>Example 2<br /><Role role='D1' /></th>
+        <th>Example 3<br /><Role role='D3' /></th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_example1.webm' /></td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_example2.webm' /></td>
+        <td><KittenAsset path='dmu/p3/bowels_of_agony_example3.webm' /></td>
+    </tr>
+</table>
