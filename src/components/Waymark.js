@@ -8,7 +8,7 @@ import Waymark2 from '/img/assets/Waymarks/way_2.png';
 import Waymark3 from '/img/assets/Waymarks/way_3.png';
 import Waymark4 from '/img/assets/Waymarks/way_4.png';
 
-export default function Role({children, value}) {
+export default function Waymark({children, value}) {
     let returnValue = '';
     switch(value){
         case 'A': returnValue = WaymarkA; break;
