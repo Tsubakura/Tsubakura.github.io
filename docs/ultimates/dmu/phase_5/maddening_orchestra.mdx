@@ -8,4 +8,75 @@ hide_table_of_contents: true
 slug: /ultimates/dmu/p5/maddening_orchestra
 ---
 
-WIP...
+import surprise_flare_icon_hr from '/img/debuff/surprise_flare_icon_hr.png';
+import surprise_holy_icon_hr from '/img/debuff/surprise_holy_icon_hr.png';
+
+Immediately after resolving <strong>Flood</strong>, have your party spread out! Kefka will cast <strong>Maddening Orchestra</strong> soon, which will hit multiple people in the party with a spread AoE. The spread position is different depending on which strategy you're using, so keep that in mind!
+
+<table>
+    <tr>
+        <th>Lisbin & Yan</th>
+        <th>Megabin</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p5/maddening_spread_yan.png' /></td>
+        <td><KittenAsset path='dmu/p5/maddening_spread_megabin.png' /></td>
+    </tr>
+</table>
+
+## Non-tanks
+
+As non-tanks, your job is simple: Soak exactly one AoE from Kefka and retreat to the south. Kefka will attack three non-tanks in sets of two: The first set is completely random, while the 2nd set is based on proximity. If you were not hit by the first set, then you have to get close to Kefka in order to bait the 2nd set of AoEs. 
+
+<table>
+    <tr>
+        <th>Hit from 1st set</th>
+        <th>Hit from 2nd set</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p5/maddening_nontanks1.webm' /></td>
+        <td><KittenAsset path='dmu/p5/maddening_nontanks2.webm' /></td>
+    </tr>
+</table>
+
+Now, this mechanic should be easy, but it can become hard if you have party members who are not paying attention or are being uncooperative by not giving you the sufficient space to get inside Kefka's hitbox. Ideally, the players should fan out and give each other sufficient space to take the spread safely, while the players that are hit by the first set should retreat so that they don't get in the way of other players.
+
+Either way, once you're hit by an AoE, you want to immediately retreat south, because there will be a giant defamation flare going off at north. Once the flare has gone off, get back to your <strong>Fell Forces</strong> position because Kefka will auto attack twice after you've resolved this mechanic.
+
+## Tanks
+
+The tanks need to put in a little bit more effort in this mechanic than the non-tanks, because they will have to tank swap and press their mitigation buttons. Make sure that the tank that is not going to invuln is at the 2nd highest aggro, while the other tank is the main aggro. If it is switched around for whatever reasons, then that could result in a wipe, so be careful on the aggro management.
+
+In this mechanic, both tanks will always be attacked by Kefka, with the resulting attack also inflicting a debuff on them. After the initial hit, there will be a two-man stack tankbuster before the debuffs will resolve. Which debuff each tank will get will depend on whether they are the main aggro or the 2nd highest aggro when they took the initial hit.
+
+<table width='70%'>
+    <tr>
+        <th width='7%'>Debuff</th>
+        <th width='65%'>Description</th>
+    </tr>
+    <tr>
+        <td><img src={surprise_flare_icon_hr} /></td>
+        <td><center><strong>Surprise Flare</strong></center><br />Once the timer of this debuff runs out, the tank with this debuff will explode in a giant defamation, killing anyone else who is caught in the blast. Although the explosion is impressively large, the damage itself is roughly 350k, which is survivable with rampart, a short mitigation and some help from the healers.</td>
+    </tr>
+    <tr>
+        <td><img src={surprise_holy_icon_hr} /></td>
+        <td><center><strong>Surprise Holy</strong></center><br />When the timer of this debuff runs out, a small holy circle AoE will explode on the tank. The intended method of resolving this mechanic is to soak this attack with four players, but no PF strategy in any datacenter will do this the intended way, preferring to cheese it instead through the use of an invulnerability.</td>
+    </tr>
+</table>
+
+To resolve the debuffs, the flare tank must run off all the way to the north while the holy tank should invuln in the center. As you might have remembered, the <strong>Surprise Flare</strong> debuff is applied on the player with the main aggro, so after it is applied, you want the holy tank to provoke immediately so that the flare tank doesn't accidentally drag Kefka all the way to the north with him. 
+
+The holy tank must use their invuln to soak the holy and the two auto attacks of <Tankbuster>Fell Forces</Tankbuster> that immediately comes after. Use the debuff timer to time your invuln as tight as you can, or in case of the DRK, just press your invuln anytime after you've done the two-man stack. The holy tank should assume aggro from hereon until Kefka casts <strong>Maddening Orchestra</strong> for the 2nd time, which is much later down this phase.
+
+<table>
+    <tr>
+        <th>Flare PoV</th>
+        <th>Holy PoV</th>
+    </tr>
+    <tr>
+        <td><KittenAsset path='dmu/p5/maddening_flare_tank.webm' /></td>
+        <td><KittenAsset path='dmu/p5/maddening_holy_tank.webm' /></td>
+    </tr>
+</table>
+
+There's only two <Tankbuster>Fell Forces</Tankbuster> after the first <strong>Maddening Orchestra</strong>, which is the limit which an invuln can soak. However, this will become three <Tankbuster>Fell Forces</Tankbuster> after the second <strong>Maddening Orchestra</strong>, which is more than what an invuln alone can handle, so both tanks must mit and soak the third hit together. Keep this in mind for later!
